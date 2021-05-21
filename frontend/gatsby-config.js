@@ -68,6 +68,20 @@ module.exports = {
       options: {
         path: path.join(__dirname, `src`, `pages`)
       }
-    }
+    },
+      {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-45461666-1',
+          // Setting this parameter is optional
+          anonymize: true,
+        },
+        facebookPixel: {
+          pixelId: 'YOUR_FACEBOOK_PIXEL_ID',
+        },
+        // Defines the environments where the tracking should be available  - default is ["production"]
+        environments: ['production', 'development'],
+      },
   ]
 };
