@@ -83,5 +83,6 @@ module.exports = {
         // Defines the environments where the tracking should be available  - default is ["production"]
         environments: ['production', 'development'],
       },
+    },
   ]
 };
