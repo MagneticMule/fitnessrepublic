@@ -49,15 +49,15 @@ module.exports = {
     },
     `gatsby-plugin-advanced-sitemap`,
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-offline",
+    // "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Fitness Republic UK",
         short_name: "fruk",
         start_url: "/",
-        background_color: "#ccc",
-        theme_color: "#FF7F00",
+        background_color: "#fff",
+        theme_color: "#000",
         display: "minimal-ui",
         icon: "src/assets/images/website-icon.png", // This path is relative to the root of the site.
         crossOrigin: `use-credentials`
