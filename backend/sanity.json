@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "project": {
+    "name": "Fitness Republic"
+  },
+  "api": {
+    "projectId": "s1k3b826",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/dashboard",
+    "@sanity/desk-tool",
+    "media",
+    "asset-source-unsplash"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "src/dashboardConfig.js"
+    },
+    {
+      "name": "part:@sanity/desk-tool/structure",
+      "path": "src/deskStructure.js"
+    },
+    {
+      "name": "part:@sanity/base/new-document-structure",
+      "path": "src/newDocumentStructure.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./parts/assetSources.js"
+    }
+  ]
+}

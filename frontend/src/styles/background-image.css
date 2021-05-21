@@ -1,0 +1,24 @@
+.masthead {
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem;
+  width: 100%;
+  height: 40vh;
+}
+
+.masthead h1 {
+  padding: 0 1.3rem;
+  margin: 0;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  background-color:orange;
+}
+
+
+.masthead h3 {
+  color: white;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, .4), 0 0 32px rgba(0, 0, 0, .8);
+}

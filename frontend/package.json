@@ -1,0 +1,61 @@
+{
+  "name": "fitness-republic",
+  "description": "Fitness Republic Gym - Ashby De La Zouch",
+  "version": "1.0.4",
+  "author": "Thomas Sweeney",
+  "dependencies": {
+    "@fontsource/lato": "^4.3.0",
+    "@fontsource/nunito": "^4.3.0",
+    "@sanity/block-content-to-react": "^2.0.7",
+    "chart.js": "^2.9.4",
+    "dotenv": "^8.2.0",
+    "gatsby-image": "^2.11.0",
+    "gatsby-plugin-advanced-sitemap": "^1.5.6",
+    "gatsby-plugin-gdpr-cookies": "^1.0.11",
+    "gatsby-plugin-manifest": "^2.2.4",
+    "gatsby-plugin-netlify": "^2.10.0",
+    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-page-creator": "^2.1.5",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.14.3",
+    "gatsby-source-filesystem": "^2.8.1",
+    "gatsby-source-sanity": "^6.0.5",
+    "gatsby-transformer-sharp": "^2.12.1",
+    "normalize.css": "^8.0.1",
+    "react-chartjs-2": "^2.11.1",
+    "react-helmet": "^5.2.1",
+    "react-icons": "^4.2.0",
+    "react-whatsapp-widget": "^1.2.1",
+    "sharp": "^0.27.2",
+    "styled-components": "^5.2.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gym"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "browsersync": "gatsby develop -H 0.0.0.0",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preload-fonts": "gatsby-preload-fonts"
+  },
+  "devDependencies": {
+    "gatsby": "^2.13.41",
+    "prettier": "^1.18.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.32.12",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MagneticMule/fitnessreublic.co.uk"
+  }
+}
