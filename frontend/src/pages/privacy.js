@@ -138,7 +138,10 @@ const Privacy = () => {
                   information that identifies you as an individual. We use
                   Google Analytics to track this information. Find out how
                   Google uses your data at
-                  <a href="https://support.google.com/analytics/answer/6004245">
+                  <a
+                    href="https://support.google.com/analytics/answer/6004245"
+                    rel="noopener"
+                  >
                     {" "}
                     this Google support page
                   </a>

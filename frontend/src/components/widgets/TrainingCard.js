@@ -126,15 +126,14 @@ const TrainingCard = ({ training }) => {
           <li>{bullet}</li>
         ))}
       </ul>
-      <div className="price">
-        {training.price}
-      </div>
+      <div className="price">{training.price}</div>
       <p>{training.paymethod}</p>
       <p>Total Cost: {training.totalcost}</p>
       <Button>
         <a
           aria="Takes you to our general contact form so that you can contact us about personal training oprions"
           href="/training/#PTForm"
+          rel="noopener"
         >
           Contact Us
         </a>

@@ -127,6 +127,7 @@ const MembershipCard = ({membership}) => {
         <a
           aria="Opens the external registration page for Fitness Republic on our CLubright system so that you can register for your plan"
           href="https://fitnessrepublic.clubright.co.uk/register"
+          rel="noopener"
         >
           Choose Plan
         </a>

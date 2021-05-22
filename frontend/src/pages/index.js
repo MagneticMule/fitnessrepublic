@@ -225,13 +225,15 @@ const Index = ({ data }) => {
             body={
               <>
                 At Fitness Republic we are proud of the service we deliver to
-                our members and are continually working to improve ourselves as fitness professionals to
-                help give you the very best training and support possible. We currenty have{" "}
+                our members and are continually working to improve ourselves as
+                fitness professionals to help give you the very best training
+                and support possible. We currenty have{" "}
                 <strong>
                   over 200 five star reviews on{" "}
                   <a
                     href="https://www.google.com/search?q=fitness+republic+reviews&oq=fitness+republic+reviews&aqs=chrome..69i57.4743j0j7&sourceid=chrome&ie=UTF-8#lrd=0x4879fc383cd0fdb3:0x4daa961f269ae01f,1,,,"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Takes you to our reviews on Google"
                   >
                     Google
@@ -240,13 +242,14 @@ const Index = ({ data }) => {
                   <a
                     href="https://www.facebook.com/fitnessrepublicashby/reviews"
                     target="_blank"
+                    rel="noopener"
                     aria-label="Takes you to our reviews on Facebook"
                   >
                     Facebook
                   </a>
-                </strong>{' '}
-                 and we couldn't be more delghted.
-                <br/>
+                </strong>{" "}
+                and we couldn't be more delghted.
+                <br />
                 <i>Feel free to have a look but promise you'll come back!</i> 😊
               </>
             }

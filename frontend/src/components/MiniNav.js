@@ -88,8 +88,13 @@ return (
           <li>
             <FaPhoneSquareAlt />
             <a
-            aria-label="Call the gym to chat to one of our team"
-            href="tel:+4401530413330"> 01530 413330</a>
+              aria-label="Call the gym to chat to one of our team"
+              href="tel:+4401530413330"
+              rel="noopener"
+            >
+              {" "}
+              01530 413330
+            </a>
           </li>
         </ul>
       </Items>

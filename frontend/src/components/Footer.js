@@ -190,7 +190,10 @@ const Footer = props => (
             <li>LE65 1AH</li>
             <li>
               <FaPhoneSquareAlt />
-              <a href="tel:+4401530413330"> 01530 413330</a>
+              <a href="tel:+4401530413330" rel="noopener">
+                {" "}
+                01530 413330
+              </a>
             </li>
             <li>
               <a

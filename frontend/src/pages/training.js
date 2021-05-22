@@ -118,7 +118,7 @@ const TrainingPage = ({ data }) => {
                 <div>
                   Feel free to give us a ring{" "}
                   <span>
-                    <a href="tel:+4401530413330">
+                    <a href="tel:+4401530413330" rel="noopener">
                       <FaPhoneSquareAlt /> 01530 413330
                     </a>
                   </span>{" "}

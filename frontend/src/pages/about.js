@@ -108,7 +108,7 @@ const TeamPage = ({ data }) => {
                     those under the age of 18yrs. Above this age it is highly
                     recommended but not compulsory. This can be booked at our
                     reception or via email{" "}
-                    <a href="info@fitnessrepublic.co.uk">
+                    <a href="info@fitnessrepublic.co.uk" rel="noopener">
                       info@fitnessrepublic.co.uk
                     </a>{" "}
                     or by giving us a call{" "}
@@ -143,7 +143,7 @@ const TeamPage = ({ data }) => {
                     date. If you need to freeze for longer, please see a member
                     of the fitness team. If you would like to cancel please
                     email us at{" "}
-                    <a href="info@fitnessrepublic.co.uk">
+                    <a href="info@fitnessrepublic.co.uk" rel="noopener">
                       info@fitnessrepublic.co.uk
                     </a>{" "}
                     . Please do not cancel any direct debits in place as you may
@@ -211,7 +211,11 @@ const TeamPage = ({ data }) => {
                     <strong>How can I book fitness classes?</strong> You can
                     book your classes in 4 ways. Via our app, on this website,
                     at reception or by calling us on{" "}
-                    <a href="tel:+4401530413330"> 01530 413330</a>.
+                    <a href="tel:+4401530413330" rel="noopener">
+                      {" "}
+                      01530 413330
+                    </a>
+                    .
                   </li>
                   <li>
                     <strong>What if I have never used the gym before?</strong>

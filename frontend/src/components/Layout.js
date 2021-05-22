@@ -12,18 +12,6 @@ import Footer from './Footer.js';
 import WhatsAppWidget from 'react-whatsapp-widget';
 import 'react-whatsapp-widget/dist/index.css';
 
-import "@fontsource/lato/300.css";
-import "@fontsource/lato/400.css";
-import "@fontsource/lato/700.css";
-import "@fontsource/lato/900.css";
-
-import "@fontsource/nunito/200.css";
-import "@fontsource/nunito/300.css";
-import "@fontsource/nunito/400.css";
-import "@fontsource/nunito/700.css";
-import "@fontsource/nunito/900.css";
-
-
 function Layout(props) {
   const { children } = props;
     return (
