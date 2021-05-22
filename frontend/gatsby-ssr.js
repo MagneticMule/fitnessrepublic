@@ -1,7 +1,5 @@
-// require("@fontsource/lato");
-// require("@fontsource/nunito");
 const React = require("react");
-const Layout = require("./src/components/Layout.js").default;
+const Layout = require("./src/components/Layout").default;
 
 exports.wrapPageElement = ({ element, props }) => (
   // props provide same data to Layout as Page element will get
