@@ -83,7 +83,7 @@ return (
       <Items>
         <ul>
           <li>
-            We are open until <strong>9.00PM </strong>today
+            We are open until <strong>6.00PM </strong>today
           </li>
           <li>
             <FaPhoneSquareAlt />
