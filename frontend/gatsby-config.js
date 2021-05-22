@@ -21,7 +21,8 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, `images`)
       }
     },
-    `gatsby-plugin-styled-components`,`gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     // `gatsby-plugin-preload-fonts`,
     // {
@@ -77,12 +78,18 @@ module.exports = {
           // Setting this parameter is optional
           anonymize: true
         },
+        googleTagManager: {
+          trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
+          cookieName: "gatsby-gdpr-google-tagmanager", // default
+          dataLayerName: "dataLayer" // default
+        },
         facebookPixel: {
           pixelId: "YOUR_FACEBOOK_PIXEL_ID"
         },
         // Defines the environments where the tracking should be available  - default is ["production"]
         environments: ["production", "development"]
       }
-    }
+    },
+    "gatsby-plugin-netlify-cache"
   ]
 };
