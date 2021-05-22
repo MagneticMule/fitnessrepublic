@@ -2,7 +2,6 @@ import { graphql, Link } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 
-import Layout from "../components/Layout";
 import Container from "../styles/ContainerStyle";
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
@@ -15,7 +14,7 @@ import ImageGallery from "../components/ImageGallery";
 
 const TeamPage = ({ data }) => {
   return (
-    <Layout>
+    <>
       <Helmet
         title="Fitness Republic - All about us"
         meta={[
@@ -242,7 +241,7 @@ const TeamPage = ({ data }) => {
           />
         </DualSection>
       </Container>
-    </Layout>
+    </>
   );
 };
 

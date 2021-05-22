@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import React from 'react';
 import Helmet from 'react-helmet';
 import Header from '../components/Header.js';
-import Layout from '../components/Layout.js';
 import MembershipSection from '../components/MembershipSection.js';
 import ReviewSection from '../components/ReviewSection.js';
 import TextSection from '../components/TextSection.js';
@@ -17,7 +16,7 @@ import ImageGallery from "../components/ImageGallery";
 const MembershipPage = ({data}) =>{
   console.log(data.file);
     return (
-      <Layout>
+      <>
         <Helmet
           title="Fitness Republic - Personal Training"
           meta={[
@@ -250,7 +249,7 @@ const MembershipPage = ({data}) =>{
             {/* <InfoBubble /> */}
           </DualSection>
         </Container>
-      </Layout>
+      </>
     );
   }
 

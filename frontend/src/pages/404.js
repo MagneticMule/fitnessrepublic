@@ -1,8 +1,7 @@
 import React from 'react'
-import Layout from '../components/Layout';
 
 const NotFoundPage = () => (
-  <Layout>
+  <>
     <div id="main" className="alt">
         <section id="one">
             <div className="inner">
@@ -11,7 +10,7 @@ const NotFoundPage = () => (
             </div>
         </section>
     </div>
-  </Layout>
+  </>
 )
 
 export default NotFoundPage

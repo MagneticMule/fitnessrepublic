@@ -19,7 +19,7 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 
 const TrainingPage = ({ data }) => {
   return (
-    <Layout>
+    <>
       <Helmet
         title="Fitness Republic - Personal Training"
         meta={[
@@ -231,7 +231,7 @@ const TrainingPage = ({ data }) => {
           <FormGeneral pos={"2/4"} id="PTForm" name="Seven Day Pass" />
         </DualSection>
       </Container>
-    </Layout>
+    </>
   );
 };
 

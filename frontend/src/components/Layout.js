@@ -23,17 +23,9 @@ import "@fontsource/nunito/400.css";
 import "@fontsource/nunito/700.css";
 import "@fontsource/nunito/900.css";
 
-// require("@fontsource/lato");
-// require("@fontsource/nunito");
 
-class Layout extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  render() {
-    const { children } = this.props;
+function Layout(props) {
+  const { children } = props;
     return (
       <>
         <IconContext.Provider
@@ -55,6 +47,5 @@ class Layout extends React.Component {
       </>
     );
   }
-}
 
 export default Layout;

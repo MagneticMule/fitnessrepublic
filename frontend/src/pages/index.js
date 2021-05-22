@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 
-import Layout from "../components/Layout";
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
@@ -23,7 +22,7 @@ import FormSevenDayPass from "../components/FormSevenDayPass";
 
 const Index = ({ data }) => {
   return (
-    <Layout>
+    <>
       <Helmet
         title="Fitness Republic - Family Gym in Ashby"
         meta={[
@@ -341,7 +340,7 @@ const Index = ({ data }) => {
           /> */}
         </DualSection>
       </Container>
-    </Layout>
+    </>
   );
 };
 

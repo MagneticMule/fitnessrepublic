@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 
-import Layout from "../components/Layout";
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
@@ -13,7 +12,7 @@ import Calender from "../components/ClubrightCalender";
 
 const Privacy = () => {
   return (
-    <Layout>
+    <>
       <Helmet
         title="Fitness Republic - Privacy and Cookie Policy"
         meta={[
@@ -287,7 +286,7 @@ const Privacy = () => {
           />
         </DualSection>
       </Container>
-    </Layout>
+    </>
   );
 };
 

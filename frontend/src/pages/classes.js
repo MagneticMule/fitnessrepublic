@@ -1,8 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
-
-import Layout from "../components/Layout";
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
@@ -19,7 +17,7 @@ import { DiAndroid } from "react-icons/di";
 
 const Index = ({ data }) => {
   return (
-    <Layout>
+    <>
       <Helmet
         title="Fitness Republic - Fitness Classes delivered in the gym and onine"
         meta={[
@@ -314,7 +312,7 @@ const Index = ({ data }) => {
           <Calender />
         </DualSection>
       </Container>
-    </Layout>
+    </>
   );
 };
 
