@@ -77,16 +77,10 @@ const Index = ({ data }) => {
             subtitle="From AB's through Core to Zumba"
             body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
           />
-
           <Image
-            pic={data.timetable.childImageSharp.fluid}
-            alt="Our fitness class timetable."
-            blurb={
-              <>
-                This weeks timetable. Download it, print it and stick it on the
-                front of your fridge
-              </>
-            }
+            pic={data.fitnessclass2.childImageSharp.fluid}
+            alt="A black and white image of one of our fitness classes. A lady and a man punching during a BoxFit class."
+            blurb={"A boxfit class taking place in our upstairs studio."}
           />
 
           <TextSection
@@ -314,6 +308,16 @@ const Index = ({ data }) => {
             }
           />
           <Calender />
+          <Image
+            pic={data.timetable.childImageSharp.fluid}
+            alt="Our fitness class timetable."
+            blurb={
+              <>
+                This weeks timetable. Download it, print it and stick it on the
+                front of your fridge
+              </>
+            }
+          />
         </DualSection>
       </Container>
     </>
@@ -323,54 +327,71 @@ const Index = ({ data }) => {
 export default Index;
 
 export const query = graphql`
-  query {
-    kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
-      childImageSharp {
-        fixed(height: 100, width: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
-      childImageSharp {
-        fixed(height: 152, width: 152) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
+         query {
+           kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
+             childImageSharp {
+               fixed(height: 100, width: 100) {
+                 ...GatsbyImageSharpFixed
+               }
+             }
+           }
+           blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
+             childImageSharp {
+               fixed(height: 152, width: 152) {
+                 ...GatsbyImageSharpFixed
+               }
+             }
+           }
 
-    timetable: file(relativePath: { eq: "classtimetable.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
+           timetable: file(relativePath: { eq: "classtimetable.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
 
-    fitnessclass1: file(relativePath: { eq: "fitness-class-1.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          base64
-          tracedSVG
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-          originalImg
-          originalName
-        }
-      }
-    }
-  }
-`;
+           fitnessclass1: file(relativePath: { eq: "fitness-class-1.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
+
+           fitnessclass2: file(relativePath: { eq: "lady-man-boxfit.jpg" }) {
+             childImageSharp {
+               fluid(maxWidth: 1000) {
+                 base64
+                 tracedSVG
+                 aspectRatio
+                 src
+                 srcSet
+                 srcWebp
+                 srcSetWebp
+                 sizes
+                 originalImg
+                 originalName
+               }
+             }
+           }
+         }
+       `;

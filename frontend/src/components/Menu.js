@@ -55,7 +55,7 @@ const Navigation = styled.nav`
 
     @media ${device.mobileS} {
       flex-direction: column;
-      height: 300px;
+      height: 400px;
     }
 
     @media ${device.laptop} {
@@ -67,12 +67,7 @@ const Navigation = styled.nav`
   li {
     text-decoration: none;
     text-transform: uppercase;
-    display: inline-block;
 
-  }
-
-  li + li {
-    margin-left: 2em;
   }
 
   @media ${device.mobileS} {
@@ -90,7 +85,6 @@ const Navigation = styled.nav`
 
 const Logo = styled.div`
   height: 1.8em;
-
 `;
 
 const Spacer = styled.div`
@@ -110,7 +104,6 @@ const NavToggle = styled.input.attrs({ type: "checkbox" })`
   display: none;
   :checked ~ nav {
     display: inline-block;
-
   }
 `;
 
@@ -154,7 +147,7 @@ const BurgerIcon = styled.label.attrs({ for: "nav-toggle" })`
   }
 `;
 
-const Menu = () => {
+const Menu = (props) => {
 return (
   <MenuHolder>
     <BurgerIcon>
