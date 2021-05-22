@@ -1,5 +1,14 @@
 import {createGlobalStyle} from 'styled-components';
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
+import "@fontsource/lato/900.css";
 
+import "@fontsource/nunito/200.css";
+import "@fontsource/nunito/300.css";
+import "@fontsource/nunito/400.css";
+import "@fontsource/nunito/700.css";
+import "@fontsource/nunito/900.css";
 const Typography = createGlobalStyle`
 html {font-size: 100%;} /*16px*/
 
