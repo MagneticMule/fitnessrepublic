@@ -21,7 +21,7 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, `images`)
       }
     },
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-styled-components`,`gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     // `gatsby-plugin-preload-fonts`,
     // {
@@ -69,20 +69,20 @@ module.exports = {
         path: path.join(__dirname, `src`, `pages`)
       }
     },
-      {
+    {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-45461666-1',
+          trackingId: "UA-45461666-1",
           // Setting this parameter is optional
-          anonymize: true,
+          anonymize: true
         },
         facebookPixel: {
-          pixelId: 'YOUR_FACEBOOK_PIXEL_ID',
+          pixelId: "YOUR_FACEBOOK_PIXEL_ID"
         },
         // Defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development'],
-      },
-    },
+        environments: ["production", "development"]
+      }
+    }
   ]
 };
