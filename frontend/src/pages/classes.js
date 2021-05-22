@@ -83,8 +83,8 @@ const Index = ({ data }) => {
             alt="Our fitness class timetable."
             blurb={
               <>
-                This weeks timetable. Download it, print it and
-                stick it on the front of your fridge
+                This weeks timetable. Download it, print it and stick it on the
+                front of your fridge
               </>
             }
           />
@@ -270,6 +270,7 @@ const Index = ({ data }) => {
                     <a
                       href="https://apps.apple.com/gb/app/zoom-cloud-meetings/id546505307"
                       target="_blank"
+                      rel="noopener"
                       aria-label="Takes you to the Zoom app on the Apple App Store; opens in a new window"
                     >
                       [download from the App Store]
@@ -280,6 +281,7 @@ const Index = ({ data }) => {
                     <a
                       href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en_GB&gl=US"
                       target="_blank"
+                      rel="noopener"
                       aria-label="Takes you to the Zoom app on the Google Play Store; opens in a new window"
                     >
                       [download from the Google Play Store]
@@ -290,6 +292,7 @@ const Index = ({ data }) => {
                     <a
                       href="https://zoom.us/download"
                       target="_blank"
+                      rel="noopener"
                       aria-label="Opens the download page on the Zoom website; opens in a new window"
                     >
                       [download from the Zoom website]
@@ -300,6 +303,7 @@ const Index = ({ data }) => {
                     <a
                       href="https://zoom.us/download"
                       target="_blank"
+                      rel="noopener"
                       aria-label="Opens the download page on the Zoom website; opens in a new window"
                     >
                       [download from the Zoom website]

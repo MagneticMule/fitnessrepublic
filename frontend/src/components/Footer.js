@@ -193,7 +193,11 @@ const Footer = props => (
               <a href="tel:+4401530413330"> 01530 413330</a>
             </li>
             <li>
-              <a href="https://g.page/fitnessrepublicashby?share">
+              <a
+                href="https://g.page/fitnessrepublicashby?share"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaMapMarkerAlt />
                 {" Open in Google Maps >>"}
               </a>
@@ -252,13 +256,20 @@ const Footer = props => (
           </SectionHeader>
           <SocialIcons>
             <li>
-              <a href="https://twitter.com/ashbyfitness" aria-label="Twitter">
+              <a
+                href="https://twitter.com/ashbyfitness"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener"
+              >
                 <FaTwitter /> Twitter
               </a>
             </li>
             <li>
               <a
                 href="https://www.facebook.com/fitnessrepublicashby/?fref=ts"
+                target="_blank"
+                rel="noopener"
                 aria-label="Facebook"
               >
                 <FaFacebook /> Facebook
@@ -268,6 +279,8 @@ const Footer = props => (
               <a
                 href="https://www.instagram.com/fitnessrepublicgym/"
                 aria-label="Instagram"
+                target="_blank"
+                rel="noopener"
               >
                 <FaInstagram /> Instagram
               </a>
@@ -275,6 +288,8 @@ const Footer = props => (
             <li>
               <a
                 href="https://www.youtube.com/channel/UCcFx40fq_DCUcwatqgNgBAA"
+                target="_blank"
+                rel="noopener"
                 aria-label="YouTube"
               >
                 <FaYoutube /> YouTube
