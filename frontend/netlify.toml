@@ -13,3 +13,6 @@
 	providers = [
 		"google"
 	]
+
+[[plugins]]
+  	package = "netlify-plugin-gatsby-cache"
