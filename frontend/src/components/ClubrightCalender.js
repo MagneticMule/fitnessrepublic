@@ -1,11 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-
+import { device } from "../styles/DeviceSizes";
 const Calender = styled.section`
   grid-column: 1/-1;
   #clubrightcalendar {
-    p>small {
-        display: none;
+    p > small {
+      display: none;
+    }
+
+    .calendarDay + .calendarDay {
+      margin-left:4px;
     }
     .calendarDay {
       > h3 {
@@ -17,7 +21,7 @@ const Calender = styled.section`
       flex-direction: column;
       .class {
         flex-grow: 1;
-        min-height: 430px;
+        min-height: 460px;
         display: flex;
         flex-direction: column;
         border: 0;

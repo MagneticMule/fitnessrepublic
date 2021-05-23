@@ -65,7 +65,7 @@ const Index = ({ data }) => {
             body="Fitness classes are an ideal way to add structure, fun and motivation to your fitness plan"
             attribution={
               <>
-                <strong>Simon Pellechia</strong> // Director and Personal
+                <strong>Simon Pellecchia</strong> // Director and Personal
                 Trainer
               </>
             }

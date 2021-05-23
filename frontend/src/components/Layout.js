@@ -44,7 +44,7 @@ function Layout(props) {
             borderRadius: "2px",
             alignSelf:"middle"
           }}
-          cookieName="gatsby-gdpr-google-analytics,"
+          cookieName="gatsby-gdpr-google-analytics"
         >
 
             <strong>Fitness Republic uses cookies.</strong> By using our site
