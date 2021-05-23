@@ -14,13 +14,15 @@ const ImageContainer = styled.div`
   box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   overflow: hidden;
+
   @media ${device.mobileS} {
     border-radius: 0;
-    margin: 0 -2em;
+    margin: 0 -1.5em;
   }
 
   @media ${device.laptop} {
     border-radius: 8px;
+    margin: 0;
   }
 
   @media ${device.laptopL} {
