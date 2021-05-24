@@ -314,7 +314,7 @@ const Footer = props => (
         </p>
         <ul>
           <li>
-            <Link to="/privacy">Terms and Conditions</Link>
+            <Link to="/terms">Terms and Conditions</Link>
           </li>
           <li>
             <Link to="/privacy#privacy-policy">Privacy Policy</Link>
