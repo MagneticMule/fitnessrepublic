@@ -27,23 +27,6 @@ const Privacy = () => {
           }
         ]}
       >
-        <script src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
-
-        <script type="application/ldon">
-          {`
-            {
-              @context": "https://schema.org",
-              "@type": "Organization",
-              "url": "https://www.fitnessrepublic.co.uk",
-              "name": "Fitness Republic",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "01530 413330",
-                "contactType": "Enquiries"
-              }
-            }
-            `}
-        </script>
       </Helmet>
       <Container>
         <DualSection>

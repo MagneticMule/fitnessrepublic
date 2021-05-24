@@ -1,6 +1,6 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 
 const path = require('path')
@@ -24,6 +24,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+
     // `gatsby-plugin-preload-fonts`,
     // {
     //   resolve: `gatsby-plugin-google-fonts`,
@@ -49,6 +50,29 @@ module.exports = {
       }
     },
     `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.fitnessrepublic.co.uk",
+        sitemap: "https://www.fitnessrepublic.co.uk/sitemap.xml",
+        env: {
+          development: {
+            policy: [
+              { userAgent: "*", disallow: ["/404", "/privacy", "/terms"] }
+            ]
+          },
+          production: {
+            policy: [
+              {
+                userAgent: "*",
+                allow: "/",
+                disallow: ["/404", "/privacy", "/terms"]
+              }
+            ]
+          }
+        }
+      }
+    },
     "gatsby-plugin-react-helmet",
     // "gatsby-plugin-offline",
     {
