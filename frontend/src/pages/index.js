@@ -29,12 +29,12 @@ const Index = ({ data }) => {
           {
             name: "description",
             content:
-              "The premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within an clean and covid safe friendly environment."
+              "For over 11 years we have been The premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within an clean and covid safe friendly environment."
           },
           {
             name: "keywords",
             content:
-              "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, student membership, local, near me"
+              "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, student membership, family, clean, bright, community, lose weight, build muscle, friendly, coaching, support"
           }
         ]}
       >

@@ -29,7 +29,7 @@ const MembershipPage = ({data}) =>{
             {
               name: "keywords",
               content:
-                "leicester, personal training, ashby, ashby de la zouch, leicestershire, free pass, trial, weight loss, excercise, support, supportive, community, professional, gym near me"
+                "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low price"
             }
           ]}
         ></Helmet>
