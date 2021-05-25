@@ -97,14 +97,14 @@ module.exports = {
           // Setting this parameter is optional
           anonymize: true
         },
-        googleTagManager: {
-          trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
-          cookieName: "gatsby-gdpr-google-tagmanager", // default
-          dataLayerName: "dataLayer" // default
-        },
-        facebookPixel: {
-          pixelId: "YOUR_FACEBOOK_PIXEL_ID"
-        },
+        // googleTagManager: {
+        //   trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
+        //   cookieName: "gatsby-gdpr-google-tagmanager", // default
+        //   dataLayerName: "dataLayer" // default
+        // },
+        // facebookPixel: {
+        //   pixelId: "YOUR_FACEBOOK_PIXEL_ID"
+        // },
         // Defines the environments where the tracking should be available  - default is ["production"]
         environments: ["production", "development"]
       }
