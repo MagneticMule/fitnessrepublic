@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import styled from "styled-components";
 import { device } from "../styles/DeviceSizes";
 const Calender = styled.section`
@@ -66,10 +66,31 @@ const Calender = styled.section`
   }
 `;
 const ClubrightCalender = props => {
-
+  // const [calData, setCalData] = useState(0);
+  // useEffect(() => {
+  //   // get data from clubright calender. It returnes Raw Html including jQuery
+  //   fetch(
+  //     `https://app.clubright.co.uk/Public/Calendar/?clubname=fitnessrepublic&classes=`,
+  //     {
+  //       credentials: "include",
+  //       mode: "no-cors"
+  //     },
+  //     {
+  //       Headers: {
+  //         "Content-Type": "text/html; charset=UTF-8"
+  //       }
+  //     }
+  //   )
+  //     .then(response => response.text())
+  //     .then(clubrightData => {
+  //       console.log(clubrightData);
+  //       setCalData(clubrightData);
+  //     });
+  // }, []);
   return (
     <Calender>
       <div
+        // dangerouslySetInnerHTML={{ __html: calData}}
         id="clubrightcalendar"
         data-clubname="fitnessrepublic"
         data-classes=""
