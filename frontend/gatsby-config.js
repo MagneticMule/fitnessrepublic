@@ -56,11 +56,6 @@ module.exports = {
         host: "https://www.fitnessrepublic.co.uk",
         sitemap: "https://www.fitnessrepublic.co.uk/sitemap.xml",
         env: {
-          development: {
-            policy: [
-              { userAgent: "*", disallow: ["/404", "/privacy", "/terms"] }
-            ]
-          },
           production: {
             policy: [
               {

@@ -57,6 +57,9 @@ const Input = styled.input`
   background: #f4f4f4;
   border: 2px solid #ff7121;
   box-shadow: inset var(--shadow-low);
+  ::placeholder{
+    opacity:.7;
+  }
 
   &:focus {
     border: 2px solid var(--deep-purple);
@@ -73,13 +76,13 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.input`
-  border:0;
-  font-weight:700;
+  border: 0;
+  font-weight: 700;
   border-radius: 8px;
-  background: var(--dark-grad);
+  background: var(--orange);
   cursor: pointer;
   color: var(--white);
-  width:auto;
+  width: auto;
   padding: 1.2em 1.8em;
   box-shadow: var(--shadow-low);
 `;
@@ -132,7 +135,7 @@ const FormSevenDayPass = props => (
         type="tel"
         name="phone"
         id="phone"
-        placeholder="01530 413330"
+        placeholder="e,g, 01530 413330"
       />
     </div>
     <div className="field">

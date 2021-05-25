@@ -113,15 +113,16 @@ const Index = ({ data }) => {
             id="getstarted"
             pos="2/4"
             number="01"
-            heading="Make Contact"
+            heading="Seven Day Free Pass"
             body={
               <>
-                Contacting us is easy. All we need is your name and a method of
-                contact, either your email or telephone number. We will get back
-                to you within the day to make an appointment for your first
-                visit. If you prefer to chat to a real life human being you can{" "}
-                <strong>call us directly on 01530 413330</strong> or simply pop
-                into the gym anytime between{" "}
+                Gettting started with us is easy with our{" "}
+                <strong>Seven Day Free Pass</strong>. All we need is your name
+                and a method of contact, either your email or telephone number.
+                We will get back to you within the day to make an appointment
+                for your first visit. If you prefer to chat to a real life human
+                being you can <strong>call us directly on 01530 413330</strong>{" "}
+                or simply pop into the gym anytime between{" "}
                 <strong>7.00 AM and 8.00 PM</strong> for an informal chat with
                 one of the team.
               </>
@@ -165,7 +166,7 @@ const Index = ({ data }) => {
           <SuperBullet
             pos="2/4"
             number="03"
-            heading="Seven Day Free Pass"
+            heading="Get to know our gym"
             body={
               <>
                 After your induction you have free full access to the Gym,

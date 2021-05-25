@@ -24,7 +24,7 @@ const Index = ({ data }) => {
           {
             name: "description",
             content:
-              "We offer gym based and online classes in Zumba, HIIT, Core, Yoga, Ballet Be Fit, Cambat HIIT, Pilates, Stretch and Relax, Zumba Toning and more."
+              "We offer gym based and online classes in Zumba, HIIT, Core, Yoga, Ballet Be Fit, Cambat HIIT, Pilates, Stretch and Relax, Zumba, Zumba Toning and more."
           },
           {
             name: "keywords",
@@ -34,22 +34,6 @@ const Index = ({ data }) => {
         ]}
       >
         <script src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
-
-        <script type="application/ldon">
-          {`
-            {
-              @context": "https://schema.org",
-              "@type": "Organization",
-              "url": "https://www.fitnessrepublic.co.uk",
-              "name": "Fitness Republic",
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "01530 413330",
-                "contactType": "Enquiries"
-              }
-            }
-            `}
-        </script>
       </Helmet>
       <Header
         title={
@@ -78,9 +62,14 @@ const Index = ({ data }) => {
             body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
           />
           <Image
-            pic={data.fitnessclass2.childImageSharp.fluid}
-            alt="A black and white image of one of our fitness classes. A lady and a man punching during a BoxFit class."
-            blurb={"A boxfit class taking place in our upstairs studio."}
+            pic={data.timetable.childImageSharp.fluid}
+            alt="Our fitness class timetable."
+            blurb={
+              <>
+                This weeks timetable. Download it, print it and stick it on the
+                front of your fridge
+              </>
+            }
           />
 
           <TextSection
@@ -307,17 +296,12 @@ const Index = ({ data }) => {
               </>
             }
           />
-          <Calender />
           <Image
-            pic={data.timetable.childImageSharp.fluid}
-            alt="Our fitness class timetable."
-            blurb={
-              <>
-                This weeks timetable. Download it, print it and stick it on the
-                front of your fridge
-              </>
-            }
+            pic={data.fitnessclass2.childImageSharp.fluid}
+            alt="A black and white image of one of our fitness classes. A lady and a man punching during a BoxFit class."
+            blurb={"A boxfit class taking place in our upstairs studio."}
           />
+          <Calender />
         </DualSection>
       </Container>
     </>

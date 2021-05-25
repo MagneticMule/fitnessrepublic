@@ -8,7 +8,7 @@ const Text = styled.div`
   font-style: italic;
   margin: 0;
   line-height: 1.5;
-  grid-column: ${props => (props.pos ? props.pos : '2/4')};
+  grid-column: ${props => (props.pos ? props.pos : '2/-1')};
 `;
 
 const IntroText = (props) => (
