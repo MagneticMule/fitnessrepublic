@@ -74,13 +74,13 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Fitness Republic UK",
-        short_name: "fruk",
+        short_name: "Fitness Republic",
         start_url: "/",
         background_color: "#fff",
         theme_color: "#000",
         display: "minimal-ui",
         icon: "src/assets/images/website-icon.png", // This path is relative to the root of the site.
-        crossOrigin: `use-credentials`
+        crossOrigin: `anonymous`
       }
     },
     {
