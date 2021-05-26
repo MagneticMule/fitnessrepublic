@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
-import styled, { withTheme } from 'styled-components';
-import Container from '../styles/ContainerStyle';
-import FRlogo from '../assets/images/svg/fitness-republic-logo-header.svg';
+import styled, { withTheme } from "styled-components";
+import Container from "../styles/ContainerStyle";
+import FRlogo from "../assets/images/svg/fitness-republic-logo-header.svg";
 
 import { device } from "../styles/DeviceSizes";
 
@@ -21,7 +21,6 @@ const MenuHolder = styled.div`
   z-index: 1;
   display: flex;
 `;
-
 
 const MenuContainer = styled(Container)`
   display: flex;
@@ -52,7 +51,6 @@ const Navigation = styled.nav`
     padding: 0;
     justify-content: space-between;
 
-
     @media ${device.mobileS} {
       flex-direction: column;
       height: 400px;
@@ -67,7 +65,6 @@ const Navigation = styled.nav`
   li {
     text-decoration: none;
     text-transform: uppercase;
-
   }
 
   @media ${device.mobileS} {
@@ -107,11 +104,14 @@ const NavToggle = styled.input.attrs({ type: "checkbox" })`
   }
 `;
 
-const BurgerIcon = styled.label.attrs({ for: "nav-toggle" })`
-  display: inline-block;
-  margin-left: 2em;
-  margin-top: 2em;
+const BurgerIcon = styled.button`
+  height: fit-content;
+  border: 0;
   cursor: pointer;
+  background: white;
+  box-shadow: none;
+  margin-left: 1em;
+  margin-top: 1.5em;
   span,
   &:before,
   &:after {
@@ -147,42 +147,60 @@ const BurgerIcon = styled.label.attrs({ for: "nav-toggle" })`
   }
 `;
 
-const Menu = (props) => {
-return (
-  <MenuHolder>
-    <BurgerIcon>
-      <span></span>
-    </BurgerIcon>
-    <MenuContainer>
-      <StyledLink to="/" aria-label="Links to Fitness Republic home page">
-        <Logo>
-          <FRlogo alt="Fitness Republic Logo" />
-        </Logo>
-      </StyledLink>
-      <NavToggle id="nav-toggle" />
-      <Navigation>
-        <ul>
-          <li>
-            <spacer />
-          </li>
-          <li>
-            <StyledLink to="/membership">Membership</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/training">Personal Training</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/classes">Classes</StyledLink>
-          </li>
-          <li>
-            <StyledLink to="/about">About</StyledLink>
-          </li>
-        </ul>
-      </Navigation>
-    </MenuContainer>
-  </MenuHolder>
-);
-}
-
+const Menu = props => {
+  const [displayed, setDisplayed] = useState(false);
+  return (
+    <MenuHolder>
+      <BurgerIcon onClick={() => setDisplayed(displayed => !displayed)}><span></span></BurgerIcon>
+      <MenuContainer>
+        <StyledLink to="/" aria-label="Links to Fitness Republic home page">
+          <Logo>
+            <FRlogo alt="Fitness Republic Logo" />
+          </Logo>
+        </StyledLink>
+        <NavToggle id="nav-toggle" checked={displayed} />
+        <Navigation>
+          <ul>
+            <li>
+              <spacer />
+            </li>
+            <li>
+              <StyledLink
+                onClick={() => setDisplayed(displayed => !displayed)}
+                to="/membership"
+              >
+                Membership
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink
+                onClick={() => setDisplayed(displayed => !displayed)}
+                to="/training"
+              >
+                Personal Training
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink
+                onClick={() => setDisplayed(displayed => !displayed)}
+                to="/classes"
+              >
+                Classes
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink
+                onClick={() => setDisplayed(displayed => !displayed)}
+                to="/about"
+              >
+                About
+              </StyledLink>
+            </li>
+          </ul>
+        </Navigation>
+      </MenuContainer>
+    </MenuHolder>
+  );
+};
 
 export default Menu;

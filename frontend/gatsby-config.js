@@ -2,8 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   siteMetadata: {
@@ -11,7 +10,7 @@ module.exports = {
     siteUrl: "https://www.fitnessrepublic.co.uk",
     author: "Thomas Sweeney",
     description:
-      "For over 11 years we have been The premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within an clean and covid safe friendly environment."
+      "For over 11 years we have been the premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within a clean, covid safe friendly environment."
   },
   plugins: [
     {
