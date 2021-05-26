@@ -33,7 +33,10 @@ const Index = ({ data }) => {
           }
         ]}
       >
-        <script src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"></script>
+        <script
+          src="https://fitnessrepublic.clubright.co.uk/js/calendar.js"
+          crossorigin="anonymous"
+        ></script>
       </Helmet>
       <Header
         title={

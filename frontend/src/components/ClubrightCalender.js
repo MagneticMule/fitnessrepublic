@@ -70,15 +70,17 @@ const ClubrightCalender = props => {
   // useEffect(() => {
   //   // get data from clubright calender. It returnes Raw Html including jQuery
   //   fetch(
-  //     `https://app.clubright.co.uk/Public/Calendar/?clubname=fitnessrepublic&classes=`,
-  //     {
-  //       credentials: "include",
-  //       mode: "no-cors"
-  //     },
+  //     `https://api.allorigins.win/get?url=${encodeURIComponent(
+  //       "https://app.clubright.co.uk/Public/Calendar/?clubname=fitnessrepublic&classes="
+  //     )}`,
+
   //     {
   //       Headers: {
   //         "Content-Type": "text/html; charset=UTF-8"
   //       }
+  //     },
+  //     {
+  //       mode: "no-cors" // no-cors, *cors, same-origin
   //     }
   //   )
   //     .then(response => response.text())
