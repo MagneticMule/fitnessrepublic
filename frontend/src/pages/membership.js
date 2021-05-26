@@ -29,7 +29,7 @@ const MembershipPage = ({data}) =>{
             {
               name: "keywords",
               content:
-                "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low price"
+                "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low prices"
             }
           ]}
         ></Helmet>
