@@ -29,7 +29,7 @@ const Index = ({ data }) => {
           {
             name: "keywords",
             content:
-              "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, student membership, local, near me"
+              "fitness classes, yoga class, zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting instructor, HIIT"
           }
         ]}
       >

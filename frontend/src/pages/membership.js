@@ -24,12 +24,12 @@ const MembershipPage = ({data}) =>{
             {
               name: "description",
               content:
-                "Working with a personal trainer here at fitness republic could be the perfect way to kickstart your fitness journey."
+                "Try us first with our Free Seven Day Pass. Monthly, annual, joint meberships and of course special student memberships available"
             },
             {
               name: "keywords",
               content:
-                "leicester, personal training, ashby, ashby de la zouch, leicestershire, free pass, trial, weight loss, excercise, support, supportive, community, professional, gym near me"
+                "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low price"
             }
           ]}
         ></Helmet>

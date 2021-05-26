@@ -26,7 +26,7 @@ const TeamPage = ({ data }) => {
           {
             name: "keywords",
             content:
-              "leicester, inclusive, personal training, ashby, ashby de la zouch, market street, leicestershire, free pass, trial, weight loss, excercise, support, supportive, community, professional, weight, near me, lose weight,get fit"
+              "ashby, ashby de la zouch, market street, leicestershire, free pass, trial, excercise, support, supportive, community, professional, weight, lose weight, get fit"
           }
         ]}
       ></Helmet>

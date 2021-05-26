@@ -31,7 +31,7 @@ const TrainingPage = ({ data }) => {
           {
             name: "keywords",
             content:
-              "ashby, leicester, personal training, ashby, ashby de la zouch, leicestershire, free pass, trial, weight loss, excercise, support, supportive, community, professional, near me"
+              "personal trainer, personal training, support, advice, nutrition, workout plan, online, gym based, personal instructor, gains, gym instractor, plans, transformation, lose weight, weight loss, bulk up"
           }
         ]}
       ></Helmet>
