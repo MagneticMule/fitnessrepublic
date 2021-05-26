@@ -11,7 +11,7 @@ module.exports = {
     siteUrl: "https://www.fitnessrepublic.co.uk",
     author: "Thomas Sweeney",
     description:
-      "Fitness Republic is the premiere family run gym in Ashby De La Zouch, England"
+      "For over 11 years we have been The premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within an clean and covid safe friendly environment."
   },
   plugins: [
     {
