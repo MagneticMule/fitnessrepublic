@@ -29,12 +29,12 @@ const Index = ({ data }) => {
         {
           name: "description",
           content:
-            "For over 11 years we have been the premiere FAMILY GYM at the heart of Ashby de la Zouch. Group FITNESS CLASSES, PERSONAL TRAINING, WELL EQUIPED GYM all within an clean and covid safe friendly environment.",
+            "For over 11 years we have been the premiere Family Run Gym at the heart of Ashby de la Zouch. Group Fitness Classes from ZUMBA to Yoga. Perosnal Training in a WELL EQUIPED GYM hosted in a clean and covid safe friendly environment.",
         },
         {
           name: "keywords",
           content:
-            "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, freetrial, student membership, younf people membership, juniors, family run, clean, bright, community, lose weight, build muscle, friendly, personal coaching, personal support",
+            "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, freetrial, student membership, young people membership, juniors, family run, clean, bright, community, lose weight, build muscle, friendly, personal coaching, personal support, zumba, boxfit, yoga",
         },
       ]}
     >
