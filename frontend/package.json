@@ -43,7 +43,7 @@
   "license": "MIT",
   "scripts": {
     "browsersync": "gatsby develop -H 0.0.0.0",
-    "build": "gatsby build GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true",
+    "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
