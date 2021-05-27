@@ -18,7 +18,7 @@ const Workout = ({ data }) => {
       </Helmet>
       <div id="main">
         <section>
-          <WorkoutHeader image={workout.image.asset.fluid} title={workout.name} description={workout.description}/>
+          {/* <WorkoutHeader image={workout.image.asset.fluid} title={workout.name} description={workout.description}/> */}
           <div className="inner">
             <SetList sets={workout.workoutBuilder} />
           </div>

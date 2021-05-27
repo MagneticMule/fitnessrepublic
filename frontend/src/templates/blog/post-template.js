@@ -49,7 +49,7 @@ const BlogPost = ({ data }) => {
       </Helmet>
       <div id="main">
         <section>
-          <GatsbyImage image={post.mainImage.childImageSharp.gatsbyImageData} />
+          {/* <GatsbyImage image={post.mainImage.childImageSharp.gatsbyImageData} /> */}
           <div className="inner">
             <header className="major">
               <h1>{post.title}</h1>
