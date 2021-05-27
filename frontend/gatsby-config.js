@@ -10,20 +10,20 @@ module.exports = {
     siteUrl: "https://www.fitnessrepublic.co.uk",
     author: "Thomas Sweeney",
     description:
-      "For over 11 years we have been the premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within a clean, covid safe friendly environment."
+      "For over 11 years we have been the premiere family gym at the heart of Ashby de la Zouch. We offer an extensive range of group fitness classes, personal coaching and a well equiped gym all within a clean, covid safe friendly environment.",
   },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: path.join(__dirname, `src`, `assets`, `images`)
-      }
+        path: path.join(__dirname, `src`, `assets`, `images`),
+      },
     },
-    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-
+    `gatsby-plugin-styled-components`,
     // `gatsby-plugin-preload-fonts`,
     // {
     //   resolve: `gatsby-plugin-google-fonts`,
@@ -35,9 +35,9 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /svg/
-        }
-      }
+          include: /svg/,
+        },
+      },
     },
     {
       resolve: `gatsby-source-sanity`,
@@ -45,8 +45,8 @@ module.exports = {
         projectId: `s1k3b826`,
         dataset: `production`,
         watchMode: `true`,
-        token: process.env.SANITY_TOKEN
-      }
+        token: process.env.SANITY_TOKEN,
+      },
     },
     `gatsby-plugin-advanced-sitemap`,
     {
@@ -60,12 +60,12 @@ module.exports = {
               {
                 userAgent: "*",
                 allow: "/",
-                disallow: ["/404", "/privacy", "/terms"]
-              }
-            ]
-          }
-        }
-      }
+                disallow: ["/404", "/privacy", "/terms"],
+              },
+            ],
+          },
+        },
+      },
     },
     "gatsby-plugin-react-helmet",
     // "gatsby-plugin-offline",
@@ -79,14 +79,14 @@ module.exports = {
         theme_color: "#000",
         display: "minimal-ui",
         icon: "src/assets/images/website-icon.png", // This path is relative to the root of the site.
-        crossOrigin: `anonymous`
-      }
+        crossOrigin: `anonymous`,
+      },
     },
     {
       resolve: `gatsby-plugin-page-creator`,
       options: {
-        path: path.join(__dirname, `src`, `pages`)
-      }
+        path: path.join(__dirname, `src`, `pages`),
+      },
     },
     {
       resolve: `gatsby-plugin-gdpr-cookies`,
@@ -94,7 +94,7 @@ module.exports = {
         googleAnalytics: {
           trackingId: "UA-45461666-1",
           // Setting this parameter is optional
-          anonymize: true
+          anonymize: true,
         },
         // googleTagManager: {
         //   trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
@@ -105,9 +105,16 @@ module.exports = {
         //   pixelId: "YOUR_FACEBOOK_PIXEL_ID"
         // },
         // Defines the environments where the tracking should be available  - default is ["production"]
-        environments: ["production", "development"]
-      }
+        environments: ["production", "development"],
+      },
     },
-    "gatsby-plugin-netlify-cache"
-  ]
+    // "gatsby-plugin-netlify-cache",
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     type: `user-profile`,
+    //     username: `8556131572`
+    //   }
+    // }
+  ],
 };

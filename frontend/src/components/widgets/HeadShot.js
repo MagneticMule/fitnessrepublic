@@ -1,18 +1,13 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 
 
 
 
 const HeadShot = (props) => {
-  return (
-        <Img
-          fixed={props.headshot}
-          alt="{props.name}'s headshot"
-        />
-  )
+  return <GatsbyImage image={props.headshot} alt="{props.name}'s headshot" />;
 }
 
 

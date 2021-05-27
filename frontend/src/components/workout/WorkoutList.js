@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 import { BiTime, BiHealth } from 'react-icons/bi';
 const WorkoutListStyles = styled.div`
@@ -158,7 +158,10 @@ function SingleWorkout({ workout }) {
   return (
     <Link to={`/workout/${workout.node.slug.current}`}>
   <Card>
-        <Img className="card__image" fluid={workout.node.image.asset.fluid} alt={workout.node.name}/>
+        <GatsbyImage
+          image={workout.node.image.childImageSharp.gatsbyImageData}
+          className="card__image"
+          alt={workout.node.name} />
         <div className="card__content">
           <h2 className="card__title">{workout.node.name}</h2>
           <ul className="card__content__excercise-list">
@@ -184,7 +187,7 @@ function SingleWorkout({ workout }) {
         </div>
   </Card>
   </Link>
-  )
+  );
 }
 
 export default function WorkoutList({workouts}) {

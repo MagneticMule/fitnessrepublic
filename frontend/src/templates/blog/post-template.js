@@ -1,10 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
-
+import { GatsbyImage } from "gatsby-plugin-image";
 import Helmet from 'react-helmet';
 
-// import Layout from '../../../src/components/Layout';
+import Layout from '../../../src/components/Layout';
 
 const BlockContent = require('@sanity/block-content-to-react');
 const client = require('@sanity/client')({
@@ -42,7 +41,7 @@ const BlockRenderer = props => {
 
 const BlogPost = ({ data }) => {
   const { post } = data;
-  return(
+  return (
     <div>
       <Helmet>
           <title>{post.title}</title>
@@ -50,7 +49,7 @@ const BlogPost = ({ data }) => {
       </Helmet>
       <div id="main">
         <section>
-          <Img fluid={post.mainImage.asset.fluid} />
+          <GatsbyImage image={post.mainImage.childImageSharp.gatsbyImageData} />
           <div className="inner">
             <header className="major">
               <h1>{post.title}</h1>
@@ -66,26 +65,15 @@ const BlogPost = ({ data }) => {
 
 // $slug: String! = expect the slug to be of type String and ! = required
 export const query = graphql`
-  query ($slug: String!) {
-    post: sanityPost(slug: {
-      current: {
-      eq: $slug
-      }
-    }) {
+  query($slug: String!) {
+    post: sanityPost(slug: { current: { eq: $slug } }) {
       id
       title
       _rawBody
       publishedAt
       excerpt
-        mainImage {
-          asset {
-		        fluid(maxHeight: 200) {
-			        ...GatsbySanityImageFluid
-              }
-            }
-          }
-        }
     }
+  }
 `;
 
 export default BlogPost;

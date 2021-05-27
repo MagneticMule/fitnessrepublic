@@ -9,9 +9,6 @@ import Typography from '../styles/Typography.js';
 import Menu from './Menu';
 import MiniNav from './MiniNav';
 import Footer from './Footer.js';
-
-import WhatsAppWidget from 'react-whatsapp-widget';
-import 'react-whatsapp-widget/dist/index.css';
 import CookieConsent from "react-cookie-consent";
 
 function Layout(props) {
@@ -21,7 +18,7 @@ function Layout(props) {
         <IconContext.Provider value={{ style: { verticalAlign: "-2px" } }}>
           <GlobalStyles />
           <Typography />
-          <MiniNav />
+          {/* <MiniNav /> */}
           <Menu />
           {children}
           <Footer />

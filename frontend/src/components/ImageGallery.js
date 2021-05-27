@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 
@@ -33,13 +33,13 @@ const ImageGallery = props => {
   return (
     <Container>
       <div className="image">
-        <Img fluid={props.pic1} alt={props.alt} />
+        <GatsbyImage image={props.pic1} alt={props.alt} />
       </div>
       <div className="image">
-        <Img fluid={props.pic2} alt={props.alt} />
+        <GatsbyImage image={props.pic2} alt={props.alt} />
       </div>
       <div className="image">
-        <Img fluid={props.pic3} alt={props.alt} />
+        <GatsbyImage image={props.pic3} alt={props.alt} />
       </div>
     </Container>
   );

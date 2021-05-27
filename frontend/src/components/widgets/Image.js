@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 import { device } from "../../styles/DeviceSizes";
 
@@ -32,9 +33,8 @@ const ImageContainer = styled.div`
   }
 `;
 
-const StyledImg = styled(Img)`
+const StyledImg = styled(GatsbyImage)`
   z-index: -1;
-
 `;
 
 const Blurb = styled.p`
@@ -50,7 +50,7 @@ const Image = (props) => {
 return (
   <PicContainer pos={props.pos}>
     <ImageContainer>
-      <StyledImg fluid={props.pic} alt={props.alt} />
+      <StyledImg image={props.pic} alt={props.alt} />
     </ImageContainer>
     <Blurb>{props.blurb}</Blurb>
   </PicContainer>

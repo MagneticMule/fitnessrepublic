@@ -1,13 +1,13 @@
 import React from 'react';
 
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 
 
 const SinglePost = ({post}) => {
-  return(
+  return (
     <section>
-      <Img className="image" fluid={post.mainImage.asset.fluid} />
+      <GatsbyImage image={post.mainImage.childImageSharp.gatsbyImageData} className="image" />
       <div className="content">
         <div className="inner">
             <header className="major">
@@ -22,7 +22,7 @@ const SinglePost = ({post}) => {
           </div>
         </div>
     </section>
-  )
+  );
 }
 
 

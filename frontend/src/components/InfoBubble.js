@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import Img from 'gatsby-image';
+import { GatsbyImage } from "gatsby-plugin-image";
 import HeadShot from './widgets/HeadShot';
 import Button from './widgets/Button';
 import { device } from "../styles/DeviceSizes";
@@ -74,11 +74,7 @@ const InfoBubble = (props) => {
   return (
     <Container>
       <Bubble>
-        <Img
-          className="headshot"
-          fixed={props.headshot}
-          alt="{props.name}'s headshot"
-        />
+        <GatsbyImage image={props.headshot} className="headshot" alt="{props.name}'s headshot" />
         <b>
           Working with a personal instructor is the perfect kickstart to your
           fitness journey.

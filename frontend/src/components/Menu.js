@@ -108,7 +108,7 @@ const BurgerIcon = styled.button`
   height: fit-content;
   border: 0;
   cursor: pointer;
-  background: white;
+  background: rgba(1,1,1,0);
   box-shadow: none;
   margin-left: 1em;
   margin-top: 1.5em;

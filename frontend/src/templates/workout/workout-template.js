@@ -31,36 +31,26 @@ const Workout = ({ data }) => {
 
 // $slug: String! = expect the slug to be of type String and ! = required
 export const query = graphql`
-  query ($slug: String!) {
-    workout: sanityWorkout(slug: {
-      current: {
-        eq: $slug
-      }
-    }) {
+  query($slug: String!) {
+    workout: sanityWorkout(slug: { current: { eq: $slug } }) {
       id
       name
       description
-      image {
-          asset {
-		        fluid(maxHeight: 400) {
-			        ...GatsbySanityImageFluid
-              }
-            }
-          }
+
       workoutBuilder {
-          isActive
-          setName
-          description
+        isActive
+        setName
+        description
+        repetitions
+        excercise {
+          video
           repetitions
-          excercise {
-            video
-            repetitions
-            instructions
-            excerciseName
-          }
+          instructions
+          excerciseName
         }
       }
     }
+  }
 `;
 
 export default Workout;

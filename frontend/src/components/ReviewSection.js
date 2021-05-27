@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { FaStar } from "react-icons/fa";
 import { device } from "../styles/DeviceSizes";
 
@@ -152,11 +152,10 @@ const SubTitle = styled.p`
 const SingleReview = ({ review }) => {
   return (
     <Review>
-      <Img
+      <GatsbyImage
+        image={review.headshot}
         className="headshot"
-        fixed={review.headshot}
-        alt="{review.reviewer}'s headshot"
-      />
+        alt="{review.reviewer}'s headshot" />
       <ReviewText>{review.text}</ReviewText>
       <ReviewerName>
         {review.reviewer}
