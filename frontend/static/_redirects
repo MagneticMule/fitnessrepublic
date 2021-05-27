@@ -9,10 +9,10 @@
 /shop                             /membership
 /checkout                         /membership
 /my-account                       /membership
-/terms-conditions                 /membership
+/terms-conditions                 /terms
 /zumba                            /classes
 /hiit                             /classes
 /yoga                             /classes
-/black-friday-offer               /
-/student-black-friday             /
+/black-friday-offer               /membership
+/student-black-friday             /membership
 /covid-19-procedures              /covid

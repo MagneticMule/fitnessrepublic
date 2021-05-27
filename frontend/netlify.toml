@@ -11,7 +11,7 @@
 
 	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
 	providers = [
-		"google"
+		'google', 'bing', 'yandex'
 	]
 
 [[plugins]]
