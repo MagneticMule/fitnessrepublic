@@ -83,7 +83,7 @@ return (
       <Items>
         <ul>
           <li>
-            elebrating <strong>11 years in business</strong>
+            Celebrating <strong>11 years in business</strong>
           </li>
           <li>
             <FaPhoneSquareAlt />
