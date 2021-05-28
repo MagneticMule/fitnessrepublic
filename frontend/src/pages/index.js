@@ -62,7 +62,7 @@ const Index = ({ data }) => {
         </>
       }
       subtitle={
-        "Celebrating 11 years at the heart of Ashby De La Zouch"
+        "A Family run gym at the heart of Ashby De La Zouch"
       }
     />
     <Container>
