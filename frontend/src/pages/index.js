@@ -29,7 +29,7 @@ const Index = ({ data }) => {
         {
           name: "description",
           content:
-            "For over 11 years we have been the premiere Family Run Gym at the heart of Ashby de la Zouch. Group Fitness Classes from ZUMBA to Yoga. Perosnal Training in a WELL EQUIPED GYM hosted in a clean and covid safe friendly environment.",
+            "For over 11 years we have been the premiere Family Run Gym at the heart of Ashby de la Zouch. Group Fitness Classes from ZUMBA to Yoga. Perosnal Training in a well equiped gym hosted in a clean and covid safe friendly environment.",
         },
         {
           name: "keywords",
@@ -62,7 +62,7 @@ const Index = ({ data }) => {
         </>
       }
       subtitle={
-        "A Family run gym with a focus on inclusive fitness and wellbeing"
+        "Celebrating 11 years at the heart of Ashby De La Zouch"
       }
     />
     <Container>
