@@ -12,7 +12,7 @@ import InfoBubble from "../components/InfoBubble";
 
 import ImageGallery from "../components/ImageGallery";
 
-const TeamPage = ({ data }) => {
+const About = ({ data }) => {
   return <>
     <Helmet
       title="Fitness Republic - All about us"
@@ -247,7 +247,7 @@ const TeamPage = ({ data }) => {
   </>;
 };
 
-export default TeamPage;
+export default About;
 
 export const query = graphql`{
   kathyhead: file(relativePath: {eq: "headshots/katy.jpg"}) {

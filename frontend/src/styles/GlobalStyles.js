@@ -182,7 +182,7 @@ th {
   border-radius:8px;
 }
 
-#___gatsby {
+/* #___gatsby {
     width: 100%;
     height:100%;
 }
@@ -190,7 +190,7 @@ th {
 #gatsby-focus-wrapper {
   width: 100%;
   height:100%;
-}
+} */
 
 `;
 

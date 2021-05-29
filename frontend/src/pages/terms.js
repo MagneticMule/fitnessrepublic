@@ -11,7 +11,7 @@ import Image from "../components/widgets/Image";
 import Pullquote from "../components/widgets/text/Pullquote";
 import Calender from "../components/ClubrightCalender";
 
-const Privacy = () => {
+const Terms = () => {
   return (
     <>
       <Helmet
@@ -157,4 +157,4 @@ const Privacy = () => {
   );
 };
 
-export default Privacy;
+export default Terms;

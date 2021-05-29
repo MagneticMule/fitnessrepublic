@@ -17,7 +17,7 @@ import FormGeneral from "../components/FormGeneral";
 
 import { FaPhoneSquareAlt } from "react-icons/fa";
 
-const TrainingPage = ({ data }) => {
+const Training = ({ data }) => {
   return <>
     <Helmet
       title="Fitness Republic - Personal Training"
@@ -233,7 +233,7 @@ const TrainingPage = ({ data }) => {
   </>;
 };
 
-export default TrainingPage;
+export default Training;
 
 export const query = graphql`{
   kathyhead: file(relativePath: {eq: "headshots/katy.jpg"}) {

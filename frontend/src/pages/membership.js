@@ -14,7 +14,7 @@ import ImageGallery from '../components/ImageGallery';
 import FormSevenDayPass from '../components/FormSevenDayPass';
 
 
-const MembershipPage = ({data}) =>{
+const Membership = ({data}) =>{
   console.log(data.file);
     return <>
       <Helmet
@@ -261,7 +261,7 @@ const MembershipPage = ({data}) =>{
   }
 
 
-export default MembershipPage;
+export default Membership;
 
 export const query = graphql`{
   zoehead: file(relativePath: {eq: "headshots/zoe.jpg"}) {

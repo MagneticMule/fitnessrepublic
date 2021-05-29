@@ -16,7 +16,7 @@ import {
 } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 
-const Index = ({ data }) => {
+const Classes = ({ data }) => {
   return <>
     <Helmet
       title="Fitness Republic - Fitness Classes delivered in the gym and online"
@@ -310,7 +310,7 @@ const Index = ({ data }) => {
   </>;
 };
 
-export default Index;
+export default Classes;
 
 export const query = graphql`{
   kathyhead: file(relativePath: {eq: "headshots/katy.jpg"}) {
