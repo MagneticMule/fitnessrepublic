@@ -25,7 +25,7 @@ const Pass = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic Gym - Free Seven Day Pass"
+        title="Free Seven Day Pass: Fitness Republic Ashby"
         meta={[
           {
             name: "description",
@@ -38,8 +38,7 @@ const Pass = ({ data }) => {
               "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, free trial, seven days, no obligation",
           },
         ]}
-      >
-      </Helmet>
+      ></Helmet>
 
       <Header
         title={
