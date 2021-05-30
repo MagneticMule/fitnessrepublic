@@ -12,6 +12,8 @@ module.exports = {
     description:
       "For over 11 years we have been the premiere Family Run Gym at the heart of Ashby de la Zouch. Group Fitness Classes from ZUMBA to Yoga. Perosnal Training in a well equiped gym hosted in a clean and covid safe friendly environment.",
   },
+  // cache will have to be manually cleared via 'gatsby clean'
+  flags: { PRESERVE_WEBPACK_CACHE: true },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -21,8 +23,26 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: [`auto`, `webp`],
+          placeholder: `dominantColor`,
+          quality: 50,
+          breakpoints: [750, 1080, 1366, 1920],
+          backgroundColor: `transparent`,
+          tracedSVGOptions: {},
+          blurredOptions: {},
+          jpgOptions: {},
+          pngOptions: {},
+          webpOptions: {},
+          avifOptions: {},
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     // `gatsby-plugin-preload-fonts`,
     // {

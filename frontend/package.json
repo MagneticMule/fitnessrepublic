@@ -53,6 +53,7 @@
     "preload-fonts": "gatsby-preload-fonts"
   },
   "devDependencies": {
+    "cypress": "^7.4.0",
     "prettier": "2.2.1"
   },
   "peerDependencies": {},

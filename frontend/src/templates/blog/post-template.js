@@ -2,13 +2,16 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { GatsbyImage } from "gatsby-plugin-image";
 import Helmet from 'react-helmet';
-
-import Layout from '../../../src/components/Layout';
+import Image from '../../components/widgets/Image';
+import TextSection from '../../components/TextSection';
+import Container from "../../styles/ContainerStyle";
+import { DualSection } from "../../styles/GridStyles";
 
 const BlockContent = require('@sanity/block-content-to-react');
 const client = require('@sanity/client')({
   projectId: 's1k3b826',
   dataset: 'production',
+  apiVersion: '2021-03-25',
   useCdn: true
 });
 
@@ -40,25 +43,35 @@ const BlockRenderer = props => {
 }
 
 const BlogPost = ({ data }) => {
+  console.log(data);
   const { post } = data;
   return (
-    <div>
+    <>
       <Helmet>
-          <title>{post.title}</title>
-          <meta name="description" content={post.title} />
+        <title>{post.title}</title>
+        <meta name="description" content={post.title} />
       </Helmet>
-      <div id="main">
-        <section>
-          {/* <GatsbyImage image={post.mainImage.childImageSharp.gatsbyImageData} /> */}
-          <div className="inner">
-            <header className="major">
-              <h1>{post.title}</h1>
-            </header>
-              <BlockContent blocks={post._rawBody} serializers={{types: {block: BlockRenderer}}} />
-          </div>
-        </section>
-      </div>
-    </div>
+      <Container>
+        <DualSection>
+
+            {<Image pic={post.mainImage.asset.gatsbyImageData} />}
+
+            <TextSection
+              pos="2/4"
+              title={post.title}
+              body={
+                <>
+                  <BlockContent
+                    blocks={post._rawBody}
+                    serializers={{ types: { block: BlockRenderer } }}
+                  />
+                </>
+              }
+            />
+
+        </DualSection>
+      </Container>
+    </>
   );
 }
 
@@ -72,8 +85,17 @@ export const query = graphql`
       _rawBody
       publishedAt
       excerpt
-    }
-  }
+        mainImage {
+          asset {
+		        gatsbyImageData(
+              width:1800,
+              height:900,
+              fit: FILLMAX,
+              placeholder: BLURRED),
+              }
+            }
+          }
+      }
 `;
 
 export default BlogPost;
