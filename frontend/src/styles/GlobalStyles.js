@@ -122,8 +122,8 @@ const GlobalStyles = createGlobalStyle`
   }
 
   hr {
-    border: 1px;
-    height: 8px;
+    border: 4px;
+    height: 1em;
     background-size: 1500px;
   }
 
@@ -176,7 +176,7 @@ th {
     padding-bottom:.33em;
 }
 
-.intro-video{
+.intro-video {
   grid-column:1/-1;
   overflow:hidden;
   border-radius:8px;

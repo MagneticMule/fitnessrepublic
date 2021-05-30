@@ -120,9 +120,8 @@ const Index = ({ data }) => {
                 and a method of contact, either your email or telephone number.
                 We will get back to you within the day to make an appointment
                 for your first visit.
-                <hr/>
-                If you prefer to chat to a real life human
-                being you can{" "}
+                <hr />
+                If you prefer to chat to a real life human being you can{" "}
                 <strong>
                   call us directly on
                   <a
@@ -141,17 +140,6 @@ const Index = ({ data }) => {
             }
           />
           <FormSevenDayPass />
-          <video
-            className="intro-video"
-            height="100%"
-            width="100%"
-            loop
-            muted
-            autoPlay
-            source
-            src={intro}
-            type="video/mp4"
-          />
           <SuperBullet
             pos="2/4"
             number="02"
@@ -170,10 +158,16 @@ const Index = ({ data }) => {
               </>
             }
           />
-          <ImageGallery
-            pic1={data.side2.childImageSharp.gatsbyImageData}
-            pic2={data.dumbells.childImageSharp.gatsbyImageData}
-            pic3={data.lowdown.childImageSharp.gatsbyImageData}
+          <video
+            className="intro-video"
+            height="100%"
+            width="100%"
+            loop
+            muted
+            autoPlay
+            source
+            src={intro}
+            type="video/mp4"
           />
           <SuperBullet
             pos="2/4"
@@ -190,7 +184,26 @@ const Index = ({ data }) => {
               </>
             }
           />
+          <ImageGallery
+            pic1={data.side2.childImageSharp.gatsbyImageData}
+            pic2={data.dumbells.childImageSharp.gatsbyImageData}
+            pic3={data.lowdown.childImageSharp.gatsbyImageData}
+          />
+          <TextSection
+            pos="2/-1"
 
+            subtitle="The next step in your fitness journey"
+            body={
+              <>
+                We are positive that once you have experienced everything our
+                gym has to offer that you will be keen to become part of our almost 500 strong fitness
+                community. Enjoy our extensive selection of fitness classes and
+                well equiped gym for the low monthly cost of{" "}
+                <strong>£32.99</strong>. Or pay annually and{" "}
+                <strong>save £95</strong> on monthly membership.
+              </>
+            }
+          />
           <MembershipSection
             title="Single Membership Plans"
             subtitle="Gym and Class"

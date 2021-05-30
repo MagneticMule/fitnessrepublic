@@ -27,6 +27,7 @@ const Blog = ({data}) => {
         }
       ]}
     />
+    
       <Header
         title={
           <>
