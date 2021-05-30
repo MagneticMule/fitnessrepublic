@@ -151,7 +151,9 @@ const Menu = props => {
   const [displayed, setDisplayed] = useState(false);
   return (
     <MenuHolder>
-      <BurgerIcon onClick={() => setDisplayed(displayed => !displayed)}><span></span></BurgerIcon>
+      <BurgerIcon onClick={() => setDisplayed((displayed) => !displayed)}>
+        <span></span>
+      </BurgerIcon>
       <MenuContainer>
         <StyledLink to="/" aria-label="Links to Fitness Republic home page">
           <Logo>
@@ -166,7 +168,7 @@ const Menu = props => {
             </li>
             <li>
               <StyledLink
-                onClick={() => setDisplayed(displayed => !displayed)}
+                onClick={() => setDisplayed((displayed) => !displayed)}
                 to="/membership"
               >
                 Membership
@@ -174,7 +176,7 @@ const Menu = props => {
             </li>
             <li>
               <StyledLink
-                onClick={() => setDisplayed(displayed => !displayed)}
+                onClick={() => setDisplayed((displayed) => !displayed)}
                 to="/training"
               >
                 Personal Training
@@ -182,7 +184,7 @@ const Menu = props => {
             </li>
             <li>
               <StyledLink
-                onClick={() => setDisplayed(displayed => !displayed)}
+                onClick={() => setDisplayed((displayed) => !displayed)}
                 to="/classes"
               >
                 Classes
@@ -190,10 +192,18 @@ const Menu = props => {
             </li>
             <li>
               <StyledLink
-                onClick={() => setDisplayed(displayed => !displayed)}
+                onClick={() => setDisplayed((displayed) => !displayed)}
                 to="/about"
               >
                 About
+              </StyledLink>
+            </li>
+            <li>
+              <StyledLink
+                onClick={() => setDisplayed((displayed) => !displayed)}
+                to="/blog"
+              >
+                Blog
               </StyledLink>
             </li>
           </ul>

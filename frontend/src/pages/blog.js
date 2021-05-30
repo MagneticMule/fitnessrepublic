@@ -9,17 +9,31 @@ import BlogPostList from "../components/blog/BlogPostList";
 
 
 const Blog = ({data}) => {
-  console.log(data);
   const posts = data.posts.nodes;
   return (
     <>
+      <Helmet
+      title="Fitness Republic - Fitness Classes delivered in the gym and online"
+      meta={[
+        {
+          name: "description",
+          content:
+            "We write articles on fitness, diet control, weight loss, working out all while promoting good health."
+        },
+        {
+          name: "keywords",
+          content:
+            "weight loss, calories, low fat, workput, gym, ashby, ashby de la zouch, fitness, health, lose fat"
+        }
+      ]}
+    />
       <Header
         title={
           <>
-            Articles about <span>fitness and health</span>
+            the Fitness Republic <span>blog</span>
           </>
         }
-        subtitle={"Group fitness training delivered both in-gym and online"}
+        subtitle={"Articles about fitness, health and training"}
       />
       <Container>
         <DualSection>
@@ -46,8 +60,8 @@ export const query = graphql`
         mainImage {
           asset {
 		        gatsbyImageData(
-              width:900,
-              height:500,
+              width:1200,
+              height:800,
               fit: FILLMAX,
               placeholder: BLURRED),
               }
