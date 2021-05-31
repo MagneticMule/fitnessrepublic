@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
-import BlogPostList from "../components/blog/BlogPostList";
+import BlogPostList from "../components/workout/WorkoutList";
 
 
 const Blog = ({data}) => {
@@ -13,17 +13,17 @@ const Blog = ({data}) => {
   return (
     <>
       <Helmet
-      title="Fitness Republic - Fitness Classes delivered in the gym and online"
+      title="Fitness Republic - Free Online Wourkouts"
       meta={[
         {
           name: "description",
           content:
-            "We write articles on fitness, diet control, weight loss, working out all while promoting good health."
+            "A selection of workput plans including videos and instructions for you to carry out at our gym or at home"
         },
         {
           name: "keywords",
           content:
-            "weight loss, calories, low fat, workput, gym, ashby, ashby de la zouch, fitness, health, lose fat"
+            "workout, online workout, weight loss, lose weight, calorie control,fitness, weight lifting, cardio excercise, excercises, excersie plan, workout plan, lessons"
         }
       ]}
     />
@@ -31,14 +31,14 @@ const Blog = ({data}) => {
       <Header
         title={
           <>
-            the Fitness Republic <span>blog</span>
+            Fitness Republic <span>Online Workouts</span>
           </>
         }
-        subtitle={"Articles about fitness, health and training"}
+        subtitle={"Free workout plans for you to complete at our sym or at home"}
       />
       <Container>
         <DualSection>
-          <BlogPostList posts={posts} />
+          {/* <BlogPostList workouts={workouts} /> */}
         </DualSection>
       </Container>
     </>
