@@ -27,7 +27,7 @@ const Blog = ({data}) => {
         }
       ]}
     />
-    
+
       <Header
         title={
           <>
@@ -49,7 +49,7 @@ const Blog = ({data}) => {
 export default Blog;
 
 export const query = graphql`
- query BlogQuery {
+ query WorkoutQuery {
     posts: allSanityPost {
       nodes {
         id
