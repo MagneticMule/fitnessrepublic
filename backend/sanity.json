@@ -14,7 +14,8 @@
     "@sanity/default-login",
     "@sanity/dashboard",
     "@sanity/desk-tool",
-    "asset-source-unsplash"
+    "asset-source-unsplash",
+    "dashboard-widget-netlify"
   ],
   "env": {
     "development": {

@@ -23,11 +23,11 @@ const Blog = ({data}) => {
         {
           name: "keywords",
           content:
-            "weight loss, calories, low fat, workput, gym, ashby, ashby de la zouch, fitness, health, lose fat"
+            "weight loss, calories, low fat, workout, gym, ashby, ashby de la zouch, fitness, health, lose fat, blog, articles"
         }
       ]}
     />
-    
+
       <Header
         title={
           <>
