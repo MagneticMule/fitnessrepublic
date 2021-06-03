@@ -63,7 +63,7 @@ const ExcerciseList = ( {excercises} ) => {
       {excercises.map((excercise) => (
         <Card>
           {/* <Video videoSrcURL={excercise.video} controls/> */}
-          <video source src={excercise.CloudVideo.url} controls loop></video>
+          {excercise.CloudVideo && <video source src={excercise.CloudVideo.url} controls loop/>}
           <Content>
             <h3>{excercise.excerciseName}</h3>
             <div className="reps">
