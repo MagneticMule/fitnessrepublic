@@ -35,7 +35,7 @@ const Workout = ({data}) => {
             Fitness Republic <span>Online Workouts</span>
           </>
         }
-        subtitle={"Free workout plans for you to complete at our sym or at home"}
+        subtitle={"Free workout plans for you to complete at our gym or at home"}
       />
       <Container>
         <DualSection>
