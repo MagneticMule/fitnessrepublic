@@ -69,6 +69,15 @@ module.exports = {
         token: process.env.SANITY_TOKEN,
       },
     },
+    // {
+    //   resolve: `gatsby-source-cloudinary`,
+    //   options: {
+    //     cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+    //     apiKey: process.env.CLOUDINARY_API_KEY,
+    //     apiSecret: process.env.CLOUDINARY_API_SECRET,
+    //     resourceType: [`image`, `video`],
+    //   },
+    // },
     `gatsby-plugin-advanced-sitemap`,
     {
       resolve: "gatsby-plugin-robots-txt",
@@ -89,7 +98,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

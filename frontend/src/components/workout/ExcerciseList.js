@@ -4,50 +4,84 @@ import styled from 'styled-components';
 import Video from '../Video.js';
 
 const Card = styled.div`
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: #240519;
   border-radius: 16px;
-  padding: 2rem;
   margin: 4rem 0;
-  background: #eee;
-  box-shadow: 0 0px 16px rgba(0,0,0,0.1), 0 70px 56px -50px rgba(0,0,0,0.1);
-
+  background: linear-gradient(180.14deg, #332266 -1.96%, #220033 96.02%);
+  box-shadow: 0 0px 16px rgba(0, 0, 0, 0.1),
+    0 70px 56px -50px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   h3 {
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 900;
     margin: 0;
+    color: white;
   }
 
   .reps {
+    color: lightgrey;
     font-size: 1.2rem;
     font-weight: bold;
-    color: orange;
     span {
-      color:black
+      color: orange;
     }
     margin: 0 0 1rem 0;
   }
 
   .instructions {
-    padding: 1rem;
+    color: white;
     margin: 2rem 0;
     font-size: 1.4rem;
   }
+
+  form {
+    display:flex;
+    justify-content: flex-end;
+    color: white;
+    > label {
+      font-size: 1.66rem;
+      padding: 0 1rem 0 0;
+    }
+  }
+  input {
+    border-radius: 16px;
+    padding:.5em;
+  }
+`;
+
+const Content = styled.div`
+  margin: 4em;
 `;
 
 const ExcerciseList = ( {excercises} ) => {
   return (
     <>
-      {excercises.map((excercise)=>(
+      {excercises.map((excercise) => (
         <Card>
-          <h3>{excercise.excerciseName}</h3>
-          <div className="reps">Repetitions: <span>{excercise.repetitions}</span></div>
-          <Video videoSrcURL={excercise.video}/>
-          <div className="instructions"><strong>Instructions:</strong> <span>{excercise.instructions}</span></div>
-          <hr/>
-          How many reps did you do?
+          {/* <Video videoSrcURL={excercise.video} controls/> */}
+          <video source src={excercise.CloudVideo.url} controls loop></video>
+          <Content>
+            <h3>{excercise.excerciseName}</h3>
+            <div className="reps">
+              Repetitions: <span>{excercise.repetitions}</span>
+            </div>
+            <div className="instructions">
+              <strong>Instructions:</strong>{" "}
+              <span>{excercise.instructions}</span>
+            </div>
+            <hr />
+            <form>
+              <label htmFor="reps"> How many reps did you do?</label>
+              <input id="reps" type="number"></input>
+            </form>
+          </Content>
         </Card>
       ))}
-</>
+    </>
   );
 }
 

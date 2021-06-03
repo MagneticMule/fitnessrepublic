@@ -39,8 +39,6 @@ const Post = styled.section`
   }
 `;
 
-
-
 const SinglePost = ({post}) => {
   return (
     <Post>

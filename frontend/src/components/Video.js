@@ -1,6 +1,21 @@
-import React from "react"
+import React from "react";
+import styled from "styled-components";
+
+const Container = styled.div`
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  overflow:hidden;
+  > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`;
 const Video = ({ videoSrcURL, videoTitle, ...props }) => (
-  <div className="video">
+  <Container>
     <iframe
       src={videoSrcURL}
       title={videoTitle}
@@ -10,6 +25,6 @@ const Video = ({ videoSrcURL, videoTitle, ...props }) => (
       mozallowfullscreen="true"
       allowFullScreen
     />
-  </div>
-)
+  </Container>
+);
 export default Video;

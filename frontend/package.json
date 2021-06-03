@@ -27,6 +27,7 @@
     "gatsby-source-filesystem": "^3.6.0",
     "gatsby-source-sanity": "^7.0.4",
     "gatsby-transformer-sharp": "^3.6.0",
+    "gbimage-bridge": "^0.1.4",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-chartjs-2": "^2.11.1",
@@ -45,7 +46,7 @@
   "scripts": {
     "browsersync": "gatsby develop -H 0.0.0.0",
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -FAST_DEV",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

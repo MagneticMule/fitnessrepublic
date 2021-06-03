@@ -43,7 +43,6 @@ const BlockRenderer = props => {
 }
 
 const BlogPost = ({ data }) => {
-  console.log(data);
   const { post } = data;
   return (
     <>

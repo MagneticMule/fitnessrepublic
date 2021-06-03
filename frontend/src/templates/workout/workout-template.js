@@ -1,30 +1,32 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
+import Container from "../../styles/ContainerStyle";
 import Helmet from 'react-helmet';
-
-import Layout from '../../components/Layout';
-
 import WorkoutHeader from '../../components/workout/WorkoutHeader.js';
 import SetList from '../../components/workout/SetList.js';
 
 const Workout = ({ data }) => {
   const { workout } = data;
-  return(
-    <Layout>
+  return (
+    <>
       <Helmet>
-          <title>{workout.name}</title>
-          <meta name="description" content={workout.name} />
+        <title>{workout.name}</title>
+        <meta name="description" content={workout.description} />
       </Helmet>
-      <div id="main">
-        <section>
-          {/* <WorkoutHeader image={workout.image.asset.fluid} title={workout.name} description={workout.description}/> */}
+
+      <section>
+        <WorkoutHeader
+          image={workout.image.asset.gatsbyImageData}
+          title={workout.name}
+          description={workout.description}
+        />
+        <Container>
           <div className="inner">
             <SetList sets={workout.workoutBuilder} />
           </div>
-        </section>
-      </div>
-    </Layout>
+        </Container>
+      </section>
+    </>
   );
 }
 
@@ -36,7 +38,19 @@ export const query = graphql`
       id
       name
       description
-
+      image {
+        asset {
+          _id
+          altText
+          description
+          gatsbyImageData(
+            width: 1200
+            height: 800
+            fit: FILLMAX
+            placeholder: BLURRED
+          )
+        }
+      }
       workoutBuilder {
         isActive
         setName
@@ -47,6 +61,14 @@ export const query = graphql`
           repetitions
           instructions
           excerciseName
+          CloudVideo {
+            _key
+            url
+            public_id
+            width
+            format
+            height
+          }
         }
       }
     }

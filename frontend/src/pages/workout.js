@@ -5,20 +5,21 @@ import Helmet from "react-helmet";
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
-import BlogPostList from "../components/workout/WorkoutList";
+import WorkoutList from "../components/workout/WorkoutList";
 
 
-const Blog = ({data}) => {
-  const posts = data.posts.nodes;
+const Workout = ({data}) => {
+  console.log(data);
+  const workouts = data.workouts.edges;
   return (
     <>
       <Helmet
-      title="Fitness Republic - Free Online Wourkouts"
+      title="Fitness Republic - Free Online Workouts"
       meta={[
         {
           name: "description",
           content:
-            "A selection of workput plans including videos and instructions for you to carry out at our gym or at home"
+            "A selection of workout plans including videos and instructions for you to carry out at our gym or at home"
         },
         {
           name: "keywords",
@@ -38,7 +39,7 @@ const Blog = ({data}) => {
       />
       <Container>
         <DualSection>
-          {/* <BlogPostList workouts={workouts} /> */}
+          <WorkoutList workouts={workouts} />
         </DualSection>
       </Container>
     </>
@@ -46,28 +47,63 @@ const Blog = ({data}) => {
 }
 
 
-export default Blog;
+export default Workout;
 
 export const query = graphql`
- query WorkoutQuery {
-    posts: allSanityPost {
-      nodes {
-        id
-        title
-        slug {
-          current
-        }
-        excerpt
-        mainImage {
-          asset {
-		        gatsbyImageData(
-              width:1200,
-              height:800,
-              fit: FILLMAX,
-              placeholder: BLURRED),
+  query WorkoutQuery {
+    workouts: allSanityWorkout {
+      edges {
+        node {
+          id
+          _id
+          description
+          slug {
+            current
+          }
+          image {
+            asset {
+              _id
+              altText
+              description
+              gatsbyImageData(
+                width: 1200
+                height: 800
+                fit: FILLMAX
+                placeholder: BLURRED
+              )
+            }
+          }
+          name
+          target {
+            lower_body
+            upper_body
+          }
+          workoutBuilder {
+            setName
+            repetitions
+            description
+            isActive
+            _key
+            excercise {
+              _id
+              excerciseName
+              instructions
+              isActive
+              repetitions
+              video
+              CloudVideo {
+                _key
+                url
+                public_id
+                width
+                format
+                height
               }
             }
           }
+        }
       }
+      totalCount
     }
+  }
 `;

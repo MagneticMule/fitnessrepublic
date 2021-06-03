@@ -3,11 +3,14 @@ import React from 'react';
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 import { BiTime, BiHealth } from 'react-icons/bi';
-const WorkoutListStyles = styled.div`
-  padding: 1rem;
+
+
+const Container = styled.section`
+  grid-column: ${(props) => (props.pos ? props.pos : "1 / -1")};
+  padding: 1em;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4em 1em;
 `;
 
 
@@ -157,11 +160,12 @@ function SingleWorkout({ workout }) {
   const sets = workout.node.workoutBuilder;
   return (
     <Link to={`/workout/${workout.node.slug.current}`}>
-  <Card>
+      <Card>
         <GatsbyImage
-          image={workout.node.image.childImageSharp.gatsbyImageData}
+          image={workout.node.image.asset.gatsbyImageData}
           className="card__image"
-          alt={workout.node.name} />
+          alt={workout.node.name}
+        />
         <div className="card__content">
           <h2 className="card__title">{workout.node.name}</h2>
           <ul className="card__content__excercise-list">
@@ -176,26 +180,26 @@ function SingleWorkout({ workout }) {
           </ul>
           <div className="card__content__footer">
             <div className="card__content__workout-time">
-              <BiTime className="icon"/>
-              {' '}
-              <span>30</span>{' '}minutes</div>
+              <BiTime className="icon" /> <span>30</span> minutes
+            </div>
 
-          <div className="card__content__workout-difficulty">
-          <BiHealth className="icon"/>
-          Difficulty{' '}<span>6/10</span></div>
+            <div className="card__content__workout-difficulty">
+              <BiHealth className="icon" />
+              Difficulty <span>6/10</span>
+            </div>
           </div>
         </div>
-  </Card>
-  </Link>
+      </Card>
+    </Link>
   );
 }
 
 export default function WorkoutList({workouts}) {
   return (
-    <WorkoutListStyles>
+    <Container>
     {workouts.map((workout)=>(
         <li><SingleWorkout key={workout.node.id} workout={workout}/></li>
     ))}
-    </WorkoutListStyles>
+    </Container>
   );
 }

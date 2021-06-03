@@ -45,7 +45,7 @@ export default {
       title: 'Description',
       name: 'description',
       type: 'text',
-      description: `You can introduce the workout here and describe some of the excercises and benefits of the workout.`,
+      description: `You can introduce the workout here and describe some of the excercises and benefits.`,
       validation: Rule => [
         Rule.max(200).error('Description should be shorter than 200 characters')
       ]

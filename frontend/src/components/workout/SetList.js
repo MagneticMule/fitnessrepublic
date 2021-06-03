@@ -6,15 +6,17 @@ const SetList = ( {sets} ) => {
 
   return (
     <>
-      {sets.map((set)=>(
+      {sets.map((set) => (
         <section>
           <h1>{set.setName}</h1>
           <h3>{set.description}</h3>
-          <h4><strong>Set Repetitions:</strong> {set.repetitions}</h4>
-          <ExcerciseList excercises={set.excercise}/>
+          <h4>
+            <strong>Set Repetitions:</strong> {set.repetitions}
+          </h4>
+          <ExcerciseList excercises={set.excercise} />
         </section>
       ))}
-</>
+    </>
   );
 }
 

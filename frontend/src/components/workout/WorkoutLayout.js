@@ -1,12 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
-// import 'normalize.css';
 
-import GlobalStyles from '../../styles/GlobalStyles.js';
-import Typography from '../../styles/Typography.js';
-
-
-export default function WorkoutLayout( { children }){
+const WorkoutLayout = ( { children } ) =>{
   return(
     <>
       <GlobalStyles/>
@@ -15,3 +9,6 @@ export default function WorkoutLayout( { children }){
     </>
   );
 }
+
+
+export default WorkoutLayout;

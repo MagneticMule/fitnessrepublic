@@ -13,7 +13,7 @@ const Blog = ({data}) => {
   return (
     <>
       <Helmet
-      title="Fitness Republic - Fitness Classes delivered in the gym and online"
+      title="Fitness Republic - Articles on training, "
       meta={[
         {
           name: "description",

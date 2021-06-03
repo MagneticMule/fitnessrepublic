@@ -70,5 +70,5 @@ const turnWorkoutsIntoPages = async ({ graphql, actions }) => {
 exports.createPages = async (params) => {
   console.log('--- Creating Pages ---');
   await turnPostsIntoPages(params);
-  // await turnWorkoutsIntoPages(params);
+  await turnWorkoutsIntoPages(params);
 }
