@@ -63,7 +63,7 @@ export const query = graphql`
           excerciseName
           CloudVideo {
             _key
-            url
+            url: secure_url
             public_id
             width
             format

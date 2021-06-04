@@ -93,7 +93,7 @@ export const query = graphql`
               video
               CloudVideo {
                 _key
-                url
+                url: secure_url
                 public_id
                 width
                 format
