@@ -151,7 +151,7 @@ const Menu = props => {
   const [displayed, setDisplayed] = useState(false);
   return (
     <MenuHolder>
-      <BurgerIcon onClick={() => setDisplayed((displayed) => !displayed)}>
+      <BurgerIcon aria-label="Show Navigation Menu" onClick={() => setDisplayed((displayed) => !displayed)}>
         <span></span>
       </BurgerIcon>
       <MenuContainer>
