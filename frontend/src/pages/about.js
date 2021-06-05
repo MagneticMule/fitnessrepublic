@@ -15,7 +15,7 @@ import ImageGallery from "../components/ImageGallery";
 const About = ({ data }) => {
   return <>
     <Helmet
-      title="Fitness Republic - All about us"
+      title="Fitness Republic Gym | All about us"
       meta={[
         {
           name: "description",

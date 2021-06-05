@@ -20,7 +20,7 @@ import { FaPhoneSquareAlt } from "react-icons/fa";
 const Training = ({ data }) => {
   return <>
     <Helmet
-      title="Fitness Republic - Personal Training"
+      title="Fitness Republic Gym | Personal Training"
       meta={[
         {
           name: "description",

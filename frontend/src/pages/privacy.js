@@ -14,7 +14,7 @@ const Privacy = () => {
   return (
     <>
       <Helmet
-        title="Fitness Republic - Privacy and Cookie Policy"
+        title="Fitness Republic | Privacy and Cookie Policy"
         meta={[
           {
             name: "description",

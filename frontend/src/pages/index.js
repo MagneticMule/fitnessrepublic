@@ -25,12 +25,12 @@ const Index = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic Gym - Keeping Ashby healthy for 11+ years"
+        title="Fitness Republic Gym | Ashby De La Zouch"
         meta={[
           {
             name: "description",
             content:
-              "For over 11 years we have been the premiere Family Run Gym at the heart of Ashby de la Zouch. Group Fitness Classes from ZUMBA to Yoga. Perosnal Training in a well equiped gym hosted in an immaculate, covid safe friendly environment.",
+              "Group Fitness Classes from ZUMBA to Yoga. Personal Training in a well equiped gym hosted in an immaculate, covid safe friendly environment in the heart of Ashby De La Zouch",
           },
           {
             name: "keywords",
@@ -191,15 +191,14 @@ const Index = ({ data }) => {
           />
           <TextSection
             pos="2/-1"
-
             subtitle="The next step in your fitness journey"
             body={
               <>
                 We are positive that once you have experienced everything our
-                gym has to offer that you will be keen to become part of our almost 500 strong fitness
-                community. Enjoy our extensive selection of fitness classes and
-                well equiped gym for the low monthly cost of{" "}
-                <strong>£32.99</strong>. Or pay annually and{" "}
+                gym has to offer that you will be keen to become part of our
+                almost 500 strong fitness community. Enjoy our extensive
+                selection of fitness classes and well equiped gym for the low
+                monthly cost of <strong>£32.99</strong>. Or pay annually and{" "}
                 <strong>save £95</strong> on monthly membership.
               </>
             }

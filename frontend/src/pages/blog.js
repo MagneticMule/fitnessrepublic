@@ -13,17 +13,17 @@ const Blog = ({data}) => {
   return (
     <>
       <Helmet
-      title="Fitness Republic - Articles on training, "
+      title="Fitness Republic Gym | Our Blog "
       meta={[
         {
           name: "description",
           content:
-            "We write articles on fitness, diet control, weight loss, working out all while promoting good health."
+            "We write articles on fitness, diet control, weight loss and training all while promoting good health."
         },
         {
           name: "keywords",
           content:
-            "weight loss, calories, low fat, workout, gym, ashby, ashby de la zouch, fitness, health, lose fat, blog, articles"
+            "weight loss, calories, low fat, workout, gym, ashby, ashby de la zouch, fitness, health, lose fat, blog, articles, low carb, wellbeing, well being"
         }
       ]}
     />

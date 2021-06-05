@@ -10,7 +10,7 @@ module.exports = {
     siteUrl: "https://www.fitnessrepublic.co.uk",
     author: "Thomas Sweeney",
     description:
-      "For over 11 years we have been the premiere Family Run Gym at the heart of Ashby de la Zouch. Group Fitness Classes from ZUMBA to Yoga. Perosnal Training in a well equiped gym hosted in a clean and covid safe friendly environment.",
+      "Group Fitness Classes from ZUMBA to Yoga. Personal Training in a well equiped gym hosted in an immaculate, covid safe friendly environment in the heart of Ashby De La Zouch",
   },
   // cache will have to be manually cleared via 'gatsby clean'
   flags: { PRESERVE_WEBPACK_CACHE: true },

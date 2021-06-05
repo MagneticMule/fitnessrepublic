@@ -15,7 +15,7 @@ const Terms = () => {
   return (
     <>
       <Helmet
-        title="Fitness Republic - Terms and Conditions"
+        title="Fitness Republic | Terms and Conditions"
         meta={[
           {
             name: "description",

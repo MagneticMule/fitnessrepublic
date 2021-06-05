@@ -14,7 +14,7 @@ const Workout = ({data}) => {
   return (
     <>
       <Helmet
-      title="Fitness Republic - Free Online Workouts"
+      title="Fitness Republic Gym | Free Online Workouts"
       meta={[
         {
           name: "description",

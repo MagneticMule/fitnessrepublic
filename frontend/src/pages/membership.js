@@ -18,17 +18,17 @@ const Membership = ({data}) =>{
   console.log(data.file);
     return <>
       <Helmet
-        title="Fitness Republic - Personal Training"
+        title="Fitness Republic Gym| Membership Plans"
         meta={[
           {
             name: "description",
             content:
-              "Try us first with our Free Seven Day Pass. Monthly, annual, joint meberships and of course special student memberships available"
+              "Try us first with our Free Seven Day Pass. Monthly, annual and family memberships available"
           },
           {
             name: "keywords",
             content:
-              "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low prices"
+              "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low price"
           }
         ]}
       ></Helmet>

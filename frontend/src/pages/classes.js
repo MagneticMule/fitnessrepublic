@@ -19,7 +19,7 @@ import { DiAndroid } from "react-icons/di";
 const Classes = ({ data }) => {
   return <>
     <Helmet
-      title="Fitness Republic - Fitness Classes delivered in the gym and online"
+      title="Fitness Republic Gym | Fitness Classes delivered in gym and online"
       meta={[
         {
           name: "description",
@@ -29,7 +29,7 @@ const Classes = ({ data }) => {
         {
           name: "keywords",
           content:
-            "fitness classes, yoga class, zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting instructor, HIIT"
+            "fitness classes, yoga class, zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, instructor, HIIT"
         }
       ]}
     >
