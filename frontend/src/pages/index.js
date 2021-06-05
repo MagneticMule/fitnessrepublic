@@ -30,8 +30,7 @@ const Index = ({ data }) => {
           {
             name: "description",
             content:
-              "Group Fitness Classes from ZUMBA to Yoga. Personal Training in a well equiped gym hosted in an immaculate, covid safe friendly environment in the heart of Ashby De La Zouch",
-          },
+              "Love feeling good? At Fitness Republic, we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today"
           {
             name: "keywords",
             content:
