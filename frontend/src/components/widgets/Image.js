@@ -15,6 +15,7 @@ const ImageContainer = styled.div`
   box-shadow: inset 0px 4px 2px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   overflow: hidden;
+  z-index: 1;
 
   @media ${device.mobileS} {
     border-radius: 0;
@@ -34,7 +35,7 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImg = styled(GatsbyImage)`
-  z-index: -1;
+  z-index: 0;
 `;
 
 const Blurb = styled.p`

@@ -57,6 +57,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    background: var(--white);
     color: var(--black);
   }
 
@@ -109,7 +110,9 @@ const GlobalStyles = createGlobalStyle`
     scrollbar-width: thick;
     scrollbar-color: var(--orange) var(--white);
     scroll-behavior: smooth;
+
   }
+
 
   body::-webkit-scrollbar-track {
     background: var(--white);
@@ -174,6 +177,10 @@ td {
 
 th {
     padding-bottom:.33em;
+}
+
+.text-background {
+  background: var(--white);
 }
 
 .intro-video {

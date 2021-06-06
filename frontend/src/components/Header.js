@@ -13,18 +13,9 @@ import Container from "../styles/ContainerStyle";
 //   max-width: 1400px;
 // `;
 
-const Contents = styled.div`
-  height: 75vh;
-  min-height: min(30em, 800px);
-  max-height: 50em;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-`;
 const Head = styled.head`
   display: block;
-
+  overflow:hidden;
   background: linear-gradient(
       262.04deg,
       rgba(255, 107, 0, 0.2) 48.53%,
@@ -35,7 +26,7 @@ const Head = styled.head`
       rgba(0, 13, 129, 0.2) 0.9%,
       rgba(255, 255, 255, 0) 56.29%
     ),
-    #f0e1e1;
+    rgba(240, 225, 225,.8);
   box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.25);
 
   @media ${device.mobileS} {
@@ -49,6 +40,17 @@ const Head = styled.head`
 
   @media ${device.desktop} {
   }
+`;
+
+const Contents = styled.div`
+  overflow: hidden;
+  height: 75vh;
+  min-height: min(30em, 800px);
+  max-height: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
 `;
 
 const Title = styled.h1`
@@ -112,15 +114,40 @@ const Subtitle = styled.p`
   text-transform: uppercase;
 `;
 
+
+const Video = styled.div`
+  overflow: hidden;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  > video {
+    overflow: hidden;
+    position: absolute;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+  }
+`;
+
 const TextSection = (props) => {
   return (
     <Head>
+      <Video>
+        <video autoPlay={true} muted={true} loop={true}>
+          <source src={props.video} type="video/mp4" />
+        </video>
+      </Video>
       <Container>
         <Contents>
           <div>
             <Title>{props.title}</Title>
             <Subtitle>{props.subtitle}</Subtitle>
-            <Button title="Free Seven Day Pass" destination={"/#getstarted"}/>
+            <Button title="Free Seven Day Pass" destination={"/#getstarted"} />
           </div>
         </Contents>
       </Container>
