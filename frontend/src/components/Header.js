@@ -15,7 +15,7 @@ import Container from "../styles/ContainerStyle";
 
 const Head = styled.head`
   display: block;
-  overflow:hidden;
+
   background: linear-gradient(
       262.04deg,
       rgba(255, 107, 0, 0.2) 48.53%,
@@ -43,9 +43,8 @@ const Head = styled.head`
 `;
 
 const Contents = styled.div`
-  overflow: hidden;
-  height: 75vh;
-  min-height: min(30em, 800px);
+  height: 48vh;
+  min-height: min(30em, 860px);
   max-height: 50em;
   display: flex;
   flex-direction: column;
@@ -117,20 +116,13 @@ const Subtitle = styled.p`
 
 const Video = styled.div`
   overflow: hidden;
-  z-index: -100;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
   > video {
-    overflow: hidden;
-    position: absolute;
     object-fit: cover;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background-size: cover;
+    position: absolute;
+    min-height: 55vh;
+    width:100%;
+    position: absolute;
+    z-index: -1;
   }
 `;
 

@@ -181,6 +181,7 @@ th {
 
 .text-background {
   background: var(--white);
+  overflow:hidden;
 }
 
 .intro-video {
