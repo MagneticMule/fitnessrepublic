@@ -18,15 +18,19 @@ const Terms = () => {
         title="Fitness Republic | Terms and Conditions"
         meta={[
           {
+            name: "robots",
+            content: "noindex",
+          },
+          {
             name: "description",
             content:
-              "These are our terms and conditions for our membership plans. Have a read, any problems then let us know."
+              "These are our terms and conditions for our membership plans. Have a read, any problems then let us know.",
           },
           {
             name: "keywords",
             content:
-              "terms, conditions, membership, fees, rules,club,facilities"
-          }
+              "terms, conditions, membership, fees, rules,club,facilities",
+          },
         ]}
       ></Helmet>
       <Container>

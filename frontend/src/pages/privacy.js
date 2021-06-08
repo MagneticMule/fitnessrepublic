@@ -17,6 +17,10 @@ const Privacy = () => {
         title="Fitness Republic | Privacy and Cookie Policy"
         meta={[
           {
+          name:"robots",
+           content: "noindex"
+        },
+          {
             name: "description",
             content:
               "This is our privacy policy. We need one because of GDPR. There are many like it but this is ours."
