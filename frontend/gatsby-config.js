@@ -90,7 +90,7 @@ module.exports = {
               {
                 userAgent: "*",
                 allow: "/",
-                disallow: ["/404", "/privacy", "/terms"],
+                // disallow: ["/404", "/privacy", "/terms"],
               },
             ],
           },
