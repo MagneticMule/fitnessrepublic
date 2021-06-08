@@ -3,7 +3,7 @@ import { BsFileRichtext as icon} from 'react-icons/bs';
 export default {
 
   // Setup a 'document' type to house the page builder field
-  title: "Page",
+  title: "Web Page",
   name: "page",
   type: "document",
   icon,

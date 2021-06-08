@@ -16,6 +16,9 @@ import social from './objects/social.js';
 import staffMember from './objects/staffMember.js';
 import video from './objects/video.js';
 import target from './objects/target.js';
+import client from './objects/client.js';
+import membership from './objects/membership.js';
+import instagram from './objects/instagram.js';
 
 
 // => blog
@@ -33,7 +36,6 @@ import page from './documents/page.js';
 // import shop from './documents/shop.js';
 import workout from './documents/workout.js';
 // => blog
-import author from './documents/blog/author.js';
 import post from './documents/blog/post.js';
 
 
@@ -46,6 +48,7 @@ export default createSchema({
   types: schemaTypes.concat([
     /* Your types here! */
     staffMember,
+    client,
     page,
     businessDetails,
     hero,
@@ -53,6 +56,7 @@ export default createSchema({
     cta,
     news,
     workout,
+    membership,
     set,
     excercise,
     video,
@@ -60,10 +64,10 @@ export default createSchema({
     target,
     // blog
     post,
-    author,
     mainImage,
     authorReference,
     bodyPortableText,
     bioPortableText,
+    instagram
   ]),
 })

@@ -32,7 +32,7 @@ export default {
     {
       type: 'cloudinary.asset',
       name: 'CloudVideo',
-      description: 'This asset is served from Cloudinary',
+      description: 'Add or upload a video',
     },
     {
       title: 'Repetitions',

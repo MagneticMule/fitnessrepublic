@@ -17,7 +17,7 @@ export default {
       name: 'form',
       type: 'string',
       title: 'Form',
-      description: 'WHat kind of form?',
+      description: 'What kind of form?',
       options: {
         list: ['pass', 'register', 'contact']
       }

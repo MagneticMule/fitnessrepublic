@@ -1,15 +1,17 @@
-import {format} from 'date-fns'
+import { CgFileDocument as icon } from 'react-icons/cg';
+import { format } from 'date-fns';
 
 export default {
   name: 'post',
   type: 'document',
   title: 'Blog Post',
+  icon,
   fields: [
     {
       name: 'title',
       type: 'string',
       title: 'Title',
-      description: 'Titles should be catchy, descriptive, and not too long'
+      description: 'Titles should be catchy, descriptive, and not too long',
     },
     {
       name: 'slug',
@@ -18,42 +20,46 @@ export default {
       description: 'This is how the article will appear in the browser address bar',
       options: {
         source: 'title',
-        maxLength: 96
-      }
+        maxLength: 96,
+      },
     },
     {
       name: 'publishedAt',
       type: 'datetime',
       title: 'Published at',
-      description: 'This can be used to schedule post for publishing later'
+      description: 'This can be used to schedule post for publishing later',
     },
     {
       name: 'mainImage',
       type: 'mainImage',
-      title: 'Main image'
+      title: 'Main image',
     },
     {
       name: 'excerpt',
       type: 'text',
       title: 'Excerpt',
-      description:
-        'This goes summary pages on Google, when people share your post in social media'
+      description: 'This goes summary pages on Google, when people share your post in social media',
     },
     {
-      name: 'authors',
-      title: 'Authors',
-      type: 'array',
-      of: [
-        {
-          type: 'authorReference'
-        }
-      ]
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: [{ type: 'staffMember' }],
     },
     {
       name: 'body',
       type: 'bodyPortableText',
-      title: 'Body'
-    }
+      title: 'Body',
+    },
+    {
+      title: 'Tags',
+      name: 'tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+      },
+    },
   ],
   orderings: [
     {
@@ -62,13 +68,13 @@ export default {
       by: [
         {
           field: 'publishedAt',
-          direction: 'asc'
+          direction: 'asc',
         },
         {
           field: 'title',
-          direction: 'asc'
-        }
-      ]
+          direction: 'asc',
+        },
+      ],
     },
     {
       name: 'publishingDateDesc',
@@ -76,15 +82,22 @@ export default {
       by: [
         {
           field: 'publishedAt',
-          direction: 'desc'
+          direction: 'desc',
         },
         {
           field: 'title',
-          direction: 'asc'
-        }
-      ]
-    }
+          direction: 'asc',
+        },
+      ],
+    },
   ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'excerpt'.slice(0, 50),
+      media: 'mainImage',
+    },
+  },
   // preview: {
   //   select: {
   //     title: 'title',
@@ -102,4 +115,4 @@ export default {
   //     }
   //   }
   // }
-}
+};

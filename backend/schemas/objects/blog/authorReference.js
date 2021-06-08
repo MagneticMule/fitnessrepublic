@@ -9,15 +9,16 @@ export default {
       type: 'reference',
       to: [
         {
-          type: 'staffMember'
-        }
-      ]
-    }
+          type: 'staffMember',
+        },
+      ],
+    },
   ],
   preview: {
     select: {
       title: 'staffMember.firstName',
-      media: 'staffMember.avitar.asset'
-    }
-  }
-}
+      subtitle: 'staffMember.secondName',
+      media: 'staffMember.avitar.asset',
+    },
+  },
+};

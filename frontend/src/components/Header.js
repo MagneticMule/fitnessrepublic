@@ -15,18 +15,17 @@ import Container from "../styles/ContainerStyle";
 
 const Head = styled.head`
   display: block;
-
   background: linear-gradient(
       120.04deg,
       rgba(255, 107, 0, 0.3) 48.53%,
       rgba(255, 255, 255, 0) 99.73%
     ),
     linear-gradient(
-      98deg,
-      rgba(0, 13, 129, 0.1) 0.9%,
-      rgba(255, 255, 255,.1) 56.29%
+      255deg,
+      rgba(0, 13, 129, 0.2) 0.9%,
+      rgba(255, 255, 255,.6) 56.29%
     ),
-    rgba(255, 225, 225,.6);
+    rgba(255, 225, 225,.75);
   box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.25);
 
   @media ${device.mobileS} {
