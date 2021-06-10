@@ -16,6 +16,7 @@ import ReviewSection from "../components/ReviewSection";
 import InfoBubble from "../components/InfoBubble";
 import IntroText from "../components/widgets/text/IntroText";
 import MembershipSection from "../components/MembershipSection";
+import InstagramSection from "../components/InstagramSection";
 
 import intro from "/static/intro.mp4";
 
@@ -91,7 +92,7 @@ const Index = ({ data }) => {
                 "Simon and Sarah Pellecchia started Fitness Republic in 2010"
               }
             />
-
+            <InstagramSection instagrams={data.instagrams} />
             <TextSection
               pos="2/5"
               title="Your Fitness Republic Journey"
@@ -324,6 +325,7 @@ const Index = ({ data }) => {
                 },
               ]}
             />
+
             <TextSection
               pos={"2/-1"}
               subtitle="Your Fitness Republic Journey Continues"
@@ -381,46 +383,74 @@ const Index = ({ data }) => {
 
 export default Index;
 
-export const query = graphql`{
-  kathyhead: file(relativePath: {eq: "headshots/katy.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 120, width: 120, placeholder: BLURRED, layout: FIXED)
+export const query = graphql`
+  {
+    instagrams: allSanityInstagram {
+      edges {
+        node {
+          id
+          instagram
+          caption
+          isActive
+          image {
+            asset {
+              altText
+              description
+              gatsbyImageData(height: 600, width: 600, fit: CROP)
+            }
+          }
+        }
+      }
+    }
+    kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          height: 120
+          width: 120
+          placeholder: BLURRED
+          layout: FIXED
+        )
+      }
+    }
+    chrishead: file(relativePath: { eq: "headshots/chris.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          height: 120
+          width: 120
+          placeholder: BLURRED
+          layout: FIXED
+        )
+      }
+    }
+    simonsarah: file(relativePath: { eq: "simon-sarah-spin.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    asksimon: file(relativePath: { eq: "ask-simon.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    topdown: file(relativePath: { eq: "gym/gym-topdown-landscape.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    lowdown: file(relativePath: { eq: "gym/simon-consulting-landscape.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    dumbells: file(relativePath: { eq: "gym/simon-client-landscape.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    side2: file(relativePath: { eq: "gym/simon-demonstrating-landscape.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
     }
   }
-  chrishead: file(relativePath: {eq: "headshots/chris.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 120, width: 120, placeholder: BLURRED, layout: FIXED)
-    }
-  }
-  simonsarah: file(relativePath: {eq: "simon-sarah-spin.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  asksimon: file(relativePath: {eq: "ask-simon.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  topdown: file(relativePath: {eq: "gym/gym-topdown-landscape.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  lowdown: file(relativePath: {eq: "gym/simon-consulting-landscape.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  dumbells: file(relativePath: {eq: "gym/simon-client-landscape.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  side2: file(relativePath: {eq: "gym/simon-demonstrating-landscape.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-}
 `;

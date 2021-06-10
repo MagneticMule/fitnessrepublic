@@ -125,7 +125,7 @@ const MembershipCard = ({membership}) => {
       <div>{membership.paymethod}</div>
       <Button>
         <a
-          aria="Opens the external registration page for Fitness Republic on our CLubright system so that you can register for your plan"
+          aria="Opens the external registration page for Fitness Republic on our Clubright system so that you can register for your plan"
           href="https://fitnessrepublic.clubright.co.uk/register"
           rel="noopener"
         >
