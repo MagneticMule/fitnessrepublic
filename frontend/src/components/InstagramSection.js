@@ -87,8 +87,14 @@ const InstagramSection = ({ instagrams }) => {
           <Title>Recent Instagrams</Title>
           <SubTitle>What's happening at our gym</SubTitle>
         </Header>
-        {instagrams.edges.map(instagram => (
-          <InstagramCard instagram={instagram.node} />
+        {instagrams.edges.map((instagram) => (
+          <a
+            href="https://www.instagram.com/fitnessrepublicgym/"
+            target="_blank"
+            rel="nofollow noopener"
+          >
+            <InstagramCard instagram={instagram.node} />
+          </a>
         ))}
       </InstagramContainer>
     </Section>
