@@ -49,19 +49,13 @@ export default {
       description: ``,
       validation: (Rule) => Rule.min(10).warning('Notes should be longer than 50 characters'),
     },
-    {
-      title:'Workouts',
-      name: 'workout',
-      type: 'object',
-      fields: [
+
         {
           title: 'Assigned Workouts',
           name: 'workout',
           type: 'reference',
           to: [{ type: 'workout' }],
         },
-      ],
-    },
   ],
   preview: {
     select: {
