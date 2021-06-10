@@ -385,7 +385,10 @@ export default Index;
 
 export const query = graphql`
   {
-    instagrams: allSanityInstagram {
+    instagrams: allSanityInstagram(
+      sort: { fields: _createdAt, order: ASC }
+      limit: 6
+    ) {
       edges {
         node {
           id
