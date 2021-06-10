@@ -396,7 +396,7 @@ export const query = graphql`
             asset {
               altText
               description
-              gatsbyImageData(height: 260, width: 260, fit: CROP)
+              gatsbyImageData(height: 500, width: 500, fit: CROP)
             }
           }
         }

@@ -12,19 +12,24 @@ const Section = styled.section`
 `;
 
 const InstagramContainer = styled.div`
-  text-align: center;
   display: flex;
-  gap: 1em 1em;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: row;
+  gap:1em;
+  justify-content: space-evenly;
+  > * {
+    min-width: 160px;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-radius: 8px;
+  }
 
   @media ${device.mobileS} {
     border-radius: 0;
   }
 
   @media ${device.laptop} {
-    border-radius: 8px;
   }
 
   @media ${device.laptopL} {
@@ -57,7 +62,7 @@ const Header = styled.div`
 
 const Title = styled.h3`
   color: var(--deep-purple);
-  font-weight: 900;
+  font-weight: 500;
   margin: 0;
 `;
 
@@ -71,9 +76,7 @@ const SubTitle = styled.p`
 
 const InstagramCard = ({ instagram }) => {
   return (
-    <Instagram>
       <GatsbyImage image={instagram.image.asset.gatsbyImageData}/>
-    </Instagram>
   );
 };
 
