@@ -1,24 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import Container from '../styles/ContainerStyle';
-import Button from "./widgets/Button";
 import { device } from "../styles/DeviceSizes";
 
 import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaYoutube,
-  FaAddressCard,
   FaPhoneSquareAlt,
 } from 'react-icons/fa';
-
-
 
 const Background = styled.div`
   background: var(--dark-grad);
   color: var(--white);
-  font-weight: 500;
+
   z-index: -1;
 
   @media ${device.mobileS} {
@@ -46,17 +38,15 @@ const CovidButton = styled.li`
 `;
 
 const Items = styled.div`
-
   a {
     color: var(--white);
-
     :hover {
-      color:var(--orange);
+      color: var(--orange);
     }
   }
 
-
   ul {
+    font-weight:900;
     display: flex;
     margin: 0;
     padding: 0;
@@ -64,7 +54,6 @@ const Items = styled.div`
   }
 
   li {
-    padding: 0.6em 0;
     text-decoration: none;
     text-transform: uppercase;
     display: inline-block;
@@ -90,7 +79,7 @@ return (
             <a
               aria-label="Call the gym to chat to one of our team"
               href="tel:+4401530413330"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               {" "}
               01530 413330

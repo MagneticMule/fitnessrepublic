@@ -138,12 +138,12 @@ module.exports = {
       },
     },
     // "gatsby-plugin-netlify-cache",
-    // {
-    //   resolve: `gatsby-source-instagram`,
-    //   options: {
-    //     type: `user-profile`,
-    //     username: `8556131572`
-    //   }
-    // }
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        // type: `user-profile`,
+        username: `8556131572`
+      }
+    }
   ],
 };

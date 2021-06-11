@@ -10,6 +10,7 @@ import { device } from "../styles/DeviceSizes";
 const BackgroundCol = "rgba(255, 255, 255, 0.85)";
 
 const MenuHolder = styled.div`
+  padding: 1em 0;
   background: ${BackgroundCol};
   backdrop-filter: blur(16px);
   box-shadow: 1px 0 16px rgba(100, 40, 40, 0.2);
@@ -82,18 +83,22 @@ const Navigation = styled.nav`
 
 const Logo = styled.div`
   height: 1.8em;
+
 `;
 
 const Spacer = styled.div`
   flex: 1;
 `;
 
-const StyledLink = styled(props => <Link {...props} />)`
+const StyledLink = styled((props) => <Link {...props} />)`
   color: black;
-  font-weight: 500;
+  font-weight: 700;
   transition: 0.3s color ease-in-out;
   &:hover {
     color: var(--orange);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness:.15em;
   }
 `;
 
@@ -111,7 +116,7 @@ const BurgerIcon = styled.button`
   background: rgba(1,1,1,0);
   box-shadow: none;
   margin-left: 1em;
-  margin-top: 1.5em;
+  margin-top: .5em;
   span,
   &:before,
   &:after {

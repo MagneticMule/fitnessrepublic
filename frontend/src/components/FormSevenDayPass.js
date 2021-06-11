@@ -5,7 +5,7 @@ import { device } from "../styles/DeviceSizes";
 
 
 const Form = styled.form`
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   grid-column: 2/4;
   display: flex;
   flex-direction: column;

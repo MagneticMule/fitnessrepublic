@@ -49,8 +49,8 @@ const Blog = ({data}) => {
 export default Blog;
 
 export const query = graphql`
- query BlogQuery {
-    posts: allSanityPost {
+  query BlogQuery {
+    posts: allSanityPost(sort: { fields: _createdAt, order: ASC }) {
       nodes {
         id
         title
@@ -60,14 +60,15 @@ export const query = graphql`
         excerpt
         mainImage {
           asset {
-		        gatsbyImageData(
-              width:1200,
-              height:800,
-              fit: FILLMAX,
-              placeholder: BLURRED),
-              }
-            }
+            gatsbyImageData(
+              width: 1200
+              height: 800
+              fit: FILLMAX
+              placeholder: BLURRED
+            )
           }
+        }
       }
     }
+  }
 `;

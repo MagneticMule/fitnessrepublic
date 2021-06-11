@@ -3,16 +3,16 @@ import {device} from './DeviceSizes';
 
 const Container = styled.div`
   margin: 0 auto;
-  padding: 2em 4em;
+  padding: 1em 4em 1em 5em;
   max-width: 1400px;
 
   @media ${device.mobileS} {
-    padding: 2em 1.5em;
+    padding: 1em 2em;
   }
 
   @media ${device.laptop} {
     /* max-width: 980px; */
-    padding: 2em 4em;
+    padding: 1em 4em 1em 6em;
   }
 
   @media ${device.laptopL} {

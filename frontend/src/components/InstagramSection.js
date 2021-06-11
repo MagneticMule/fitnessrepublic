@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { FaStar } from "react-icons/fa";
 import { device } from "../styles/DeviceSizes";
-import Image from "../components/widgets/Image";
 
 
 const Section = styled.section`

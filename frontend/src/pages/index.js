@@ -387,7 +387,7 @@ export const query = graphql`
   {
     instagrams: allSanityInstagram(
       sort: { fields: _createdAt, order: ASC }
-      limit: 6
+      limit: 3
     ) {
       edges {
         node {
