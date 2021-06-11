@@ -31,7 +31,7 @@ const Index = ({ data }) => {
           {
             name: "description",
             content:
-              "Love feeling good? At Fitness Republic Ashby we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
+              "Want to feel good this summer? At Fitness Republic Ashby we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
           },
           {
             name: "keywords",
