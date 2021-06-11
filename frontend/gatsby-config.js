@@ -137,7 +137,6 @@ module.exports = {
         environments: ["production", "development"],
       },
     },
-    // "gatsby-plugin-netlify-cache",
     {
       resolve: `gatsby-source-instagram`,
       options: {

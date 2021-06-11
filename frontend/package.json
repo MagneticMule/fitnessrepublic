@@ -58,6 +58,7 @@
     "preload-fonts": "gatsby-preload-fonts"
   },
   "devDependencies": {
+    "@netlify/plugin-gatsby": "^0.0.3",
     "cypress": "^7.4.0",
     "prettier": "2.2.1"
   },
