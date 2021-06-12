@@ -26,7 +26,7 @@ const Index = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic Gym | At the heart of Ashby De La Zouch"
+        title="Gym in Ashby | Get Started FREE | Fitness Republic"
         meta={[
           {
             name: "description",
