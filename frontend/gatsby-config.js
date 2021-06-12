@@ -101,7 +101,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Fitness Republic UK",
+        name: "Fitness Republic Ashby",
         short_name: "Fitness Republic",
         start_url: "/",
         background_color: "#fff",

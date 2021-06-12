@@ -75,14 +75,12 @@ return (
             Celebrating <strong>11 years in business</strong>
           </li>
           <li>
-            <FaPhoneSquareAlt />
             <a
               aria-label="Call the gym to chat to one of our team"
               href="tel:+4401530413330"
               rel="noopener noreferrer"
             >
-              {" "}
-              01530 413330
+              <FaPhoneSquareAlt /> 01530 413330
             </a>
           </li>
         </ul>

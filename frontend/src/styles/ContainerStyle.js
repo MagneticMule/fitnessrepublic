@@ -7,7 +7,7 @@ const Container = styled.div`
   max-width: 1400px;
 
   @media ${device.mobileS} {
-    padding: 1em 2em;
+    padding: 1em 1em;
   }
 
   @media ${device.laptop} {

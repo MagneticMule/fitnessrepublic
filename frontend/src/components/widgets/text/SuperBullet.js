@@ -1,20 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
 import { device } from "../../../styles/DeviceSizes";
+
+const Background = styled.section`
+  background: #efefef;
+`;
 const Bullet = styled.div`
   margin: 0 0 2em 0;
-  justify-content: top;
+  justify-content: middle;
   display: flex;
+  text-align: center;
   flex-direction: column;
-  grid-column: ${props => (props.pos ? props.pos : "2/4")};
-
+  grid-column: ${(props) => (props.pos ? props.pos : "2/4")};
+  margin-bottom: 0;
   @media ${device.mobileM} {
     grid-column: 1/-1;
   }
 
   @media ${device.laptop} {
-    grid-column: ${props => (props.pos ? props.pos : "1/2")};
-    margin-bottom: 0;
+    grid-column: ${(props) => (props.pos ? props.pos : "1/2")};
   }
 
   @media ${device.laptopL} {
@@ -25,6 +29,7 @@ const Bullet = styled.div`
 `;
 
 const BulletPoint = styled.div`
+margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +43,7 @@ const BulletPoint = styled.div`
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
-
+  margin-bottom:-1em;
   border: 1em solid var(--grey);
 
   > span {

@@ -29,6 +29,14 @@ const SectionTitle = styled.h2`
   letter-spacing: -0.05em;
   text-transform: capitalize;
   color: var(--deeper-purple);
+
+  @media ${device.mobileM} {
+    font-size: 2.209rem;
+  }
+
+  @media ${device.laptop} {
+    font-size: 4.209rem;
+  }
 `;
 
 const SubTitle = styled.h3`
