@@ -187,9 +187,9 @@ th {
 .intro-video {
   grid-column:1/-1;
   overflow:hidden;
-  border-radius:8px;
   margin-bottom:8em;
   margin-top:-3em;
+  border-radius:8px;
 }
 
 /* #___gatsby {
