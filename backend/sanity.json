@@ -16,7 +16,8 @@
     "@sanity/desk-tool",
     "asset-source-unsplash",
     "dashboard-widget-netlify",
-    "cloudinary"
+    "cloudinary",
+    "dark-theme-blue"
   ],
   "env": {
     "development": {

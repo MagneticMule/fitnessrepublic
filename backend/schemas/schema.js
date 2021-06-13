@@ -19,6 +19,7 @@ import target from './objects/target.js';
 import client from './objects/client.js';
 import membership from './objects/membership.js';
 import instagram from './objects/instagram.js';
+import alert  from './objects/alert.js';
 
 
 // => blog
@@ -68,6 +69,7 @@ export default createSchema({
     authorReference,
     bodyPortableText,
     bioPortableText,
-    instagram
+    instagram,
+    alert
   ]),
 })

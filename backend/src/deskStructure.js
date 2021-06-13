@@ -16,5 +16,5 @@ export default () =>
             S.divider(),
       // List out the rest of the document types, but filter out the config type
       ...S.documentTypeListItems()
-        .filter(listItem => !['businessDetails','excercise','hero','video','news'].includes(listItem.getId()))
+        .filter(listItem => !['businessDetails','hero','video'].includes(listItem.getId()))
     ])

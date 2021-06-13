@@ -3,7 +3,7 @@ export default {
     {
       name: 'netlify',
       options: {
-        title: 'My Netlify deploys',
+        title: 'Website: Hosted on Netlify',
         sites: [
           // {
           //   title: 'Sanity Studio',
@@ -12,21 +12,21 @@ export default {
           //   name: 'sanity-gatsby-blog-20-studio',
           // },
           {
-            title: 'Website',
-            apiId: process.env.NETLIFY_API_ID,
-            buildHookId: process.env.BUILDHOOKID,
+            title: 'Fitness Republic Website',
+            apiId: process.env.SANITY_STUDIO_NETLIFY_API_ID,
+            buildHookId: process.env.SANITY_STUDIO_BUILDHOOKID,
             name: 'fitnessrepublic',
           },
         ],
       },
     },
-    {
-      name: 'project-info',
-      layout: {
-        width: 'large',
-        height: 'small',
-      },
-    },
+    // {
+    //   name: 'project-info',
+    //   layout: {
+    //     width: 'large',
+    //     height: 'small',
+    //   },
+    // },
     {
       name: 'project-users',
       layout: {

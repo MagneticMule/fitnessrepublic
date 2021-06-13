@@ -188,6 +188,8 @@ th {
   grid-column:1/-1;
   overflow:hidden;
   border-radius:8px;
+  margin-bottom:8em;
+  margin-top:-3em;
 }
 
 /* #___gatsby {
