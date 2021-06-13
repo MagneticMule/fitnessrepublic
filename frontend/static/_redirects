@@ -31,6 +31,12 @@ timetable/event/glute-camp        /classes
 /timetable/*                      /classes
 /timetable                        /classes
 /privacy-policy-and-disclaimer/*  /privacy
+/privacy-policy                   /privacy
 /promotions/*                     /membership
 /product-category/*               /membership
 /one-to-one-boxing-boxfit-sessions  /training
+http://fitnessrepublic.co.uk/timetable/event/pilates-2  /membership
+
+ /fitness/what-not-to-do-if-youre-new-to-the-gym/ /blog/post/vanity-health-and-weight-training
+
+ /wp-content/*                    /
