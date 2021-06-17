@@ -179,10 +179,7 @@ th {
     padding-bottom:.33em;
 }
 
-.text-background {
-  background: var(--white);
-  overflow:hidden;
-}
+
 
 .intro-video {
   grid-column:1/-1;

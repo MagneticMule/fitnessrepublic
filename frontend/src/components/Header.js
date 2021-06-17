@@ -14,6 +14,8 @@ import Container from "../styles/ContainerStyle";
 // `;
 
 const Head = styled.head`
+  overflow:hidden;
+  z-index:0;
   display: block;
   background: linear-gradient(
       120.04deg,
@@ -114,13 +116,12 @@ const Subtitle = styled.p`
 
 
 const Video = styled.div`
-  overflow: hidden;
+  position: relative;
   > video {
     object-fit: cover;
     position: absolute;
     min-height: 80vh;
     width:100%;
-    position: absolute;
     z-index: -1;
   }
 `;
