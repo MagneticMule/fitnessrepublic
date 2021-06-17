@@ -13,8 +13,6 @@ import Pullquote from "../components/widgets/text/Pullquote";
 import Button from "../components/widgets/Button";
 import SuperBullet from "../components/widgets/text/SuperBullet";
 import ReviewSection from "../components/ReviewSection";
-import InfoBubble from "../components/InfoBubble";
-import IntroText from "../components/widgets/text/IntroText";
 import MembershipSection from "../components/MembershipSection";
 import InstagramSection from "../components/InstagramSection";
 
@@ -66,7 +64,6 @@ const Index = ({ data }) => {
         }
         subtitle={"A Family run gym at the heart of Ashby De La Zouch"}
       />
-      <div className="text-background">
         <Container>
           <DualSection>
             <Pullquote
@@ -376,7 +373,6 @@ const Index = ({ data }) => {
         /> */}
           </DualSection>
         </Container>
-      </div>
     </>
   );
 };
