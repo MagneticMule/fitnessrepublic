@@ -55,7 +55,7 @@ const Pass = ({ data, name }) => {
             body={
               <>
                 We will be in touch soon, usually via text message to set up a
-                date and time for you to come into the gym for an induction. You
+                date and time for you to come into the gym for an induction. During the introduction you
                 will learn how to get the most out of our equipment so that you
                 can exercise safely and with confidence. We will talk you
                 through our Covid safety procedures and demonstrate how we keep
