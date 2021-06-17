@@ -29,7 +29,7 @@ const Terms = () => {
           {
             name: "keywords",
             content:
-              "terms, conditions, membership, fees, rules,club,facilities",
+              "terms, conditions, membership, fees, rules, club,facilities",
           },
         ]}
       ></Helmet>
