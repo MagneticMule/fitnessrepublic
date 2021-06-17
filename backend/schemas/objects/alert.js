@@ -1,7 +1,9 @@
+import { MdAddAlert as icon } from 'react-icons/md';
 export default {
   name: 'alert',
   title: 'Site Alert',
   type: 'document',
+  icon,
   fields: [
     {
       name: 'title',

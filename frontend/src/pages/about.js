@@ -107,7 +107,7 @@ const About = ({ data }) => {
                   those under the age of 18yrs. Above this age it is highly
                   recommended but not compulsory. This can be booked at our
                   reception or via email{" "}
-                  <a href="info@fitnessrepublic.co.uk" rel="noopener">
+                  <a href="mailto:info@fitnessrepublic.co.uk" rel="noopener">
                     info@fitnessrepublic.co.uk
                   </a>{" "}
                   or by giving us a call{" "}
@@ -142,7 +142,7 @@ const About = ({ data }) => {
                   date. If you need to freeze for longer, please see a member
                   of the fitness team. If you would like to cancel please
                   email us at{" "}
-                  <a href="info@fitnessrepublic.co.uk" rel="noopener">
+                  <a href="mailto:info@fitnessrepublic.co.uk" rel="noopener">
                     info@fitnessrepublic.co.uk
                   </a>{" "}
                   . Please do not cancel any direct debits in place as you may

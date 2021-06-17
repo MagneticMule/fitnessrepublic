@@ -7,7 +7,6 @@ export default {
   type: 'document',
   icon,
   fields: [
-
     {
       title: 'Active',
       name: 'isActive',

@@ -125,20 +125,24 @@ const Video = styled.div`
   }
 `;
 
-const TextSection = (props) => {
+const TextSection = ({video, title, subtitle,cta} ) => {
+  let ctaButton ='';
+  if (cta!== 'none') {
+    ctaButton = <Button title="Free Seven Day Pass" destination={"/#getstarted"} />
+  }
   return (
     <Head>
       <Video>
         <video autoPlay={true} muted={true} loop={true}>
-          <source src={props.video} type="video/mp4" />
+          <source src={video} type="video/mp4" />
         </video>
       </Video>
       <Container>
         <Contents>
           <div>
-            <Title>{props.title}</Title>
-            <Subtitle>{props.subtitle}</Subtitle>
-            <Button title="Free Seven Day Pass" destination={"/#getstarted"} />
+            <Title>{title}</Title>
+            <Subtitle>{subtitle}</Subtitle>
+            {ctaButton}
           </div>
         </Contents>
       </Container>

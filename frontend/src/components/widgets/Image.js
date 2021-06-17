@@ -47,13 +47,13 @@ color: var(--dark-grey);
 `;
 
 
-const Image = (props) => {
+const Image = ({pos, pic, alt, blurb}) => {
 return (
-  <PicContainer pos={props.pos}>
+  <PicContainer pos={pos}>
     <ImageContainer>
-      <StyledImg image={props.pic} alt={props.alt} />
+      <StyledImg image={pic} alt={alt} />
     </ImageContainer>
-    <Blurb>{props.blurb}</Blurb>
+    <Blurb>{blurb}</Blurb>
   </PicContainer>
 );
 }

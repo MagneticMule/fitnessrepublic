@@ -155,7 +155,7 @@ const Index = ({ data }) => {
                   our equipment so that you can exercise safely and with
                   confidence. We will talk you through our Covid safety
                   procedures and demonstrate how we keep our gym clean and safe
-                  for all our customers. If you would prefer a private induction
+                  for all our customers. If you would prefer a private induction then let us know in the form.
                   Your instructor will guide you at your pace, answer all the
                   questions which you may have and help you on your way to step
                   3.

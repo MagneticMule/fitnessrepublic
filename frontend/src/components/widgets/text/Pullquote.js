@@ -59,7 +59,7 @@ const Quote = styled.div`
 
 const Pullquote = (props) => {
   return (
-    <QuoteContainer>
+    <QuoteContainer pos={props.pos}>
       <Quote>{props.body}</Quote>
       <Attribution>{props.attribution}</Attribution>
     </QuoteContainer>

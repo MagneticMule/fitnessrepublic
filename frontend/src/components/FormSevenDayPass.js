@@ -93,7 +93,7 @@ const FormSevenDayPass = props => (
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
-    action="#"
+    action="/thanks"
   >
     <div className="field">
       <Input type="hidden" name="bot-field" />

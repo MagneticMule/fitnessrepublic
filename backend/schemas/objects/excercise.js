@@ -1,7 +1,9 @@
+import { CgGym as icon } from 'react-icons/cg';
 export default {
   title: 'Excercise',
   name: 'excercise',
   type: 'document',
+  icon,
   fields: [
     {
       title: 'Active',

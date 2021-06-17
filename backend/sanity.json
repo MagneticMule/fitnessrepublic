@@ -17,7 +17,8 @@
     "asset-source-unsplash",
     "dashboard-widget-netlify",
     "cloudinary",
-    "dark-theme-blue"
+    "dark-theme-blue",
+    "media"
   ],
   "env": {
     "development": {
@@ -42,6 +43,10 @@
     {
       "name": "part:@sanity/base/new-document-structure",
       "path": "src/newDocumentStructure.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./parts/assetSources.js"
     },
     {
       "implements": "part:@sanity/form-builder/input/image/asset-sources",
