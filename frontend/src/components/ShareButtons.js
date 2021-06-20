@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import styled from 'styled-components';
+import PropTypes from "prop-types";
+import React from "react";
+import styled from "styled-components";
 
 import {
   EmailShareButton,
@@ -59,7 +59,7 @@ const Container = styled.section`
   /* background: var(--grey); */
   margin-bottom: -1em;
 
-  >h2 {
+  > h2 {
     font-size: 2rem;
     font-weight: 500;
     color: var(--deeper-purple);
@@ -71,7 +71,7 @@ const Buttons = styled.div`
   gap: 1em;
 `;
 
-const ShareButtons = ({props}) => {
+const ShareButtons = ({ tags, message, url }) => {
   const tags = ["ashby", "free", "classes", "gym", "ashbyfitness"];
   const message = `I just got my FREE SEVEN DAY PASS from Fitness Republic Gym in Ashby💪 @ashbyfitness \nWant to join me?\n`;
   const url = "https://www.fitnessrepublic.co.uk/membership";
@@ -86,11 +86,7 @@ const ShareButtons = ({props}) => {
           <EmailIcon size={64} round={true} />
         </EmailShareButton>
 
-        <TwitterShareButton
-          url = {url}
-          title={message}
-          hashtags={tags}
-        >
+        <TwitterShareButton url={url} title={message} hashtags={tags}>
           <TwitterIcon size={64} round={true} />
         </TwitterShareButton>
 
@@ -109,7 +105,7 @@ const ShareButtons = ({props}) => {
       <p></p>
     </Container>
   );
-}
+};
 
 // Icon.propTypes = {
 //   iconName: PropTypes.oneOf([

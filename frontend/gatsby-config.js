@@ -2,7 +2,7 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-const path = require('path');
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
@@ -140,7 +140,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
-        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+        headers: {
+          "/public/**/*.html": [
+            "cache-control: public",
+            "cache-control:  max-age=0",
+            "cache-control: must-revalidate",
+          ],
+          "/sw.js": [
+            "cache-control: public",
+            "cache-control:  max-age=0",
+            "cache-control: must-revalidate",
+          ],
+          "/public/page-data/*": [
+            "cache-control: public",
+            "cache-control:  max-age=0",
+            "cache-control: must-revalidate",
+          ],
+        }, // option to add more headers. `Link` headers are transformed by the below criteria
         allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
