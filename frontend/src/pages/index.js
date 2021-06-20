@@ -121,7 +121,7 @@ const Index = ({ data }) => {
           <TextSection
             title="Welcome Aboard"
             subtitle="Our mission - Fitness, Strength and Balance for Life"
-            body="We are a friendly and caring team, passionate about your fitness, health and wellbeing, situated right at the heart of Ashby and serving nearby areas such as Coalville and Swadlincote. We will give you a warm welcome and support you every step of the way to reach your fitness goals and achieve them at a pace which is comfortable for you. We will work alongside you to create the  right exercise and nutrition programmes for you so that you can relax in the knowledge that you are on track to a fitter, happier, healthier life."
+            body="We are a friendly and caring team, passionate about your fitness, health and wellbeing, situated right at the heart of Ashby and serving nearby areas such as Coalville, Measham and Swadlincote. We will give you a warm welcome and support you every step of the way to reach your fitness goals and achieve them at a pace which is comfortable for you. We will work alongside you to create the  right exercise and nutrition programmes for you so that you can relax in the knowledge that you are on track to a fitter, happier, healthier life."
           />
 
           <Image
