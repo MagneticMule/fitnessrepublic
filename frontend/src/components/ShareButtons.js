@@ -71,7 +71,7 @@ const Buttons = styled.div`
   gap: 1em;
 `;
 
-const ShareButtons = ({ tags, message, url }) => {
+const ShareButtons = ({ props }) => {
   const tags = ["ashby", "free", "classes", "gym", "ashbyfitness"];
   const message = `I just got my FREE SEVEN DAY PASS from Fitness Republic Gym in Ashby💪 @ashbyfitness \nWant to join me?\n`;
   const url = "https://www.fitnessrepublic.co.uk/membership";

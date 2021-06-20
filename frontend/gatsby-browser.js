@@ -6,7 +6,8 @@ exports.wrapPageElement = ({ element, props }) => (
   // including location, data, etc - you don't need to pass it
   <Layout {...props}>{element}</Layout>
 );
-export const onServiceWorkerUpdateReady = () => {
+
+exports.onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(
     `Fitness Republic has been updated ` +
       `Reload to display the latest version?`
