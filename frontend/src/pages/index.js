@@ -438,7 +438,7 @@ export default Index;
 export const query = graphql`
   {
     instagrams: allSanityInstagram(
-      sort: { fields: _createdAt, order: desc }
+      sort: { fields: _createdAt, order: DESC }
       limit: 3
     ) {
       edges {

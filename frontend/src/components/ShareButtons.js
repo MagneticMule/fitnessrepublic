@@ -77,7 +77,7 @@ const ShareButtons = ({ props }) => {
   const url = "https://www.fitnessrepublic.co.uk/membership";
   return (
     <Container>
-      <h2>Share with a friend</h2>
+    <h2>Share with a friend</h2>
       <Buttons>
         <EmailShareButton
           subject="I have a FREE 7 day pass from Fitness Republic, want to join me?"
