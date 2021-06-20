@@ -1,7 +1,5 @@
 /the-team                         /about
 /team                             /about
-/free-pass                        /membership
-/students                         /membership
 /contact                          /
 /whats-the-best-way-to-lose-fat   /blog/post/what-is-the-best-way-to-lose-fat
 /personal-training                /training
@@ -9,31 +7,35 @@
 /shop                             /membership
 /checkout                         /membership
 /my-account                       /membership
+/black-friday-offer               /membership
+/student-black-friday             /membership
+/free-pass                        /membership
+/students                         /membership
+/promotions/*                     /membership
+/product-category/*               /membership
+/subscription-plan-2              /membership
+/promotions/membership/           /membership
+/product-category/membership/     /membership
 /terms-conditions                 /terms
 /zumba                            /classes
 /hiit                             /classes
 /yoga                             /classes
-/black-friday-offer               /membership
-/student-black-friday             /membership
+
 /covid-19-procedures              /
 timetable/event/glute-camp        /classes
 /privacy-policy-and-disclaimer/   /privacy
 /?feature=massage-club            /classes
-/promotions/membership/           /membership
-/product-category/membership/     /membership
+
 /default-redirect-page            /
 /thank-you-cancellation-form      /
 /public-individual-page-2         /
 /hoodie-payment                   /
-/subscription-plan-2              /membership
 /?feature=bodytrax                /classes
 /personal-training/               /training
 /timetable/*                      /classes
 /timetable                        /classes
 /privacy-policy-and-disclaimer/*  /privacy
 /privacy-policy                   /privacy
-/promotions/*                     /membership
-/product-category/*               /membership
 /one-to-one-boxing-boxfit-sessions  /training
 http://fitnessrepublic.co.uk/timetable/event/pilates-2  /membership
 

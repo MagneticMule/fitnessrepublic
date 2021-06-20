@@ -125,10 +125,15 @@ const Index = ({ data }) => {
           />
 
           <Image
-            pic={data.simonsarah.childImageSharp.gatsbyImageData}
-            alt="Simon and Sarah, directors of Fitness Republic, standing in the gym, smiling at the camera"
+            pic={data.groupshot.childImageSharp.gatsbyImageData}
+            alt="The staff of Fitness Republic standing in the gym, smiling at the camera"
             blurb={
-              "Simon and Sarah Pellecchia started Fitness Republic in 2010"
+              <>
+                Clockwise from top left:{" "}
+                <strong>
+                  Simon, Marcus, Ben, Connor, Sarah, Blanka and Jacqui
+                </strong>
+              </>
             }
           />
           <InstagramSection instagrams={data.instagrams} />
@@ -459,7 +464,11 @@ export const query = graphql`
         )
       }
     }
-    simonsarah: file(relativePath: { eq: "simon-sarah-spin.jpg" }) {
+    groupshot: file(
+      relativePath: {
+        eq: "staff/group-shot-fitness-republic-ashby-ashby-home-page.jpg"
+      }
+    ) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
       }
