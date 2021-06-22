@@ -83,7 +83,6 @@ const Navigation = styled.nav`
 
 const Logo = styled.div`
   height: 1.8em;
-
 `;
 
 const Spacer = styled.div`
@@ -98,7 +97,7 @@ const StyledLink = styled((props) => <Link {...props} />)`
     color: var(--orange);
     text-decoration: underline;
     text-underline-offset: 4px;
-    text-decoration-thickness:.15em;
+    text-decoration-thickness: 0.15em;
   }
 `;
 
@@ -113,10 +112,10 @@ const BurgerIcon = styled.button`
   height: fit-content;
   border: 0;
   cursor: pointer;
-  background: rgba(1,1,1,0);
+  background: rgba(1, 1, 1, 0);
   box-shadow: none;
   margin-left: 1em;
-  margin-top: .5em;
+  margin-top: 0.5em;
   span,
   &:before,
   &:after {
@@ -152,11 +151,14 @@ const BurgerIcon = styled.button`
   }
 `;
 
-const Menu = props => {
+const Menu = (props) => {
   const [displayed, setDisplayed] = useState(false);
   return (
     <MenuHolder>
-      <BurgerIcon aria-label="Show Navigation Menu" onClick={() => setDisplayed((displayed) => !displayed)}>
+      <BurgerIcon
+        aria-label="Show Navigation Menu"
+        onClick={() => setDisplayed((displayed) => !displayed)}
+      >
         <span></span>
       </BurgerIcon>
       <MenuContainer>

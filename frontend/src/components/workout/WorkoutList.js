@@ -1,78 +1,81 @@
-import { Link } from 'gatsby';
-import React from 'react';
+import { Link } from "gatsby";
+import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
-import styled from 'styled-components';
-import { BiTime, BiHealth } from 'react-icons/bi';
-
+import styled from "styled-components";
+import { BiTime, BiHealth } from "react-icons/bi";
 
 const Container = styled.section`
   grid-column: ${(props) => (props.pos ? props.pos : "1 / -1")};
-  padding: 1em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4em 1em;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px 100px;
+  gap: 2em 2em;
+  grid-auto-flow: column dense;
 `;
 
-
-function SingleExcercise ( {excercise} ){
-  return(
+function SingleExcercise({ excercise }) {
+  return (
     <div className="">
       <h4>{excercise.excerciseName}</h4>
       <p>Repetitions: {excercise.repetitions}</p>
     </div>
-  )
+  );
 }
 
-function ExcerciseList ( {excercises}) {
-  return(
+function ExcerciseList({ excercises }) {
+  return (
     <>
-    {excercises.map((excercise)=>(
-      <ul>
-        <li><SingleExcercise excercise={excercise}/></li>
-      </ul>
-    ))}
-    </>
-  )
-}
-
-function SingleSet({ set }) {
-  return(
-    <>
-      <h3>{set.setName}</h3>
-      <p><ExcerciseList excercises={set.excercise}/></p>
-    </>
-  )
-}
-
-function SetList({ sets }) {
-  return(
-    <>
-      {sets.map((set)=>(
+      {excercises.map((excercise) => (
         <ul>
-          <li><SingleSet set={set}/></li>
+          <li>
+            <SingleExcercise excercise={excercise} />
+          </li>
         </ul>
       ))}
     </>
-  )
+  );
 }
 
+function SingleSet({ set }) {
+  return (
+    <>
+      <h3>{set.setName}</h3>
+      <p>
+        <ExcerciseList excercises={set.excercise} />
+      </p>
+    </>
+  );
+}
+
+function SetList({ sets }) {
+  return (
+    <>
+      {sets.map((set) => (
+        <ul>
+          <li>
+            <SingleSet set={set} />
+          </li>
+        </ul>
+      ))}
+    </>
+  );
+}
 
 const Card = styled.div`
-  width: 90%;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   border: 1px solid black;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0 auto;
   max-width: 900px;
+  min-width: 360px;
   color: var(--white);
-  background:  linear-gradient(0deg, #202020 0%, #212121 100%);
+  background: linear-gradient(0deg, #202020 0%, #212121 100%);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, .6), 0 8px 32px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 8px 32px rgba(0, 0, 0, 0.25);
   transition: 0.6s;
-
-
 
   @media (min-width: 700px) {
     flex-direction: row;
@@ -83,12 +86,12 @@ const Card = styled.div`
     min-width: 0;
     min-height: 0;
     flex-basis: 300px;
-     vertical-align: middle;
+    vertical-align: middle;
   }
 
   :hover {
-    border: .5px solid orange;
-    background:linear-gradient(0deg, #232020 0%, #551133 100%);
+    border: 0.5px solid orange;
+    background: linear-gradient(0deg, #232020 0%, #551133 100%);
   }
 
   h2.card__title {
@@ -98,22 +101,20 @@ const Card = styled.div`
     color: var(--white);
     margin: 0;
     padding: 0;
-
   }
 
   .card__content {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     flex-basis: 100%;
-    font-size: .8rem;
+    font-size: 0.8rem;
     padding: 1.6rem;
     line-height: 1.6;
-
   }
 
   ul.card__content__excercise-list {
-  padding-top: 1rem;
+    padding-top: 1rem;
     > li {
-      display:inline-block;
+      display: inline-block;
     }
   }
 
@@ -121,7 +122,7 @@ const Card = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    font-size: .76rem;
+    font-size: 0.76rem;
     border-top: 1px solid #665656;
     padding-top: 1rem;
   }
@@ -130,17 +131,16 @@ const Card = styled.div`
     margin: 0;
     display: inline-block;
 
-
-    > .icon{
+    > .icon {
       font-size: 1rem;
       color: orange;
       margin-right: 2px;
       vertical-align: middle;
       bottom: 1px;
-      }
+    }
     > span {
       font-weight: bold;
-  }
+    }
   }
 
   .card__content__workout-difficulty {
@@ -151,10 +151,11 @@ const Card = styled.div`
       vertical-align: middle;
       bottom: 2px;
     }
-    > span {font-weight: bold;}
+    > span {
+      font-weight: bold;
+    }
   }
 `;
-
 
 function SingleWorkout({ workout }) {
   const sets = workout.node.workoutBuilder;
@@ -194,12 +195,14 @@ function SingleWorkout({ workout }) {
   );
 }
 
-export default function WorkoutList({workouts}) {
+export default function WorkoutList({ workouts }) {
   return (
     <Container>
-    {workouts.map((workout)=>(
-        <li><SingleWorkout key={workout.node.id} workout={workout}/></li>
-    ))}
+      {workouts.map((workout) => (
+        <li>
+          <SingleWorkout key={workout.node.id} workout={workout} />
+        </li>
+      ))}
     </Container>
   );
 }

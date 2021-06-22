@@ -4,10 +4,9 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import { FaStar } from "react-icons/fa";
 import { device } from "../styles/DeviceSizes";
 
-
 const Section = styled.section`
   grid-column: 1/-1;
-  margin-bottom:4em;
+  margin-bottom: 4em;
 `;
 
 const ReviewContainer = styled.div`
@@ -82,7 +81,7 @@ const Review = styled.div`
     margin: 0 2em 1em 0;
     border-radius: 20%;
     overflow: hidden;
-    border: 8px solid rgba(255,100,100,.4);
+    border: 8px solid rgba(255, 100, 100, 0.4);
     box-shadow: var(--shadow-low);
     align-self: center;
     margin-top: -130px;
@@ -114,8 +113,8 @@ const ReviewerName = styled.p`
   font-size: 1rem;
   font-weight: 900;
   > span {
-    color:var(--orange);
-    display:block;
+    color: var(--orange);
+    display: block;
     font-style: italic;
     font-style: normal;
     font-weight: 300;
@@ -155,7 +154,8 @@ const SingleReview = ({ review }) => {
       <GatsbyImage
         image={review.headshot}
         className="headshot"
-        alt="{review.reviewer}'s headshot" />
+        alt="{review.reviewer}'s headshot"
+      />
       <ReviewText>{review.text}</ReviewText>
       <ReviewerName>
         {review.reviewer}
@@ -182,7 +182,7 @@ const ReviewSection = ({ reviews }) => {
           <Title>You are in good company</Title>
           <SubTitle>Over 200 five star reviews on Google and Facebook</SubTitle>
         </Header>
-        {reviews.map(review => (
+        {reviews.map((review) => (
           <SingleReview review={review} />
         ))}
       </ReviewContainer>

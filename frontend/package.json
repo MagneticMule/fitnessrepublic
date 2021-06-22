@@ -28,6 +28,7 @@
     "gatsby-source-filesystem": "^3.6.0",
     "gatsby-source-instagram": "^0.9.0",
     "gatsby-source-sanity": "^7.0.4",
+    "gatsby-source-stripe": "^3.2.2",
     "gatsby-transformer-sharp": "^3.6.0",
     "gbimage-bridge": "^0.1.4",
     "normalize.css": "^8.0.1",

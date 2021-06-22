@@ -7,8 +7,6 @@ import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import TextSection from "../components/TextSection";
 import Image from "../components/widgets/Image";
-import ReviewSection from "../components/ReviewSection";
-import InfoBubble from "../components/InfoBubble";
 
 import ImageGallery from "../components/ImageGallery";
 
@@ -43,11 +41,25 @@ const About = ({ data }) => {
           <TextSection
             title="How we started"
             subtitle="a mission to create a new kind of gym"
-            body="We opened Fitness Republic in May 2010. Why? Well, we wanted to open a facility that  fostered the most comfortable, fun, friendly and social environment to train physically and relax mentally. We wanted a gym that felt more like a community than a place to simply 'work out' where you came in, lifted some weights then walked away.
-
-            Creating a facility that encompassed all of our passions about keeping fit & healthy was always going to be a tough nut to crack. With so many facilities out there, we wanted to be different. We wanted to bring you the most comfortable, family friendly facility that wasn’t only just about training, but about lifestyle, wellbeing, friends and the social side of working out.
-
-            At Fitness Republic, we are passionate about helping everyone reach their goals. Our team are a dedicated bunch of fitness and wellbeing professionals, here to guide and support you on your unique fitness journey."
+            body={
+              <>
+                We opened Fitness Republic in May 2010. Why? Well, we wanted to
+                a facility that fostered the most comfortable, fun, friendly and
+                social environment to train physically and relax mentally. We
+                wanted a gym that felt more like a community than a place to
+                simply 'work out' where you came in, lifted some weights then
+                walked away. Creating a facility that encompassed all of our
+                passions about keeping fit & healthy was always going to be a
+                tough nut to crack. With so many facilities out there, we wanted
+                to be different. We wanted to bring you the most comfortable,
+                family friendly facility that wasn’t only just about training,
+                but about lifestyle, wellbeing, friends and the social side of
+                working out. At Fitness Republic, we are passionate about
+                helping everyone reach their goals. Our team are a dedicated
+                bunch of fitness and wellbeing professionals, here to guide and
+                support you on your unique fitness journey.
+              </>
+            }
           />
           <TextSection
             title="All work, all play"
@@ -82,7 +94,7 @@ const About = ({ data }) => {
                 natural light, a small outside area for outdoor training and a
                 small intimate class studio for our ever-expanding class
                 timetable. Very clean and with Covid safe procedures firmly in
-                place, we can’t wait to meet you!{" "}
+                place, we can’t wait to meet you{" "}
               </>
             }
           />
@@ -108,7 +120,10 @@ const About = ({ data }) => {
                     those under the age of 18yrs. Above this age it is highly
                     recommended but not compulsory. This can be booked at our
                     reception or via email{" "}
-                    <a href="mailto:info@fitnessrepublic.co.uk" rel="noopener">
+                    <a
+                      href="mailto:info@fitnessrepublic.co.uk?subject=Book an Induction"
+                      rel="noopener"
+                    >
                       info@fitnessrepublic.co.uk
                     </a>{" "}
                     or by giving us a call{" "}
@@ -143,7 +158,10 @@ const About = ({ data }) => {
                     date. If you need to freeze for longer, please see a member
                     of the fitness team. If you would like to cancel please
                     email us at{" "}
-                    <a href="mailto:info@fitnessrepublic.co.uk" rel="noopener">
+                    <a
+                      href="mailto:info@fitnessrepublic.co.uk?subject=Cancel or Freeze Membership"
+                      rel="noopener"
+                    >
                       info@fitnessrepublic.co.uk
                     </a>{" "}
                     . Please do not cancel any direct debits in place as you may
@@ -253,36 +271,37 @@ const About = ({ data }) => {
 
 export default About;
 
-export const query = graphql`{
-  kathyhead: file(relativePath: {eq: "headshots/katy.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 100, width: 100, layout: FIXED)
+export const query = graphql`
+  {
+    kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 100, width: 100, layout: FIXED)
+      }
+    }
+    blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 152, width: 152, layout: FIXED)
+      }
+    }
+    team: file(relativePath: { eq: "team-group-bw.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    simontreadmill: file(relativePath: { eq: "staff/simon-treadmill.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    jacquibench: file(relativePath: { eq: "staff/jacqui-bench.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    marcusdumbells: file(relativePath: { eq: "staff/marcus-dumbells.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
     }
   }
-  blankahead: file(relativePath: {eq: "headshots/blanka.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 152, width: 152, layout: FIXED)
-    }
-  }
-  team: file(relativePath: {eq: "team-group-bw.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  simontreadmill: file(relativePath: {eq: "staff/simon-treadmill.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  jacquibench: file(relativePath: {eq: "staff/jacqui-bench.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  marcusdumbells: file(relativePath: {eq: "staff/marcus-dumbells.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-}
 `;
