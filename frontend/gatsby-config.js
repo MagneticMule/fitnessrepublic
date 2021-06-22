@@ -29,7 +29,7 @@ module.exports = {
     //     secretKey: process.env.STRIPE_SECRET_KEY,
     //     downloadFiles: true,
     //   },
-    },
+    // },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,

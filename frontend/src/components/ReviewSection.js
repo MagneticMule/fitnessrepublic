@@ -154,7 +154,7 @@ const SingleReview = ({ review }) => {
       <GatsbyImage
         image={review.headshot}
         className="headshot"
-        alt="{review.reviewer}'s headshot"
+        alt={<>{review.reviewer}'s headshot"</>}
       />
       <ReviewText>{review.text}</ReviewText>
       <ReviewerName>
