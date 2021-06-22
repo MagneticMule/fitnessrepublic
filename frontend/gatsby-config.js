@@ -52,13 +52,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
-    // `gatsby-plugin-preload-fonts`,
-    // {
-    //   resolve: `gatsby-plugin-google-fonts`,
-    //   options: {
-    //     fonts: ["Lato:100,300,400,700,900", "Nunito:100,200,300,400,700,900"]
-    //   }
-    // },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
