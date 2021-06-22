@@ -15,23 +15,22 @@ const Privacy = () => {
     <>
       <Helmet
         title="Fitness Republic | Privacy and Cookie Policy"
-        // meta={[
-        //   {
-        //   name:"robots",
-        //    content: "noindex"
-        // },
+        meta={[
+          //   {
+          //   name:"robots",
+          //    content: "noindex"
+          // },
           {
             name: "description",
             content:
-              "This is our privacy policy. We need one because of GDPR. There are many like it but this is ours."
+              "This is our privacy policy. We need one because of GDPR. There are many like it but this is ours.",
           },
           {
             name: "keywords",
-            content: "privacy, cookies"
-          }
+            content: "privacy, cookies",
+          },
         ]}
-      >
-      </Helmet>
+      ></Helmet>
       <Container>
         <DualSection>
           <TextSection
@@ -281,5 +280,3 @@ const Privacy = () => {
 };
 
 export default Privacy;
-
-

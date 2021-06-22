@@ -16,11 +16,11 @@ const Terms = () => {
     <>
       <Helmet
         title="Fitness Republic | Terms and Conditions"
-        // meta={[
-        //   {
-        //     name: "robots",
-        //     content: "noindex",
-        //   },
+        meta={[
+          // {
+          //   name: "robots",
+          //   content: "noindex",
+          // },
           {
             name: "description",
             content:
