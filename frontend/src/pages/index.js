@@ -34,7 +34,7 @@ const Index = ({ data }) => {
           {
             name: "keywords",
             content:
-              "gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire, free pass, free trial, student membership, young people membership, juniors, family run, clean, bright, community, lose weight, build muscle, friendly, personal coaching, personal support",
+              "gyms in ashby, gyms in coalville, gyms in leicesyershire,gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire, free pass, free trial, student membership, young people membership, juniors, family run, clean, bright, community, lose weight, build muscle,personal coaching, personal support",
           },
         ]}
       >
@@ -124,14 +124,16 @@ const Index = ({ data }) => {
             body={
               <>
                 We are a friendly and caring team, passionate about your
-                fitness, health and wellbeing, situated right at the heart of
+                fitness, health and wellbeing, situated right at the heart of{" "}
                 <strong>Ashby</strong> and serving nearby areas such as{" "}
-                <strong>Coalville, Measham and Swadlincote</strong>. We will
-                give you a warm welcome and support you every step of the way to
-                reach your fitness goals and achieve them at a pace which is
-                comfortable for you. We will work alongside you to create the
-                right exercise and nutrition programmes for you so that you can
-                relax in the knowledge that you are on track to a{" "}
+                <strong>Coalville, Measham, Swadlincote</strong>. We are proud
+                to be one of the most respected Gyms in Leicestershire.
+                <hr />
+                We will always give you a warm welcome and support you every
+                step of the way to reach your fitness goals and achieve them at
+                a pace which is comfortable for you. We will work alongside you
+                to create the right exercise and nutrition programmes for you so
+                that you can relax in the knowledge that you are on track to a{" "}
                 <strong>fitter, happier, healthier life.</strong>
               </>
             }

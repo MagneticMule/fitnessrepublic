@@ -10,10 +10,7 @@ import Image from "../components/widgets/Image";
 import Pullquote from "../components/widgets/text/Pullquote";
 import Calender from "../components/ClubrightCalender";
 
-import {
-  FaApple,
-  FaWindows,
-} from "react-icons/fa";
+import { FaApple, FaWindows } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 
 const Classes = ({ data }) => {
@@ -30,7 +27,7 @@ const Classes = ({ data }) => {
           {
             name: "keywords",
             content:
-              "fitness classes, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, instructor, HIIT, ballet, boxing, boxfit",
+              "fitness classes, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, instructor, HIIT, ballet, boxing, boxfit, fitness timetable",
           },
         ]}
       >
@@ -315,31 +312,32 @@ const Classes = ({ data }) => {
 
 export default Classes;
 
-export const query = graphql`{
-  kathyhead: file(relativePath: {eq: "headshots/katy.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 100, width: 100, layout: FIXED)
+export const query = graphql`
+  {
+    kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 100, width: 100, layout: FIXED)
+      }
+    }
+    blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 152, width: 152, layout: FIXED)
+      }
+    }
+    timetable: file(relativePath: { eq: "classtimetable.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    fitnessclass1: file(relativePath: { eq: "fitness-class-1.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    fitnessclass2: file(relativePath: { eq: "lady-man-boxfit.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
     }
   }
-  blankahead: file(relativePath: {eq: "headshots/blanka.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 152, width: 152, layout: FIXED)
-    }
-  }
-  timetable: file(relativePath: {eq: "classtimetable.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  fitnessclass1: file(relativePath: {eq: "fitness-class-1.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  fitnessclass2: file(relativePath: {eq: "lady-man-boxfit.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-}
 `;

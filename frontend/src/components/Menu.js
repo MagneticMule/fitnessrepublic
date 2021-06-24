@@ -9,7 +9,7 @@ import { device } from "../styles/DeviceSizes";
 
 const BackgroundCol = "rgba(255, 255, 255, 0.85)";
 
-const MenuHolder = styled.div`
+const MenuHolder = styled.nav`
   padding: 1em 0;
   background: ${BackgroundCol};
   backdrop-filter: blur(16px);
