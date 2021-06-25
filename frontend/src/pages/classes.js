@@ -61,7 +61,7 @@ const Classes = ({ data }) => {
           <TextSection
             title="Let's Get Started"
             subtitle="From AB's through Core to Zumba"
-            body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
+            body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of workout training activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT fitness classes, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
           />
           <Image
             pic={data.timetable.childImageSharp.gatsbyImageData}
@@ -132,12 +132,13 @@ const Classes = ({ data }) => {
                     plus increase flexibility.
                   </li>
                   <hr />
-                  {/* <li>
-                  <strong>HIIT</strong> A High Intensity bodyweight workout,
-                  involving repeated bouts of high intensity, followed by
-                  various recovery times. A tough Fat Burning Workout!
-                </li>
-                <hr /> */}
+                  <li>
+                    <strong>HIIT Workout</strong> A High Intensity bodyweight
+                    workout, involving repeated bouts of high intensity,
+                    followed by various recovery times. A tough Fat Burning
+                    Workout!
+                  </li>
+                  <hr />
                   <li>
                     <strong>Glute Camp</strong> A fun workout focusing on the
                     glutes and quads. <i>Shape and sculpt those bums!</i>

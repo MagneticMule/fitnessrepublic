@@ -11,6 +11,8 @@ module.exports = {
     author: "Thomas Sweeney",
     description:
       "Group Fitness Classes from ZUMBA to Yoga. Personal Training in a well equiped gym hosted in an immaculate, covid safe friendly environment in the heart of Ashby De La Zouch",
+    image: "/images/logo-square.jpg",
+    twitterUsername: "@ashbyfitness",
   },
   // cache will have to be manually cleared via 'gatsby clean'
   flags: { PRESERVE_WEBPACK_CACHE: true },
@@ -119,6 +121,36 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "UA-45461666-1",
+
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: true,
+
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+
+        // Specify optional GTM environment details.
+        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        dataLayerName: "YOUR_DATA_LAYER_NAME",
+
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
@@ -126,15 +158,11 @@ module.exports = {
           // Setting this parameter is optional
           anonymize: true,
         },
-        // googleTagManager: {
-        //   trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
-        //   cookieName: "gatsby-gdpr-google-tagmanager", // default
-        //   dataLayerName: "dataLayer" // default
-        // },
-        // facebookPixel: {
-        //   pixelId: "YOUR_FACEBOOK_PIXEL_ID"
-        // },
-        // Defines the environments where the tracking should be available  - default is ["production"]
+        googleTagManager: {
+          trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
+          cookieName: "gatsby-gdpr-google-tagmanager", // default
+          defaultDataLayer: { platform: "gatsby" },
+        },
         environments: ["production", "development"],
       },
     },

@@ -12,6 +12,7 @@ import Image from "../components/widgets/Image";
 import ShareButtons from "../components/ShareButtons";
 import Pullquote from "../components/widgets/text/Pullquote";
 
+import SEO from "../components/Seo";
 
 const Pass = ({ data, name }) => {
   return (
@@ -55,13 +56,13 @@ const Pass = ({ data, name }) => {
             body={
               <>
                 We will be in touch soon, usually via text message to set up a
-                date and time for you to come into the gym for an induction. During the introduction you
-                will learn how to get the most out of our equipment so that you
-                can exercise safely and with confidence. We will talk you
-                through our Covid safety procedures and demonstrate how we keep
-                our gym clean and safe for all our customers. Your instructor
-                will guide you at your pace, answer all the questions which you
-                may have and help you on your way to
+                date and time for you to come into the gym for an induction.
+                During the introduction you will learn how to get the most out
+                of our equipment so that you can exercise safely and with
+                confidence. We will talk you through our Covid safety procedures
+                and demonstrate how we keep our gym clean and safe for all our
+                customers. Your instructor will guide you at your pace, answer
+                all the questions which you may have and help you on your way to
                 <strong> exercise safely and confidently</strong>.
               </>
             }
@@ -123,14 +124,16 @@ export default Pass;
 
 export const query = graphql`
   {
-    induction: file(relativePath: {
-        eq: "gym/simon-induction-fitness-reoublic-gym-ashby.jpg"})
-        {
+    induction: file(
+      relativePath: { eq: "gym/simon-induction-fitness-reoublic-gym-ashby.jpg" }
+    ) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
       }
     }
-    staff: file(relativePath: { eq: "staff/group-shot-fitness-republic-gym-ashby.jpg" }) {
+    staff: file(
+      relativePath: { eq: "staff/group-shot-fitness-republic-gym-ashby.jpg" }
+    ) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
       }
