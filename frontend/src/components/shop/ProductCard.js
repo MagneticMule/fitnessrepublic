@@ -19,7 +19,7 @@ const imageStyle = {
   width: "300px",
   height: "300px",
   border: "1px solid black",
-  objectFit: "contain",
+  objectFit: "cover",
 };
 
 const buttonStyles = {
