@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import React from "react";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
-
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
@@ -62,8 +61,8 @@ const Index = ({ data }) => {
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 52.7475061,
-              "longitude": -1.4705644
+              "latitude": 52.74764045802777,
+              "longitude": -1.470486230108982
             },
             "openingHoursSpecification": [{
               "@type": "OpeningHoursSpecification",

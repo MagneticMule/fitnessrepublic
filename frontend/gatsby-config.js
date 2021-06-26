@@ -137,9 +137,9 @@ module.exports = {
         defaultDataLayer: { platform: "gatsby" },
 
         // Specify optional GTM environment details.
-        gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
-        dataLayerName: "YOUR_DATA_LAYER_NAME",
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
 
         // Name of the event that is triggered
         // on every Gatsby route change.
@@ -192,6 +192,14 @@ module.exports = {
         mergeCachingHeaders: true, // boolean to turn off the default caching headers
         transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Price"],
+        secretKey: process.env.GATSBY_STRIPE_SECRET_KEY,
+        downloadFiles: true,
       },
     },
     {
