@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import getStripe from "../../utils/stripejs";
 const cardStyles = {
+  textAlign: "center",
   display: "flex",
   flexDirection: "column",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
   alignItems: "flex-start",
   padding: "2rem",
   marginBottom: "1rem",
@@ -15,12 +16,14 @@ const cardStyles = {
 
 const imageStyle = {
   borderRadius: "16px",
-  maxWidth: "300px",
+  width: "300px",
+  minHeight: "300px",
+  border: "1px solid black",
 };
 
 const buttonStyles = {
   display: "block",
-  fontSize: "1.333rem",
+  fontSize: "1rem",
   textAlign: "center",
   color: "#000",
   padding: "12px",
@@ -29,6 +32,7 @@ const buttonStyles = {
   borderRadius: "6px",
   letterSpacing: "1.5px",
   cursor: "pointer",
+  width: "100%",
 };
 const buttonDisabledStyles = {
   opacity: "0.5",
@@ -67,9 +71,10 @@ const ProductCard = ({ product }) => {
       <form onSubmit={handleSubmit}>
         <fieldset style={{ border: "none" }}>
           <img style={imageStyle} src={product.images[0]} />
-          <h5>{product.description}</h5>
+          <hr />
+          <strong>{product.description}</strong>
           <legend>
-            <h5>{product.name}</h5>
+            <strong>{product.name}</strong>
           </legend>
           <label>
             Price{" "}
@@ -90,7 +95,7 @@ const ProductCard = ({ product }) => {
               : buttonStyles
           }
         >
-          BUY ME
+          BUY
         </button>
       </form>
     </div>
