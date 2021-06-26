@@ -17,7 +17,7 @@ const cardStyles = {
 const imageStyle = {
   borderRadius: "16px",
   width: "300px",
-  minHeight: "300px",
+  height: "300px",
   border: "1px solid black",
 };
 
@@ -25,14 +25,20 @@ const buttonStyles = {
   display: "block",
   fontSize: "1rem",
   textAlign: "center",
-  color: "#000",
   padding: "12px",
   boxShadow: "2px 5px 10px rgba(0,0,0,.1)",
-  backgroundColor: "rgb(255, 178, 56)",
-  borderRadius: "6px",
+  backgroundColor: "var(--orange)",
+  fontWeight: "bold",
+  color: "var(--white)",
+  borderRadius: "32px",
   letterSpacing: "1.5px",
   cursor: "pointer",
   width: "100%",
+  padding: "1rem 0",
+};
+
+const paragraphStyles = {
+  maxWidth: "300px",
 };
 const buttonDisabledStyles = {
   opacity: "0.5",
@@ -72,9 +78,11 @@ const ProductCard = ({ product }) => {
         <fieldset style={{ border: "none" }}>
           <img style={imageStyle} src={product.images[0]} />
           <hr />
-          <strong>{product.description}</strong>
+          <p style={paragraphStyles}>{product.description}</p>
           <legend>
-            <strong>{product.name}</strong>
+            <p style={paragraphStyles}>
+              <strong>{product.name}</strong>
+            </p>
           </legend>
           <label>
             Price{" "}
@@ -87,6 +95,7 @@ const ProductCard = ({ product }) => {
             </select>
           </label>
         </fieldset>
+        <hr />
         <button
           disabled={loading}
           style={
@@ -95,7 +104,7 @@ const ProductCard = ({ product }) => {
               : buttonStyles
           }
         >
-          BUY
+          BUY NOW
         </button>
       </form>
     </div>
