@@ -7,7 +7,7 @@ import FRlogo from "../assets/images/svg/fitness-republic-logo-header.svg";
 
 import { device } from "../styles/DeviceSizes";
 
-const BackgroundCol = "rgba(255, 255, 255, 0.85)";
+const BackgroundCol = "rgba(255, 255, 255, 0.8)";
 
 const MenuHolder = styled.nav`
   padding: 1em 0;
