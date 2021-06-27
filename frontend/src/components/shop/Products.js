@@ -6,7 +6,7 @@ const containerStyles = {
   display: "flex",
   flexDirection: "row",
   flexWrap: "wrap",
-  justifyContent: "space-between",
+  justifyContent: "flex-start",
   gap: "1em,1em",
 };
 const Products = () => {
