@@ -1,35 +1,35 @@
-import { graphql } from 'gatsby';
+import { graphql } from "gatsby";
 import { Link } from "gatsby";
-import React from 'react';
-import Helmet from 'react-helmet';
-import Header from '../components/Header.js';
-import MembershipSection from '../components/MembershipSection.js';
-import ReviewSection from '../components/ReviewSection.js';
-import TextSection from '../components/TextSection.js';
-import Image from '../components/widgets/Image.js';
-import IntroText from '../components/widgets/text/IntroText.js';
-import Container from '../styles/ContainerStyle';
+import React from "react";
+import Helmet from "react-helmet";
+import Header from "../components/Header.js";
+import MembershipSection from "../components/MembershipSection.js";
+import ReviewSection from "../components/ReviewSection.js";
+import TextSection from "../components/TextSection.js";
+import Image from "../components/widgets/Image.js";
+import IntroText from "../components/widgets/text/IntroText.js";
+import Container from "../styles/ContainerStyle";
 import { DualSection } from "../styles/GridStyles";
-import ImageGallery from '../components/ImageGallery';
-import FormSevenDayPass from '../components/FormSevenDayPass';
+import ImageGallery from "../components/ImageGallery";
+import FormSevenDayPass from "../components/FormSevenDayPass";
 
-
-const Membership = ({data}) =>{
+const Membership = ({ data }) => {
   console.log(data.file);
-    return <>
+  return (
+    <>
       <Helmet
-        title="Fitness Republic Gym| Membership Plans"
+        title="Menership Plans | Fitness Republic Gym"
         meta={[
           {
             name: "description",
             content:
-              "Try us first with our Free Seven Day Pass. Monthly, annual and family memberships available"
+              "Try us first with our Free Seven Day Pass. Monthly, annual and family memberships available",
           },
           {
             name: "keywords",
             content:
-              "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low price"
-          }
+              "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual, low price",
+          },
         ]}
       ></Helmet>
       <Header
@@ -72,15 +72,14 @@ const Membership = ({data}) =>{
                   </li>
                   <li>
                     <strong>Single Annual</strong> A massive saving for those
-                    who know they are in the fitness journey for the long
-                    haul. Pay a one off fee and have access to the gym for 12
-                    months.
+                    who know they are in the fitness journey for the long haul.
+                    Pay a one off fee and have access to the gym for 12 months.
                   </li>
                   <li>
                     <strong>Student Monthly</strong> We want to encourage the
-                    whole family to exercise and be part of Fitness Republic
-                    our community. This is why we support training from the
-                    age of 14 with our Student Membership. <b>Terms Apply.</b>
+                    whole family to exercise and be part of Fitness Republic our
+                    community. This is why we support training from the age of
+                    14 with our Student Membership. <b>Terms Apply.</b>
                   </li>
                 </ul>
               </>
@@ -90,8 +89,7 @@ const Membership = ({data}) =>{
             text={
               <>
                 Sound Good? <br />
-                Let's get you signed up and started on your new fitness
-                journey.
+                Let's get you signed up and started on your new fitness journey.
               </>
             }
           />
@@ -116,7 +114,7 @@ const Membership = ({data}) =>{
                 ),
                 description:
                   "Full access to the Gym facilities and fitness classes for one person.",
-                paymethod: "Payable once per month via Direct Debit"
+                paymethod: "Payable once per month via Direct Debit",
               },
               {
                 key: 2,
@@ -134,7 +132,7 @@ const Membership = ({data}) =>{
                 save: <>Save £95</>,
                 description:
                   "Full access to the Gym facilities and fitness classes for one person.",
-                paymethod: "Payable in one installment at the gym or online"
+                paymethod: "Payable in one installment at the gym or online",
               },
               {
                 key: 3,
@@ -151,7 +149,7 @@ const Membership = ({data}) =>{
                 ),
                 description:
                   "Full access to the Gym facilities and fitness classes for two people.",
-                paymethod: "Payable once per month via Direct Debit"
+                paymethod: "Payable once per month via Direct Debit",
               },
               {
                 key: 4,
@@ -168,8 +166,8 @@ const Membership = ({data}) =>{
                 ),
                 description:
                   "Full access to the Gym facilities and fitness classes for one student.",
-                paymethod: "Payable once per month via Direct Debit"
-              }
+                paymethod: "Payable once per month via Direct Debit",
+              },
             ]}
           />
           <ReviewSection
@@ -184,15 +182,15 @@ const Membership = ({data}) =>{
                     never been to a gym like it. I always used to feel
                     uncomfortable in the gym, being a larger lady,{" "}
                     <strong>
-                      but at FR there really is a range of people of all
-                      shapes & sizes from al walks of life;
+                      but at FR there really is a range of people of all shapes
+                      & sizes from al walks of life;
                     </strong>{" "}
                     this helps me to feel comfortable to workout properly.
                   </>
                 ),
 
                 reviewer: "Zoe",
-                origin: "Facebook"
+                origin: "Facebook",
               },
               {
                 key: 2,
@@ -200,14 +198,14 @@ const Membership = ({data}) =>{
                 headshot: data.sergiohead.childImageSharp.gatsbyImageData,
                 text: (
                   <>
-                    The best gym in Ashby, for sure! Friendly team, nice,
-                    clean and very safe when we talk about covid!
+                    The best gym in Ashby, for sure! Friendly team, nice, clean
+                    and very safe when we talk about covid!
                   </>
                 ),
 
                 reviewer: "Sérgio Oliveira Souza",
-                origin: "Facebook"
-              }
+                origin: "Facebook",
+              },
             ]}
           />
           <TextSection
@@ -217,20 +215,20 @@ const Membership = ({data}) =>{
               <>
                 <ul>
                   <li>
-                    <strong>Gym Access</strong> Full access to our state of
-                    the art gym from 5.30AM - 9.00PM Weekdays
+                    <strong>Gym Access</strong> Full access to our state of the
+                    art gym from 5.30AM - 9.00PM Weekdays
                   </li>
                   <li>
                     <strong>Access to all fitness classes</strong> We offer a
-                    diverse mixture of classes for every fitness level. You
-                    can attend at the gym, join us online and even catch up on
-                    the ones you missed on our faceboook group.
+                    diverse mixture of classes for every fitness level. You can
+                    attend at the gym, join us online and even catch up on the
+                    ones you missed on our faceboook group.
                   </li>
                   <li>
-                    <strong>Personalized training plan</strong> One of our
-                    team will work with you to devise a personalized training
-                    plan for you. As your fitness evolves we will revaluate
-                    your plan to push you forward towards your fitness goals.
+                    <strong>Personalized training plan</strong> One of our team
+                    will work with you to devise a personalized training plan
+                    for you. As your fitness evolves we will revaluate your plan
+                    to push you forward towards your fitness goals.
                   </li>
                 </ul>
               </>
@@ -247,57 +245,57 @@ const Membership = ({data}) =>{
             subtitle="Need further support on your fitness journey?"
             body={
               <>
-                Once you have your membership sorted out then have a look at
-                one of our{" "}
-                <Link to="/training/"> personal training options</Link>. Or
-                simple ask one of the team when you are at the gym.
+                Once you have your membership sorted out then have a look at one
+                of our <Link to="/training/"> personal training options</Link>.
+                Or simple ask one of the team when you are at the gym.
               </>
             }
           />
           {/* <InfoBubble /> */}
         </DualSection>
       </Container>
-    </>;
-  }
-
+    </>
+  );
+};
 
 export default Membership;
 
-export const query = graphql`{
-  zoehead: file(relativePath: {eq: "headshots/zoe.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 120, width: 120, layout: FIXED)
+export const query = graphql`
+  {
+    zoehead: file(relativePath: { eq: "headshots/zoe.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 120, width: 120, layout: FIXED)
+      }
+    }
+    sergiohead: file(relativePath: { eq: "headshots/sergio.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 120, width: 120, layout: FIXED)
+      }
+    }
+    file: file(relativePath: { eq: "simon-with-client.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    topdown: file(relativePath: { eq: "gym/gym-topdown-landscape.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    lowdown: file(relativePath: { eq: "man-running-treadmill.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    dumbells: file(relativePath: { eq: "gym/simon-client-landscape.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    side2: file(relativePath: { eq: "gym/simon-demonstrating-landscape.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
     }
   }
-  sergiohead: file(relativePath: {eq: "headshots/sergio.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 120, width: 120, layout: FIXED)
-    }
-  }
-  file: file(relativePath: {eq: "simon-with-client.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  topdown: file(relativePath: {eq: "gym/gym-topdown-landscape.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  lowdown: file(relativePath: {eq: "man-running-treadmill.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  dumbells: file(relativePath: {eq: "gym/simon-client-landscape.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  side2: file(relativePath: {eq: "gym/simon-demonstrating-landscape.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-}
 `;

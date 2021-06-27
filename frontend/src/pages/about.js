@@ -14,7 +14,7 @@ const About = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic Gym | All about us"
+        title="All About Us | Fitness Republic Ashby"
         meta={[
           {
             name: "description",
