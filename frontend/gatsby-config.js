@@ -155,7 +155,7 @@ module.exports = {
           cookieName: "gatsby-gdpr-google-tagmanager", // default
           defaultDataLayer: { platform: "gatsby" },
         },
-        environments: ["production", "development"],
+        environments: ["production"],
       },
     },
     {
