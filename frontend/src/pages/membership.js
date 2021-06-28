@@ -18,7 +18,7 @@ const Membership = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Menership Plans | Fitness Republic Gym"
+        title="Membership Plans | Fitness Republic Gym"
         meta={[
           {
             name: "description",
