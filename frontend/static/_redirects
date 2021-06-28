@@ -41,3 +41,5 @@ http://fitnessrepublic.co.uk/timetable/event/pilates-2  /membership
 
  /wp-content/*                    /
 http://fitnessrepublic.co.uk/timetable/*  /classes
+
+/member-logout                    /

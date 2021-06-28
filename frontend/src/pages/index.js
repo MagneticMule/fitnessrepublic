@@ -60,6 +60,18 @@ const Index = ({ data }) => {
               "postalCode": "LE65 1AH",
               "addressCountry": "GB"
             },
+            "review": {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Kelvin Greenhow"
+              }
+            },
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": 52.74764045802777,
