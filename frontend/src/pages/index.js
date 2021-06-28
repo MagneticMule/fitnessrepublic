@@ -44,7 +44,7 @@ const Index = ({ data }) => {
             "@type": "ExerciseGym",
             "name": "Fitness Republic",
             "image": "https://www.fitnessrepublic.co.uk/static/1b4debd47f40e4b7ab84999c8f9e6a92/79c11/group-shot-fitness-republic-ashby-ashby-home-page.webp",
-            "@id": "FR",
+            "@id": "https://www.fitnessrepublic.co.uk",
             "url": "https://www.fitnessrepublic.co.uk",
             "priceRange" : "££",
             "contactPoint": {
