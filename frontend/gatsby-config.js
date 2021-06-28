@@ -79,17 +79,25 @@ module.exports = {
       options: {
         host: "https://www.fitnessrepublic.co.uk",
         sitemap: "https://www.fitnessrepublic.co.uk/sitemap.xml",
-        env: {
-          production: {
-            policy: [
-              {
-                userAgent: "*",
-                allow: "/",
-                // disallow: ["/404", "/privacy", "/terms"],
-              },
-            ],
-          },
-        },
+        exclude: ["/404", "/privacy", "/terms", "/thank-you", "/thanks"],
+        createLinkInHead: true,
+        // env: {
+        //   production: {
+        //     policy: [
+        //       {
+        //         userAgent: "*",
+        //         allow: "/",
+        //         disallow: [
+        //           "/404",
+        //           "/privacy",
+        //           "/terms",
+        //           "/thank-you",
+        //           "/thanks",
+        //         ],
+        //       },
+        //     ],
+        //   },
+        // },
       },
     },
     "gatsby-plugin-react-helmet",
