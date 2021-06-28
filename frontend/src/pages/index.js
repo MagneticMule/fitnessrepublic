@@ -46,6 +46,7 @@ const Index = ({ data }) => {
             "image": "https://www.fitnessrepublic.co.uk/static/1b4debd47f40e4b7ab84999c8f9e6a92/79c11/group-shot-fitness-republic-ashby-ashby-home-page.webp",
             "@id": "FR",
             "url": "https://www.fitnessrepublic.co.uk",
+            "priceRange" : "££",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "01530 413330",
