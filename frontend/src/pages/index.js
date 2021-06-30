@@ -62,6 +62,7 @@ const Index = ({ data }) => {
             },
             "review": {
               "@type": "Review",
+              "reviewBody": "Happy, friendly, family run gym with excellent equipment and facilities. Instructors have a great knowledge of fitness training and help with your personal needs for a fit and healthy body.",
               "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "5",
