@@ -19,6 +19,10 @@ const Shop = ({ data }) => {
               "We write articles on fitness, diet control, weight loss and training all while promoting good health.",
           },
           {
+            name: "robots",
+            content: "noindex",
+          },
+          {
             name: "keywords",
             content:
               "hoodies, appharel, clothes, memberships, sportswear, merch",

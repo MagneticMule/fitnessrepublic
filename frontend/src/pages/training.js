@@ -29,6 +29,10 @@ const Training = ({ data }) => {
               "Working with a personal trainer here at fitness republic could be the perfect way to kickstart your fitness journey.",
           },
           {
+            name: "robots",
+            content: "noindex",
+          },
+          {
             name: "keywords",
             content:
               "personal trainer, personal training, support, advice, nutrition, workout plan, online, gym based, personal instructor, gains, gym instractor, plans, transformation, lose weight, weight loss, bulk up",

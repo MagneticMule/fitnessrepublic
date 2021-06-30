@@ -21,6 +21,10 @@ const Workout = ({ data }) => {
               "A selection of workout plans including videos and instructions for you to carry out at our gym or at home",
           },
           {
+            name: "robots",
+            content: "noindex",
+          },
+          {
             name: "keywords",
             content:
               "workout, online workout, weight loss, lose weight, calorie control,fitness, weight lifting, cardio excercise, excercises, excersie plan, workout plan, lessons",

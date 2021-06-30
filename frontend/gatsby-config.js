@@ -79,7 +79,16 @@ module.exports = {
       options: {
         host: "https://www.fitnessrepublic.co.uk",
         sitemap: "https://www.fitnessrepublic.co.uk/sitemap.xml",
-        exclude: ["/404", "/privacy", "/terms", "/order-complete", "/thanks"],
+        exclude: [
+          "/404",
+          "/privacy",
+          "/terms",
+          "/order-complete",
+          "/thanks",
+          "/shop",
+          "/workout",
+          "/workout/*",
+        ],
         createLinkInHead: true,
         // env: {
         //   production: {
