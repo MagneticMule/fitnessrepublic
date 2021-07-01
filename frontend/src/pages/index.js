@@ -28,12 +28,12 @@ const Index = ({ data }) => {
           {
             name: "description",
             content:
-              "Want to feel good this summer? At Fitness Republic Ashby we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
+              "Over 10 years keeping Ashby fit and healthy! At Fitness Republic Gym we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
           },
           {
             name: "keywords",
             content:
-              "gyms in ashby, gyms in coalville, gyms in leicesyershire,gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire, free pass, free trial, student membership, young people membership, juniors, family run, clean, bright, community, lose weight, build muscle,personal coaching, personal support",
+              "gym in ashby, gym in coalville, gym in leicestershire, gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire",
           },
         ]}
       >
@@ -138,14 +138,14 @@ const Index = ({ data }) => {
               <>
                 We are a friendly and caring team, passionate about your
                 fitness, health and wellbeing, situated right at the heart of{" "}
-                <strong>Ashby</strong> and serving nearby areas such as{" "}
-                <strong>Coalville, Measham, Swadlincote</strong>. We are proud
-                to be one of the most respected Gyms in Leicestershire. We will
-                always give you a warm welcome and support you every step of the
-                way to reach your fitness goals and achieve them at a pace which
-                is comfortable for you. We will work alongside you to create the
-                right exercise and nutrition programmes for you so that you can
-                relax in the knowledge that you are on track to a{" "}
+                <strong>Ashby De La Zouch</strong> and serving nearby areas such
+                as <strong>Coalville, Measham, Swadlincote</strong>. We are
+                proud to be one of the most respected Gyms in Leicestershire. We
+                will always give you a warm welcome and support you every step
+                of the way to reach your fitness goals and achieve them at a
+                pace which is comfortable for you. We will work alongside you to
+                create the right exercise and nutrition programmes for you so
+                that you can relax in the knowledge that you are on track to a{" "}
                 <strong>fitter, happier, healthier life.</strong>
               </>
             }
@@ -207,9 +207,9 @@ const Index = ({ data }) => {
                     01530 413330
                   </a>
                 </strong>{" "}
-                or simply pop into the gym anytime between{" "}
-                <strong>7.00 AM and 8.00 PM</strong> for an informal chat with
-                one of the team.
+                or simply pop into our gym in Market Street, Ashby anytime
+                between <strong>7.00 AM and 8.00 PM</strong> for an informal
+                chat with one of the team.
               </>
             }
           />
@@ -254,7 +254,14 @@ const Index = ({ data }) => {
                 5.30AM to 9.00PM. This will give you time to experience
                 everything our community has to offer. If you still have
                 questions then one of our team is always at hand. When you are
-                ready, have a look at our membership plans.
+                ready,{" "}
+                <Link
+                  to="/membership"
+                  aria-label="Takes you to our membership page"
+                >
+                  have a look at our membership plans
+                </Link>
+                .
               </>
             }
           />
@@ -270,10 +277,11 @@ const Index = ({ data }) => {
               <>
                 We are positive that once you have experienced everything our
                 gym has to offer that you will be keen to become part of our
-                almost 500 strong fitness community. Enjoy our extensive
-                selection of fitness classes and well equiped gym for the low
-                monthly cost of <strong>£32.99</strong>. Or pay annually and{" "}
-                <strong>save £95</strong> on monthly membership.
+                almost 500 strong fitness community here in Ashby De La Zouch.
+                Enjoy our extensive selection of fitness classes and well
+                equiped gym for the low monthly cost of <strong>£32.99</strong>.
+                Or pay annually and <strong>save £95</strong> on monthly
+                membership.
               </>
             }
           />
