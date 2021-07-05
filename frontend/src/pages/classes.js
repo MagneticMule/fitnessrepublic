@@ -22,12 +22,12 @@ const Classes = ({ data }) => {
           {
             name: "description",
             content:
-              "We offer gym based and online classes in Zumba, HIIT, Core, Yoga, Ballet Be Fit, Cambat HIIT, Pilates, Stretch and Relax, Zumba, Zumba Toning and more.",
+              "We offer gym based and online classes in Zumba, HIIT, Core, Yoga, Ballet Be Fit, Combat HIIT, Pilates, Stretch and Relax, Zumba, Zumba Toning and more.",
           },
           {
             name: "keywords",
             content:
-              "fitness classes, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, instructor, HIIT, ballet, boxing, boxfit, fitness timetable",
+              "fitness classes, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
           },
         ]}
       >
@@ -43,7 +43,7 @@ const Classes = ({ data }) => {
             Fitness Classes <span>For Everyone</span>
           </>
         }
-        subtitle={"Group fitness training delivered both in-gym and online"}
+        subtitle={"Fun Filled Fitness classes delivered both in-gym and online"}
       />
       <Container>
         <DualSection>

@@ -18,7 +18,7 @@ const Membership = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Membership Plans | Fitness Republic Gym"
+        title="Gym Membership Plans in Ashby | Fitness Republic Gym"
         meta={[
           {
             name: "description",
