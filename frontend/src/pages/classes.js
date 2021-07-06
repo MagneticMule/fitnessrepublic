@@ -43,7 +43,7 @@ const Classes = ({ data }) => {
             Fitness Classes <span>For Everyone</span>
           </>
         }
-        subtitle={"Fun Filled Fitness classes delivered in Ashby and online"}
+        subtitle={"Fun Filled Fitness classes in Ashby and online"}
       />
       <Container>
         <DualSection>
@@ -99,8 +99,9 @@ const Classes = ({ data }) => {
                   <hr />
                   <li>
                     <strong>Bootcamp</strong> Bootcamps are fun, full body
-                    workouts, outdoor at the local Bath Grounds. The content
-                    will vary between circuits, HIIT, ab’s & glutes.{" "}
+                    outdoor fitness classes held at the local bathgrounds in
+                    Ashby De La Zouch. The content will vary between circuits,
+                    HIIT, ab’s & glutes.{" "}
                     <i>
                       Dependant on the weather but a drop of rain doesn’t stop
                       us!
@@ -110,7 +111,9 @@ const Classes = ({ data }) => {
                   <li>
                     <strong>Boxfit</strong> A high energy workout that features
                     boxing pad work drills. Fat burning and fitness driven! Your
-                    own gloves are required for this class.
+                    own gloves are required for this class and can be purchased
+                    from any good sports retailer or directly from our gym in
+                    Ashby.
                   </li>
                   <hr />
                   {/* <li>
