@@ -14,7 +14,6 @@ import ImageGallery from "../components/ImageGallery";
 import FormSevenDayPass from "../components/FormSevenDayPass";
 
 const Membership = ({ data }) => {
-  console.log(data.file);
   return (
     <>
       <Helmet
@@ -46,7 +45,20 @@ const Membership = ({ data }) => {
             pos={"2/5"}
             title="Seven Day Free Pass"
             subtitle="Your first step in a new fitness journey"
-            body="We are confident that once you come to our gym you will feel right at home. We are so confident that we want you to try us out before you commit. You can try the Gym, Classes, and our Personal Training service all FREE. If you feel comfortable to train on your own please feel free to pop in at anytime, we will just ask you to fill in a medical questionnaire before you start training. To get started with your seven day pass just fill out the form below with your Name, Email and Phone Number so we can get back in contact with you as soon as possible."
+            body={
+              <>
+                We are confident that once you come to our gym you will feel
+                right at home. We are so confident that we want you to try us
+                out before you commit. You can try the Gym, Classes, and our
+                Personal Training service all FREE for seven days. If you feel
+                comfortable to train on your own please feel free to pop in at
+                anytime, we will just ask you to fill in a simple medical
+                questionnaire before you start training. Ready to go? To get
+                started with your seven day pass just fill out the form below
+                with your Name, Email and Phone Number so we can get back in
+                contact with you as soon as possible.
+              </>
+            }
           />
           <FormSevenDayPass />
 

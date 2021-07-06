@@ -17,12 +17,12 @@ const Classes = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Classes in Ashby and online | Fitness Republic Gym"
+        title="Fitness Classes in Ashby and Online | Fitness Republic Gym"
         meta={[
           {
             name: "description",
             content:
-              "We offer gym based and online classes in Zumba, HIIT, Core, Yoga, Ballet Be Fit, Combat HIIT, Pilates, Stretch and Relax, Zumba, Zumba Toning and more.",
+              "We offer classes in our Gym in Ashby and online via video.  Yoga Classes, HIIT, Core, Ballet Be Fit, Pilates, Zumba, Zumba Toning and more.",
           },
           {
             name: "keywords",
@@ -43,7 +43,7 @@ const Classes = ({ data }) => {
             Fitness Classes <span>For Everyone</span>
           </>
         }
-        subtitle={"Fun Filled Fitness classes delivered both in-gym and online"}
+        subtitle={"Fun Filled Fitness classes delivered in Ashby and online"}
       />
       <Container>
         <DualSection>
@@ -185,8 +185,8 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Yoga</strong> In this class the basic, unconditional
-                    yoga postures are practised to align, strengthen & promote
+                    <strong>Yoga Classes</strong> Basic, unconditional yoga
+                    postures are practised to align, strengthen & promote
                     flexibility in the body. Breathing techniques & meditation
                     are also integrated. This class is suitable for all levels &
                     will leave you with a sense of calm & well being.
@@ -256,7 +256,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://apps.apple.com/gb/app/zoom-cloud-meetings/id546505307"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Takes you to the Zoom app on the Apple App Store; opens in a new window"
                     >
                       [download from the App Store]
@@ -267,7 +267,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en_GB&gl=US"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Takes you to the Zoom app on the Google Play Store; opens in a new window"
                     >
                       [download from the Google Play Store]
@@ -278,7 +278,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://zoom.us/download"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Opens the download page on the Zoom website; opens in a new window"
                     >
                       [download from the Zoom website]
@@ -289,7 +289,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://zoom.us/download"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Opens the download page on the Zoom website; opens in a new window"
                     >
                       [download from the Zoom website]
