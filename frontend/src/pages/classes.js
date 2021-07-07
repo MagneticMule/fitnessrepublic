@@ -27,7 +27,7 @@ const Classes = ({ data }) => {
           {
             name: "keywords",
             content:
-              "fitness classes, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
+              "fitness classes, fitness classes in ashby, covid safe, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
           },
         ]}
       >

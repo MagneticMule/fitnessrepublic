@@ -28,7 +28,7 @@ const Index = ({ data }) => {
           {
             name: "description",
             content:
-              "Over 10 years keeping Ashby fit and healthy! At Fitness Republic Gym we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
+              "At Fitness Republic Ashbywe promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
           },
           {
             name: "keywords",
@@ -114,7 +114,7 @@ const Index = ({ data }) => {
         video={intro}
         title={
           <>
-            We are <span>Fitness Republic</span>
+            We are <span>Fitness Republic</span> Ashby
           </>
         }
         subtitle={"A Family run gym at the heart of Ashby De La Zouch"}
