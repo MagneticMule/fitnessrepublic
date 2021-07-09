@@ -28,7 +28,7 @@ const Index = ({ data }) => {
           {
             name: "description",
             content:
-              "At Fitness Republic Ashbywe promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
+              "At Fitness Republic Ashby, we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
           },
           {
             name: "keywords",
