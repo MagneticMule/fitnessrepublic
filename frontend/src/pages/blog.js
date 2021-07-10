@@ -7,26 +7,25 @@ import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
 import BlogPostList from "../components/blog/BlogPostList";
 
-
-const Blog = ({data}) => {
+const Blog = ({ data }) => {
   const posts = data.posts.nodes;
   return (
     <>
       <Helmet
-      title="Fitness Republic Gym | Our Blog "
-      meta={[
-        {
-          name: "description",
-          content:
-            "We write articles on fitness, diet control, weight loss and training all while promoting good health."
-        },
-        {
-          name: "keywords",
-          content:
-            "weight loss, calories, low fat, workout, gym, ashby, ashby de la zouch, fitness, health, lose fat, blog, articles, low carb, wellbeing, well being"
-        }
-      ]}
-    />
+        title="Health and Fitness Articles | Fitness Republic Ashby "
+        meta={[
+          {
+            name: "description",
+            content:
+              "We write articles on fitness, diet control, weight loss and training all while promoting good health.",
+          },
+          {
+            name: "keywords",
+            content:
+              "weight loss, calories, low fat, workout, gym, ashby, ashby de la zouch, fitness, health, lose fat, blog, articles, low carb, wellbeing, well being",
+          },
+        ]}
+      />
 
       <Header
         title={
@@ -43,8 +42,7 @@ const Blog = ({data}) => {
       </Container>
     </>
   );
-}
-
+};
 
 export default Blog;
 

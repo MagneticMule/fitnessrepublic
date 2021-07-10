@@ -14,7 +14,7 @@ const About = ({ data }) => {
   return (
     <>
       <Helmet
-        title="All About Us | Fitness Republic Ashby"
+        title="About Us and Our Gym | Fitness Republic Ashby"
         meta={[
           {
             name: "description",
@@ -69,7 +69,7 @@ const About = ({ data }) => {
           />
           <Image
             pic={data.team.childImageSharp.gatsbyImageData}
-            alt="Black and white group shot of our team in the gym"
+            alt="Black and white group shot of our fitness team in our gym in ashby"
             blurb={
               <>
                 <strong>Clockwise from top left:</strong> Sarah, Marcus, Ben,
@@ -251,7 +251,7 @@ const About = ({ data }) => {
                     by visiting the{" "}
                     <a
                       href="http://physiorepublic.co.uk/"
-                      aria-label="Visit the Physio Republic website"
+                      aria-label="Visit the Physio Republic website where you can make an appointment to see Craig in his clinic in ashby"
                       target="_blank"
                       rel="nofollow noopener"
                     >

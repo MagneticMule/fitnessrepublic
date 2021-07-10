@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "./DeviceSizes";
 
-const Container = styled.main`
+const Container = styled.div`
   margin: 0 auto;
   padding: 1em 4em 1em 5em;
   max-width: 1400px;
