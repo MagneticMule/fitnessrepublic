@@ -20,10 +20,10 @@ const Pass = ({ data, name }) => {
       <Helmet
         title="Fitness Republic Gym | Thank You"
         meta={[
-          {
-            name: "robots",
-            content: "noindex",
-          },
+          // {
+          //   name: "robots",
+          //   content: "noindex",
+          // },
           {
             name: "description",
             content: "Your Merch is on it's way",

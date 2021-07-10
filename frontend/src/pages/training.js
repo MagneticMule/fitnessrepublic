@@ -28,10 +28,10 @@ const Training = ({ data }) => {
             content:
               "Working with a personal trainer here at fitness republic could be the perfect way to kickstart your fitness journey.",
           },
-          {
-            name: "robots",
-            content: "noindex",
-          },
+          // {
+          //   name: "robots",
+          //   content: "noindex",
+          // },
           {
             name: "keywords",
             content:

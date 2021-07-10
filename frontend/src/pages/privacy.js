@@ -16,10 +16,10 @@ const Privacy = () => {
       <Helmet
         title="Fitness Republic | Privacy and Cookie Policy"
         meta={[
-          {
-            name: "robots",
-            content: "noindex",
-          },
+          // {
+          //   name: "robots",
+          //   content: "noindex",
+          // },
           {
             name: "description",
             content:
