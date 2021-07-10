@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import { device } from "../../../styles/DeviceSizes";
 
-const QuoteContainer = styled.div`
+const QuoteContainer = styled.aside`
   align-self: start;
   border-left: 1rem solid var(--orange);
-  grid-column: ${props => (props.pos ? props.pos : "1/2")};
+  grid-column: ${(props) => (props.pos ? props.pos : "1/2")};
   margin-bottom: 0;
 
   @media ${device.mobileM} {
@@ -14,7 +14,7 @@ const QuoteContainer = styled.div`
   }
 
   @media ${device.laptop} {
-    grid-column: ${props => (props.pos ? props.pos : "1/2")};
+    grid-column: ${(props) => (props.pos ? props.pos : "1/2")};
     margin-bottom: 0;
   }
 
@@ -47,15 +47,13 @@ const Quote = styled.div`
     content: close-quote;
     margin-left: 0.2rem;
   }
-  `;
+`;
 
-
-  const Attribution = styled.div`
-    font-size: 0.8rem;
-    color: var(--deep-purple);
-    padding-left: 2rem;
-  `;
-
+const Attribution = styled.div`
+  font-size: 0.8rem;
+  color: var(--deep-purple);
+  padding-left: 2rem;
+`;
 
 const Pullquote = (props) => {
   return (
@@ -63,8 +61,7 @@ const Pullquote = (props) => {
       <Quote>{props.body}</Quote>
       <Attribution>{props.attribution}</Attribution>
     </QuoteContainer>
-  )
-}
-
+  );
+};
 
 export default Pullquote;
