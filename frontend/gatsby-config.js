@@ -109,6 +109,12 @@ module.exports = {
         // },
       },
     },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.fitnessrepublic.co.uk`,
+      },
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
