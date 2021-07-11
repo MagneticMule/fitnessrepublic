@@ -261,7 +261,7 @@ const Index = ({ data }) => {
                 questions then one of our team is always at hand. When you are
                 ready,{" "}
                 <Link
-                  to="/membership"
+                  to="/membership/"
                   aria-label="Takes you to our membership page"
                 >
                   have a look at our membership plans
@@ -416,7 +416,7 @@ const Index = ({ data }) => {
                 course will design a fitness plan that's suitable for your
                 fitness goals. This is all included in your membership.{" "}
                 <Link
-                  to="/membership"
+                  to="/membership/"
                   aria-label="Takes you to our membership page"
                 >
                   Have a look at our four membership plans and decide which one

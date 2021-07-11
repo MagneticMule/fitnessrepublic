@@ -47,10 +47,10 @@ function Layout(props) {
 
             <strong>Fitness Republic uses cookies.</strong> By using our site
             you are agreeing to the terms of our{" "}
-            <Link to="/privacy#cookie-policy">Cookie Policy</Link>.
+            <Link to="/privacy#cookie-policy/">Cookie Policy</Link>.
             <br />
             We also discuss how we use any data we collect from you in our{" "}
-            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/privacy/">Privacy Policy</Link>
 
         </CookieConsent>
         {/* <WhatsAppWidget

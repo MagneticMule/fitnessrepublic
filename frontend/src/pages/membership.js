@@ -258,7 +258,7 @@ const Membership = ({ data }) => {
             body={
               <>
                 Once you have your membership sorted out then have a look at one
-                of our <Link to="/training"> personal training options</Link>.
+                of our <Link to="/training/"> personal training options</Link>.
                 Or simple ask one of the team when you are at the gym.
               </>
             }
