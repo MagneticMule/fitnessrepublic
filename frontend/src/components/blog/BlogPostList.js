@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
@@ -39,13 +39,13 @@ const Post = styled.section`
   }
 `;
 
-const SinglePost = ({post}) => {
+const SinglePost = ({ post }) => {
   return (
     <Post>
       <GatsbyImage image={post.mainImage.asset.gatsbyImageData} />
       <div>
         <header>
-          <Link to={`/blog/post/${post.slug.current}`}>
+          <Link to={`/blog/post/${post.slug.current}/`}>
             <h3>{post.title}</h3>
           </Link>
         </header>
@@ -54,8 +54,7 @@ const SinglePost = ({post}) => {
       <Link to={`/blog/post/${post.slug.current}`}>Continue Reading</Link>
     </Post>
   );
-}
-
+};
 
 const Posts = styled.section`
   grid-column: ${(props) => (props.pos ? props.pos : "1 / -1")};
@@ -71,15 +70,14 @@ const Posts = styled.section`
   }
 `;
 
-const BlogPostList = ({posts}) => {
-  return(
+const BlogPostList = ({ posts }) => {
+  return (
     <Posts>
-      {posts.map(post=>(
-          <SinglePost key={post.id} post={post}/>
+      {posts.map((post) => (
+        <SinglePost key={post.id} post={post} />
       ))}
     </Posts>
   );
-}
-
+};
 
 export default BlogPostList;
