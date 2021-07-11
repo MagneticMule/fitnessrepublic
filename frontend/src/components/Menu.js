@@ -176,7 +176,7 @@ const Menu = (props) => {
             <li>
               <StyledLink
                 onClick={() => setDisplayed((displayed) => !displayed)}
-                to="/membership"
+                to="/membership/"
               >
                 Membership
               </StyledLink>
@@ -184,7 +184,7 @@ const Menu = (props) => {
             <li>
               <StyledLink
                 onClick={() => setDisplayed((displayed) => !displayed)}
-                to="/training"
+                to="/training/"
               >
                 Personal Training
               </StyledLink>
@@ -192,7 +192,7 @@ const Menu = (props) => {
             <li>
               <StyledLink
                 onClick={() => setDisplayed((displayed) => !displayed)}
-                to="/classes"
+                to="/classes/"
               >
                 Classes
               </StyledLink>
@@ -200,7 +200,7 @@ const Menu = (props) => {
             <li>
               <StyledLink
                 onClick={() => setDisplayed((displayed) => !displayed)}
-                to="/about"
+                to="/about/"
               >
                 About
               </StyledLink>
@@ -208,7 +208,7 @@ const Menu = (props) => {
             <li>
               <StyledLink
                 onClick={() => setDisplayed((displayed) => !displayed)}
-                to="/blog"
+                to="/blog/"
               >
                 Blog
               </StyledLink>
