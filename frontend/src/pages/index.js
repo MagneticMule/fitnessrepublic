@@ -33,7 +33,7 @@ const Index = ({ data }) => {
           {
             name: "keywords",
             content:
-              "gym in ashby, gym in coalville, gym in leicestershire, gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire",
+              "gym in ashby, gym near coalville, gym in leicestershire, gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire",
           },
         ]}
       >
@@ -117,7 +117,9 @@ const Index = ({ data }) => {
             We are <span>Fitness Republic</span> Ashby
           </>
         }
-        subtitle={"A Family run gym at the heart of Ashby De La Zouch"}
+        subtitle={
+          "A Family run excercise gym at the heart of Ashby De La Zouch"
+        }
       />
       <Container>
         <DualSection>
@@ -139,13 +141,14 @@ const Index = ({ data }) => {
                 We are a friendly and caring team, passionate about your
                 fitness, health and wellbeing, situated right at the heart of{" "}
                 <strong>Ashby De La Zouch</strong> and serving nearby areas such
-                as <strong>Coalville, Measham, Swadlincote</strong>. We are
-                proud to be one of the most respected Gyms in Leicestershire. We
-                will always give you a warm welcome and support you every step
-                of the way to reach your fitness goals and achieve them at a
-                pace which is comfortable for you. We will work alongside you to
-                create the right exercise and nutrition programmes for you so
-                that you can relax in the knowledge that you are on track to a{" "}
+                as <strong>Coalville, Measham, Swadlincote and Moira</strong>.
+                We are proud to be one of the most respected excercise Gyms in
+                Leicestershire. We will always give you a warm welcome and
+                support you every step of the way to reach your fitness goals
+                and achieve them at a pace which is comfortable for you. We will
+                work alongside you to create the right exercise and nutrition
+                programmes for you so that you can relax in the knowledge that
+                you are on track to a{" "}
                 <strong>fitter, happier, healthier life.</strong>
               </>
             }
@@ -173,7 +176,7 @@ const Index = ({ data }) => {
                 At Fitness Republic, we promote health and wellbeing over body
                 image. Experience tells us that if you are given the right
                 guidance and are having fun while training, you will stick with
-                your plan achieve a happier, healthier, fitter life. We will
+                your plan and achieve a happier, healthier, fitter life. We will
                 take the time to listen to you and give you the tools and
                 equipment you need to
                 <strong> exercise safely and confidently</strong>.
@@ -225,8 +228,10 @@ const Index = ({ data }) => {
                 package. You will learn how to get the most out of our equipment
                 so that you can exercise safely and with confidence. We will
                 talk you through our Covid safety procedures and demonstrate how
-                we keep our gym clean and safe for all our customers. If you
-                would prefer a private induction then let us know in the form.
+                we keep our gym clean and safe for all our customers.
+                <strong>
+                  If you would prefer a private induction then let us know.
+                </strong>
                 Your instructor will guide you at your pace, answer all the
                 questions which you may have and help you on your way to step 3.
               </>
