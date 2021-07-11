@@ -20,10 +20,10 @@ const Workout = ({ data }) => {
             content:
               "A selection of workout plans including videos and instructions for you to carry out at our gym or at home",
           },
-          {
-            name: "robots",
-            content: "noindex",
-          },
+          // {
+          //   name: "robots",
+          //   content: "noindex",
+          // },
           {
             name: "keywords",
             content:

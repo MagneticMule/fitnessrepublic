@@ -18,10 +18,10 @@ const Shop = ({ data }) => {
             content:
               "We write articles on fitness, diet control, weight loss and training all while promoting good health.",
           },
-          {
-            name: "robots",
-            content: "noindex",
-          },
+          // {
+          //   name: "robots",
+          //   content: "noindex",
+          // },
           {
             name: "keywords",
             content:
