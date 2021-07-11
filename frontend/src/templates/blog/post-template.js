@@ -17,7 +17,7 @@ const client = require("@sanity/client")({
 
 const BlockRenderer = (props) => {
   const { style = "normal" } = props.node;
-  const { text } = props.node;a
+  const { text } = props.node;
   console.log(text);
 
   const re = new RegExp("Fitness Republic", "i");

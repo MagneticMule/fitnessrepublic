@@ -51,7 +51,7 @@ const SinglePost = ({ post }) => {
         </header>
         <p>{post.excerpt}</p>
       </div>
-      <Link to={`/blog/post/${post.slug.current}`}>Continue Reading</Link>
+      <Link to={`/blog/post/${post.slug.current}/`}>Continue Reading</Link>
     </Post>
   );
 };
