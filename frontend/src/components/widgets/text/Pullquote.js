@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { device } from "../../../styles/DeviceSizes";
+import TextCta from "../TextCta";
 
 const QuoteContainer = styled.aside`
-  align-self: start;
-  border-left: 1rem solid var(--orange);
+  display: flex;
+  flex-direction: column;
+  /* border-left: 1rem solid var(--orange); */
   grid-column: ${(props) => (props.pos ? props.pos : "1/2")};
   margin-bottom: 0;
 
   @media ${device.mobileM} {
-    grid-column: 1/5;
-    margin-bottom: 2em;
+    grid-column: 1/-1;
   }
 
   @media ${device.laptop} {
@@ -25,13 +26,12 @@ const QuoteContainer = styled.aside`
   }
 `;
 
-const Quote = styled.div`
+const Quote = styled.aside`
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 500;
   hyphens: auto;
   color: var(--orange);
-  padding: 0 2rem;
 
   &::before {
     color: var(--orange);
@@ -52,14 +52,23 @@ const Quote = styled.div`
 const Attribution = styled.div`
   font-size: 0.8rem;
   color: var(--deep-purple);
-  padding-left: 2rem;
+  margin-bottom: 2em;
 `;
 
-const Pullquote = (props) => {
+const Cta = styled.div`
+  padding: 0;
+  justify-self: flex-end;
+  margin: auto 0 2em 0;
+`;
+
+const Pullquote = ({ pos, body, attribution }) => {
   return (
-    <QuoteContainer pos={props.pos}>
-      <Quote>{props.body}</Quote>
-      <Attribution>{props.attribution}</Attribution>
+    <QuoteContainer pos={pos}>
+      <Quote>{body}</Quote>
+      <Attribution>{attribution}</Attribution>
+      <Cta>
+        <TextCta introText="Call Simon now to arrange a visit to our gym" />
+      </Cta>
     </QuoteContainer>
   );
 };

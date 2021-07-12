@@ -17,7 +17,7 @@ const client = require("@sanity/client")({
 
 const BlockRenderer = (props) => {
   const { style = "normal" } = props.node;
-  const { text } = props.node;
+  const { text } = props.children;
   console.log(text);
 
   const re = new RegExp("Fitness Republic", "i");
@@ -36,15 +36,13 @@ const BlockRenderer = (props) => {
   }
 
   // if we find an occurance of the string "Fitness Republic" return a link to the main index page
-  if (style === "strong") {
-    if (text === re) {
-      return <Link to="/">Fitness Republic</Link>;
-    }
-    return <strong>{props.children}</strong>;
+
+  if (text === new RegExp("Fitness Republic", "i")) {
+    return <Link to="/">Fitness Republic</Link>;
   }
 
   if (style === "em") {
-    return <em>{props.children}</em>;
+    return <em>{props.node.children}</em>;
   }
 
   // Fall back to default handling
@@ -80,9 +78,7 @@ const BlogPost = ({ data }) => {
               <>
                 <BlockContent
                   blocks={post._rawBody}
-                  serializers={
-                    ({ types: { block: BlockRenderer } }, { serializers })
-                  }
+                  serializers={{ types: { block: BlockRenderer } }}
                 />
               </>
             }

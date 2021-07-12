@@ -35,7 +35,7 @@ const Privacy = () => {
         <DualSection>
           <TextSection
             id="privacy-policy"
-            title="Privacy Policy"
+            title={<h1>Privacy Policy</h1>}
             body={
               <ul>
                 <li>
