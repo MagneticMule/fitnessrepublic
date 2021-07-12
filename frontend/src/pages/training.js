@@ -35,14 +35,14 @@ const Training = ({ data }) => {
           {
             name: "keywords",
             content:
-              "personal trainer, personal training, support, advice, nutrition, workout plan, online, gym based, personal instructor, gains, gym instractor, plans, transformation, lose weight, weight loss, bulk up",
+              "ashby personal trainer, personal training in ashby, personal trainer ashby,support, advice, nutrition, workout plan, online, transformation, lose weight, weight loss, bulk up",
           },
         ]}
       ></Helmet>
       <Header
         title={
           <>
-            Your own <span>Personal Trainer</span>
+            Your own <span>Personal Trainer</span> in Ashby
           </>
         }
         subtitle={

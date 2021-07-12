@@ -43,7 +43,7 @@ const Classes = ({ data }) => {
             Fitness Classes <span>For Everyone</span>
           </>
         }
-        subtitle={"Fun Filled Fitness classes in Ashby and online"}
+        subtitle={"Fun group based Fitness classes in Ashby and online"}
       />
       <Container>
         <DualSection>
@@ -59,9 +59,13 @@ const Classes = ({ data }) => {
           {/* <Button title="Book a visit" /> */}
 
           <TextSection
-            title="Let's Get Started"
+            title="Indoor Fitness Classes"
             subtitle="From AB's through Core to Zumba"
-            body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of workout training activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT fitness classes, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
+            body="One of the great things about group fitness classes is they provide a community that help keep you motovated to reach your fitness goals. Our fitness class schedule includes an incredible range of workout training activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT fitness classes, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you.Our studio is fully air conditioned, bright, airy and covid safe."
+          />
+          <TextSection
+            subtitle="Our Fitness Classes Online"
+            body="We understand that not everyone is quite ready to return to the gym due to concerns about covid. As such, we offer our fitness classes online via Zoom so anyone can join in from their own home."
           />
           <Image
             pic={data.timetable.childImageSharp.gatsbyImageData}
@@ -233,14 +237,14 @@ const Classes = ({ data }) => {
           />
 
           <TextSection
-            title="Booking a class"
-            subtitle="both gym based and zoom based"
+            title="Booking a Fitness class"
+            subtitle="indoor and online"
             body={
               <>
-                To join in simply click the Zoom options when booking, click and
-                join the class from the comfort of your own home (or anywhere
-                else for that matter). You can book your class right here or
-                through our members app up to{" "}
+                To reserve your space on online fitness class simply click the
+                Zoom options when booking, click and join the class from the
+                comfort of your own home (or anywhere else for that matter). You
+                can book your class right here or through our members app up to{" "}
                 <strong>seven days in advance</strong>.
               </>
             }

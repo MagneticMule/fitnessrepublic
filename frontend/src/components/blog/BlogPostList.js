@@ -62,7 +62,7 @@ const Posts = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  gap: 4em 4em;
+  gap: 3em 3em;
   justify-content: space-evenly;
   > * {
     flex-grow: 1;

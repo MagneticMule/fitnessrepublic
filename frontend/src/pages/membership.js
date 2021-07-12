@@ -34,7 +34,7 @@ const Membership = ({ data }) => {
       <Header
         title={
           <>
-            Clear and Simple <span>Membership Plans</span>
+            Ashby Gym <span>Membership Plans</span>
           </>
         }
         subtitle={"The very first step in your fitness journey"}
@@ -44,7 +44,7 @@ const Membership = ({ data }) => {
           <TextSection
             pos={"2/5"}
             title="Seven Day Free Pass"
-            subtitle="Your first step in a new fitness journey"
+            subtitle="Experience everything we have to offer"
             body={
               <>
                 We are confident that once you come to our gym you will feel
