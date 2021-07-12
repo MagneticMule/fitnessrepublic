@@ -102,10 +102,10 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Bootcamp</strong> Bootcamps are fun, full body
-                    outdoor fitness classes held at the local bathgrounds in
-                    Ashby De La Zouch. The content will vary between circuits,
-                    HIIT, ab’s & glutes.{" "}
+                    <strong>Bootcamp: Outdoor Fitness Classes in Ashby</strong>{" "}
+                    Bootcamps are fun, full body outdoor fitness classes held at
+                    the local bathgrounds in Ashby De La Zouch. The content will
+                    vary between circuits, HIIT, ab’s & glutes.{" "}
                     <i>
                       Dependant on the weather but a drop of rain doesn’t stop
                       us!
