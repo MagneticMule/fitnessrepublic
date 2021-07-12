@@ -23,7 +23,7 @@ const Index = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic - Ashby Gym | Get Started FREE"
+        title="Fitness Republic - Ashby Gym & Fitness | Get Started FREE"
         meta={[
           {
             name: "description",
