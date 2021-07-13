@@ -1,14 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import { device } from "../styles/DeviceSizes";
 const TextContent = styled.div`
-
   @media ${device.mobileM} {
     grid-column: 1 / -1;
   }
 
   @media ${device.laptop} {
-    grid-column: ${props => (props.pos ? props.pos : "2 / -1")};
+    grid-column: ${(props) => (props.pos ? props.pos : "2 / -1")};
   }
 
   @media ${device.laptopL} {
@@ -19,7 +18,7 @@ const TextContent = styled.div`
 `;
 
 const Background = styled.div`
-  background-color:var(--white);
+  background-color: var(--white);
 `;
 
 const SectionTitle = styled.h2`
@@ -41,7 +40,7 @@ const SectionTitle = styled.h2`
 
 const SubTitle = styled.h3`
   margin: 0;
-  padding:0;
+  padding: 0;
   letter-spacing: -1px;
   font-weight: 300;
   text-transform: capitalize;
@@ -56,6 +55,11 @@ const BodyText = styled.div`
       margin: 1em 0;
       padding-left: 2em;
       border-left: 4px solid var(--orange);
+      > h2 {
+        color: var(--orange);
+        text-transform: capitalize;
+        font-weight: 500;
+      }
       > strong {
         color: var(--orange);
         text-transform: capitalize;
@@ -83,7 +87,7 @@ const BackStripe = styled.div`
 
   &:before {
     z-index: -1;
-    content: ' ';
+    content: " ";
     background: var(--lightsripe-grad);
     position: absolute;
     top: -200%;
@@ -92,23 +96,22 @@ const BackStripe = styled.div`
     bottom: 0;
     transform: skewY(-66deg);
   }
-
 `;
 
 const SideBar = styled.div`
- > p {
-   color: var(--dark-grey);
- }
+  > p {
+    color: var(--dark-grey);
+  }
 `;
 
 const TextSection = (props) => {
-return (
-  <TextContent id={props.id} pos={props.pos}>
-    <SectionTitle>{props.title}</SectionTitle>
-    <SubTitle>{props.subtitle}</SubTitle>
-    <BodyText>{props.body}</BodyText>
-  </TextContent>
-)
-}
+  return (
+    <TextContent id={props.id} pos={props.pos}>
+      <SectionTitle>{props.title}</SectionTitle>
+      <SubTitle>{props.subtitle}</SubTitle>
+      <BodyText>{props.body}</BodyText>
+    </TextContent>
+  );
+};
 
 export default TextSection;

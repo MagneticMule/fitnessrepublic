@@ -43,7 +43,7 @@ const Classes = ({ data }) => {
             Fitness Classes <span>For Everyone</span>
           </>
         }
-        subtitle={"Fun group based Fitness classes in Ashby and online"}
+        subtitle={"Fun Filled Fitness classes in Ashby and online"}
       />
       <Container>
         <DualSection>
@@ -59,13 +59,9 @@ const Classes = ({ data }) => {
           {/* <Button title="Book a visit" /> */}
 
           <TextSection
-            title="Indoor Fitness Classes"
+            title="Let's Get Started"
             subtitle="From AB's through Core to Zumba"
-            body="One of the great things about group fitness classes is they provide a community that help keep you motovated to reach your fitness goals. Our fitness class schedule includes an incredible range of workout training activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT fitness classes, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you.Our studio is fully air conditioned, bright, airy and covid safe."
-          />
-          <TextSection
-            subtitle="Our Fitness Classes Online"
-            body="We understand that not everyone is quite ready to return to the gym due to concerns about covid. As such, we offer our fitness classes online via Zoom so anyone can join in from their own home."
+            body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of workout training activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT fitness classes, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
           />
           <Image
             pic={data.timetable.childImageSharp.gatsbyImageData}
@@ -102,10 +98,10 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Bootcamp: Outdoor Fitness Classes in Ashby</strong>{" "}
-                    Bootcamps are fun, full body outdoor fitness classes held at
-                    the local bathgrounds in Ashby De La Zouch. The content will
-                    vary between circuits, HIIT, ab’s & glutes.{" "}
+                    <strong>Bootcamp</strong> Bootcamps are fun, full body
+                    outdoor fitness classes held at the local bathgrounds in
+                    Ashby De La Zouch. The content will vary between circuits,
+                    HIIT, ab’s & glutes.{" "}
                     <i>
                       Dependant on the weather but a drop of rain doesn’t stop
                       us!
@@ -197,31 +193,6 @@ const Classes = ({ data }) => {
                     flexibility in the body. Breathing techniques & meditation
                     are also integrated. This class is suitable for all levels &
                     will leave you with a sense of calm & well being.
-                    <hr />
-                    <a
-                      href="https://www.loveyogawithclaire.co.uk/"
-                      target="_blank"
-                      rel="nofollow noopener"
-                      aria-label="Takes you to Claire Stapely's website who teaches Yoga throughout Leicestershire"
-                    >
-                      Our Tuesday morning Yoga Class in Ashby is taught by
-                      Claire Stapely.
-                    </a>
-                    Claire teaches group classes, 1:1 and 1:2 private lessons,
-                    family yoga, garden yoga, workshops, as well as local
-                    businesses and schoolteachers to help them to relax at the
-                    end of their day. Claire holds classes all over
-                    Leicestershire.{" "}
-                    <a
-                      href="https://www.loveyogawithclaire.co.uk/classes-workshops/"
-                      target="_blank"
-                      rel="nofollow noopener"
-                      aria-label="Takes you to Claire Stapely's website where you can find out more about her classes and workshops"
-                    >
-                      {" "}
-                      Claire's website has a wealth of information on the
-                      various Yoga Classes she holds throughout Leicestershire.
-                    </a>
                   </li>
                   <hr />
                   <li>
@@ -262,14 +233,14 @@ const Classes = ({ data }) => {
           />
 
           <TextSection
-            title="Booking a Fitness class"
-            subtitle="indoor and online"
+            title="Booking a class"
+            subtitle="both gym based and zoom based"
             body={
               <>
-                To reserve your space on online fitness class simply click the
-                Zoom options when booking, click and join the class from the
-                comfort of your own home (or anywhere else for that matter). You
-                can book your class right here or through our members app up to{" "}
+                To join in simply click the Zoom options when booking, click and
+                join the class from the comfort of your own home (or anywhere
+                else for that matter). You can book your class right here or
+                through our members app up to{" "}
                 <strong>seven days in advance</strong>.
               </>
             }
