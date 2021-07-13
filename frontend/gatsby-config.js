@@ -112,7 +112,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-helmet-canonical-urls`,
       options: {
-        siteUrl: `https://www.fitnessrepublic.co.uk/`,
+        siteUrl: `https://www.fitnessrepublic.co.uk`,
       },
     },
     "gatsby-plugin-react-helmet",

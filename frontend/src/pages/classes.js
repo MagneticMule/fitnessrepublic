@@ -197,6 +197,31 @@ const Classes = ({ data }) => {
                     flexibility in the body. Breathing techniques & meditation
                     are also integrated. This class is suitable for all levels &
                     will leave you with a sense of calm & well being.
+                    <hr />
+                    <a
+                      href="https://www.loveyogawithclaire.co.uk/"
+                      target="_blank"
+                      rel="nofollow noopener"
+                      aria-label="Takes you to Claire Stapely's website who teaches Yoga throughout Leicestershire"
+                    >
+                      Our Tuesday morning Yoga Class in Ashby is taught by
+                      Claire Stapely.
+                    </a>
+                    Claire teaches group classes, 1:1 and 1:2 private lessons,
+                    family yoga, garden yoga, workshops, as well as local
+                    businesses and schoolteachers to help them to relax at the
+                    end of their day. Claire holds classes all over
+                    Leicestershire.{" "}
+                    <a
+                      href="https://www.loveyogawithclaire.co.uk/classes-workshops/"
+                      target="_blank"
+                      rel="nofollow noopener"
+                      aria-label="Takes you to Claire Stapely's website where you can find out more about her classes and workshops"
+                    >
+                      {" "}
+                      Claire's website has a wealth of information on the
+                      various Yoga Classes she holds throughout Leicestershire.
+                    </a>
                   </li>
                   <hr />
                   <li>
