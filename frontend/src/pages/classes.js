@@ -17,17 +17,17 @@ const Classes = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Classes in Ashby and Online | Fitness Republic Gym"
+        title="Fitness Classes in Ashby and Online | Fitness Republic Gym | First Week FREE"
         meta={[
           {
             name: "description",
             content:
-              "We offer classes in our Gym in Ashby and online via video.  Yoga Classes, HIIT, Core, Ballet Be Fit, Pilates, Zumba, Zumba Toning and more.",
+              "We offer classes in our Fitness Studio in Ashby and online via video.  Yoga Classes, HIIT, Core, Ballet Be Fit, Pilates, Zumba, Zumba Toning and more.",
           },
           {
             name: "keywords",
             content:
-              "fitness classes, fitness classes in ashby, covid safe, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
+              "fitness classes near me, fitness classes in ashby, covid safe, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
           },
         ]}
       >
@@ -43,12 +43,12 @@ const Classes = ({ data }) => {
             Fitness Classes <span>For Everyone</span>
           </>
         }
-        subtitle={"Fun Filled Fitness classes in Ashby and online"}
+        subtitle={"Fun Filled Excercise Classes in Ashby and online"}
       />
       <Container>
         <DualSection>
           <Pullquote
-            body="Fitness classes are an ideal way to add structure, fun and motivation to your fitness plan"
+            body="Fitness classes are an ideal way to add structure, fun and motivation to your fitness plan. All our excercise classes are held in our immaculate, covid safe studio."
             attribution={
               <>
                 <strong>Simon Pellecchia</strong> // Director and Personal
@@ -56,16 +56,36 @@ const Classes = ({ data }) => {
               </>
             }
           />
-          {/* <Button title="Book a visit" /> */}
 
           <TextSection
-            title="Let's Get Started"
-            subtitle="From AB's through Core to Zumba"
-            body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of workout training activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT fitness classes, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
+            title={
+              <>
+                Let's <strong>Get Fit in 2021</strong>
+              </>
+            }
+            subtitle={
+              <>
+                Excercise classes From <strong>AB's</strong> to{" "}
+                <strong>Zumba</strong>
+              </>
+            }
+            body={
+              <>
+                One of the great things about group classes is that they provide
+                a community that help keeps you motivated to reach your fitness
+                goals. Our class schedule includes an incredible range of
+                workout training activities to suit any fitness level. We have
+                an extensive range of group exercise classes on offer including
+                high-octane HIIT fitness classes, Conditioning and energising
+                cardiovascular and sculpting classes to relaxing mind and body,
+                we have a class to suit you. Our intimate studio is fully air
+                conditioned, bright, and airy.
+              </>
+            }
           />
           <Image
             pic={data.timetable.childImageSharp.gatsbyImageData}
-            alt="Our fitness class timetable."
+            alt="Fitness Republic Gym Ashby. Fitness Class Timetable"
             blurb={
               <>
                 This weeks timetable. Download it, print it and stick it on the
@@ -188,11 +208,13 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Yoga Classes</strong> Basic, unconditional yoga
-                    postures are practised to align, strengthen & promote
-                    flexibility in the body. Breathing techniques & meditation
-                    are also integrated. This class is suitable for all levels &
-                    will leave you with a sense of calm & well being.
+                    <strong>Yoga Classes</strong> Yoga practice began at the
+                    dawn of civilization and has been used build strength,
+                    flexibility and breathing to boost physical and mental
+                    wellbeing. The main aspects of yoga are postures (a series
+                    of movements designed to increase strength and flexibility)
+                    and breathing. This class is suitable for all levels & will
+                    leave you with a sense of calm & well being.
                   </li>
                   <hr />
                   <li>
@@ -217,10 +239,10 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Zumba Toning</strong> Combines targeted
-                    body-sculpting exercises and high-energy cardio work with
-                    Latin-infused ZUMBA® moves to create a calorie-torching,
-                    strength- training dance fitness-party.
+                    <strong>Zumba Toning</strong> Combines targeted body
+                    sculpting exercises and high-energy cardio work with a
+                    Latin-infused ZUMBA® moves to create a calorie torching,
+                    strength training dance fitness party.
                   </li>
                 </ul>
               </>
@@ -228,30 +250,36 @@ const Classes = ({ data }) => {
           />
           <Image
             pic={data.fitnessclass1.childImageSharp.gatsbyImageData}
-            alt="A black and white image of one of our fitness classes. A group of women hold barbells with small weights over their shoulder."
+            alt="A black and white image of one of our fitness classes in Ashby. A group of women hold barbells with small weights over their shoulder in unison."
             blurb={"One of our fitness classes taking place in our studio."}
           />
 
           <TextSection
-            title="Booking a class"
-            subtitle="both gym based and zoom based"
+            title="Booking an Excercise Class"
+            subtitle={
+              <>
+                Coming to our <strong>Fitness Classes in Ashby</strong>
+              </>
+            }
             body={
               <>
-                To join in simply click the Zoom options when booking, click and
-                join the class from the comfort of your own home (or anywhere
-                else for that matter). You can book your class right here or
+                You can book your class right here using the Calender below or
                 through our members app up to{" "}
                 <strong>seven days in advance</strong>.
               </>
             }
           />
           <TextSection
-            subtitle="Joining in with our zoom classes"
+            subtitle={
+              <>
+                Joining in with our <strong>Online Fitness Classes</strong>
+              </>
+            }
             body={
               <>
-                We are live streaming some of our classes giving you access to
-                join in from home. We use the{" "}
-                <a href="https://zoom.us/">Zoom</a> platform for this.
+                We are live streaming some of our excercise classes from out
+                Ashby Fitness Studio giving you access to join in from home. We
+                use the <a href="https://zoom.us/">Zoom</a> platform for
                 <ul>
                   <strong>Zoom is available on:</strong>
                   <li>
@@ -299,6 +327,9 @@ const Classes = ({ data }) => {
                     </a>
                   </li>
                 </ul>
+                To join one of our online workout classes, simply click the Zoom
+                options when booking, click and join the class from the comfort
+                of your own home (or anywhere else for that matter).
               </>
             }
           />
@@ -318,27 +349,29 @@ export default Classes;
 
 export const query = graphql`
   {
-    kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(height: 100, width: 100, layout: FIXED)
+    timetable: file(
+      relativePath: {
+        eq: "fitness-classes-ashby-timetable-fitness-republic-ashby.jpg"
       }
-    }
-    blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(height: 152, width: 152, layout: FIXED)
-      }
-    }
-    timetable: file(relativePath: { eq: "classtimetable.jpg" }) {
+    ) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
       }
     }
-    fitnessclass1: file(relativePath: { eq: "fitness-class-1.jpg" }) {
+    fitnessclass1: file(
+      relativePath: {
+        eq: "ladies-excercise-class-ashby-de-la-zouch-fitness-republic-ashby.jpg"
+      }
+    ) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
       }
     }
-    fitnessclass2: file(relativePath: { eq: "lady-man-boxfit.jpg" }) {
+    fitnessclass2: file(
+      relativePath: {
+        eq: "boxfit-excercise-class-ashby-de-la-zouch-fitness-republic-ashby.jpg"
+      }
+    ) {
       childImageSharp {
         gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
       }

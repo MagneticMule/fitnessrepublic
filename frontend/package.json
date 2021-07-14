@@ -1,7 +1,7 @@
 {
   "name": "fitness-republic",
   "description": "Fitness Republic Gym - Ashby De La Zouch",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Thomas Sweeney",
   "dependencies": {
     "@fontsource/lato": "^4.3.0",
@@ -48,7 +48,8 @@
   },
   "keywords": [
     "gatsby",
-    "gym"
+    "gym",
+    "ashby"
   ],
   "license": "MIT",
   "scripts": {
