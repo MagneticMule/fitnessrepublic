@@ -39,7 +39,7 @@ const Title = styled.h3`
 `;
 
 const SubTitle = styled.p`
-color: var(--deep-purple);
+  color: var(--deep-purple);
   font-size: 1.4rem;
   font-weight: 700;
   padding: 0;
@@ -63,28 +63,26 @@ const Info = styled.div`
 
   a {
     color: var(--deep-purple);
-    font-weight:700;
+    font-weight: 700;
 
-    &:hover{
+    &:hover {
       color: var(--deeper-purple);
     }
   }
 `;
 
-const TrainingSection = ({ title, subtitle, trainings,info }) => {
+const TrainingSection = ({ title, subtitle, trainings, info }) => {
   return (
     <Container>
       <Header>
         <Title>{title}</Title>
         <SubTitle>{subtitle}</SubTitle>
       </Header>
-      {trainings.map(training => (
+      {trainings.map((training) => (
         <TrainingCard training={training} />
       ))}
 
-      <Info>
-        {info}
-      </Info>
+      <Info>{info}</Info>
     </Container>
   );
 };

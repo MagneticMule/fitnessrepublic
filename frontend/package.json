@@ -1,7 +1,7 @@
 {
   "name": "fitness-republic",
   "description": "Fitness Republic Gym - Ashby De La Zouch",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "author": "Thomas Sweeney",
   "dependencies": {
     "@fontsource/lato": "^4.3.0",
@@ -48,8 +48,7 @@
   },
   "keywords": [
     "gatsby",
-    "gym",
-    "ashby"
+    "gym"
   ],
   "license": "MIT",
   "scripts": {
@@ -57,7 +56,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "yarn run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "cy:open": "cypress open",
