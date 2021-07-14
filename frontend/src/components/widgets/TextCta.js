@@ -1,6 +1,6 @@
-import React from 'react';
-import {Link} from 'gatsby';
-import styled from 'styled-components';
+import React from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { device } from "../../styles/DeviceSizes";
 
@@ -19,7 +19,6 @@ const Cta = styled.aside`
 
   @media ${device.mobileM} {
     grid-column: 1/5;
-    margin-bottom: 2em;
   }
 
   @media ${device.laptop} {
@@ -28,12 +27,14 @@ const Cta = styled.aside`
   }
 `;
 
-const TextCta = ({introText, link, linkText}) => {
-
+const TextCta = ({
+  introText = "Rather speak to a Real Life Human?",
+  link,
+  linkText,
+}) => {
   return (
     <Cta>
-      <strong>Rather speak to a Real Life Human?</strong>
-      {introText}
+      <strong>{introText}</strong>
       <a
         aria-label="Call the gym to chat to one of our team"
         href="tel:+4401530413330"
@@ -43,6 +44,6 @@ const TextCta = ({introText, link, linkText}) => {
       </a>
     </Cta>
   );
-}
+};
 
 export default TextCta;

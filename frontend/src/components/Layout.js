@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+import styled from "styled-components";
+>>>>>>> 1f75fefcf3e02ac39d33ba4aa31b35f1432c4f20
 import { Link } from "gatsby";
 import { IconContext } from "react-icons/lib";
 
@@ -11,7 +15,12 @@ import Footer from "./Footer.js";
 
 import CookieConsent from "react-cookie-consent";
 
+<<<<<<< HEAD
 const Layout = ({ children }) => {
+=======
+function Layout(props) {
+  const { children } = props;
+>>>>>>> 1f75fefcf3e02ac39d33ba4aa31b35f1432c4f20
   return (
     <>
       <IconContext.Provider value={{ style: { verticalAlign: "-2px" } }}>
@@ -44,10 +53,17 @@ const Layout = ({ children }) => {
       >
         <strong>Fitness Republic uses cookies.</strong> By using our site you
         are agreeing to the terms of our{" "}
+<<<<<<< HEAD
         <Link to="/privacy#cookie-policy">Cookie Policy</Link>.
         <br />
         We also discuss how we use any data we collect from you in our{" "}
         <Link to="/privacy">Privacy Policy</Link>
+=======
+        <Link to="/privacy#cookie-policy/">Cookie Policy</Link>.
+        <br />
+        We also discuss how we use any data we collect from you in our{" "}
+        <Link to="/privacy/">Privacy Policy</Link>
+>>>>>>> 1f75fefcf3e02ac39d33ba4aa31b35f1432c4f20
       </CookieConsent>
       {/* <WhatsAppWidget
           companyName="Fitness Republic Ashby"
@@ -57,6 +73,10 @@ const Layout = ({ children }) => {
         /> */}
     </>
   );
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> 1f75fefcf3e02ac39d33ba4aa31b35f1432c4f20
 
 export default Layout;

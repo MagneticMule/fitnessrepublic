@@ -10,27 +10,24 @@ import Image from "../components/widgets/Image";
 import Pullquote from "../components/widgets/text/Pullquote";
 import Calender from "../components/ClubrightCalender";
 
-import {
-  FaApple,
-  FaWindows,
-} from "react-icons/fa";
+import { FaApple, FaWindows } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 
 const Classes = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Classes delivered in Ashby and online | Fitness Republic Gym"
+        title="Fitness Classes in Ashby and Online | Fitness Republic Gym"
         meta={[
           {
             name: "description",
             content:
-              "We offer gym based and online classes in Zumba, HIIT, Core, Yoga, Ballet Be Fit, Cambat HIIT, Pilates, Stretch and Relax, Zumba, Zumba Toning and more.",
+              "We offer classes in our Gym in Ashby and online via video.  Yoga Classes, HIIT, Core, Ballet Be Fit, Pilates, Zumba, Zumba Toning and more.",
           },
           {
             name: "keywords",
             content:
-              "fitness classes, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, instructor, HIIT, ballet, boxing, boxfit",
+              "fitness classes, fitness classes in ashby, covid safe, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
           },
         ]}
       >
@@ -46,7 +43,7 @@ const Classes = ({ data }) => {
             Fitness Classes <span>For Everyone</span>
           </>
         }
-        subtitle={"Group fitness training delivered both in-gym and online"}
+        subtitle={"Fun Filled Fitness classes in Ashby and online"}
       />
       <Container>
         <DualSection>
@@ -64,7 +61,7 @@ const Classes = ({ data }) => {
           <TextSection
             title="Let's Get Started"
             subtitle="From AB's through Core to Zumba"
-            body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
+            body="One of the great things about group classes is that they provide a community that help keeps you motovated to reach your fitness goals. Our class schedule includes an incredible range of workout training activities to suit any fitness level. We have an extensive range of group exercise classes on offer including high-octane HIIT fitness classes, Conditioning and energising cardiovascular and sculpting classes to relaxing mind and body, we have a class to suit you. Our intimate studio is fully air conditioned, bright, and airy."
           />
           <Image
             pic={data.timetable.childImageSharp.gatsbyImageData}
@@ -102,8 +99,9 @@ const Classes = ({ data }) => {
                   <hr />
                   <li>
                     <strong>Bootcamp</strong> Bootcamps are fun, full body
-                    workouts, outdoor at the local Bath Grounds. The content
-                    will vary between circuits, HIIT, ab’s & glutes.{" "}
+                    outdoor fitness classes held at the local bathgrounds in
+                    Ashby De La Zouch. The content will vary between circuits,
+                    HIIT, ab’s & glutes.{" "}
                     <i>
                       Dependant on the weather but a drop of rain doesn’t stop
                       us!
@@ -113,7 +111,9 @@ const Classes = ({ data }) => {
                   <li>
                     <strong>Boxfit</strong> A high energy workout that features
                     boxing pad work drills. Fat burning and fitness driven! Your
-                    own gloves are required for this class.
+                    own gloves are required for this class and can be purchased
+                    from any good sports retailer or directly from our gym in
+                    Ashby.
                   </li>
                   <hr />
                   {/* <li>
@@ -135,12 +135,13 @@ const Classes = ({ data }) => {
                     plus increase flexibility.
                   </li>
                   <hr />
-                  {/* <li>
-                  <strong>HIIT</strong> A High Intensity bodyweight workout,
-                  involving repeated bouts of high intensity, followed by
-                  various recovery times. A tough Fat Burning Workout!
-                </li>
-                <hr /> */}
+                  <li>
+                    <strong>HIIT Workout</strong> A High Intensity bodyweight
+                    workout, involving repeated bouts of high intensity,
+                    followed by various recovery times. A tough Fat Burning
+                    Workout!
+                  </li>
+                  <hr />
                   <li>
                     <strong>Glute Camp</strong> A fun workout focusing on the
                     glutes and quads. <i>Shape and sculpt those bums!</i>
@@ -187,8 +188,8 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Yoga</strong> In this class the basic, unconditional
-                    yoga postures are practised to align, strengthen & promote
+                    <strong>Yoga Classes</strong> Basic, unconditional yoga
+                    postures are practised to align, strengthen & promote
                     flexibility in the body. Breathing techniques & meditation
                     are also integrated. This class is suitable for all levels &
                     will leave you with a sense of calm & well being.
@@ -258,7 +259,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://apps.apple.com/gb/app/zoom-cloud-meetings/id546505307"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Takes you to the Zoom app on the Apple App Store; opens in a new window"
                     >
                       [download from the App Store]
@@ -269,7 +270,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://play.google.com/store/apps/details?id=us.zoom.videomeetings&hl=en_GB&gl=US"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Takes you to the Zoom app on the Google Play Store; opens in a new window"
                     >
                       [download from the Google Play Store]
@@ -280,7 +281,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://zoom.us/download"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Opens the download page on the Zoom website; opens in a new window"
                     >
                       [download from the Zoom website]
@@ -291,7 +292,7 @@ const Classes = ({ data }) => {
                     <a
                       href="https://zoom.us/download"
                       target="_blank"
-                      rel="noopener"
+                      rel="nofollow noopener"
                       aria-label="Opens the download page on the Zoom website; opens in a new window"
                     >
                       [download from the Zoom website]
@@ -315,31 +316,32 @@ const Classes = ({ data }) => {
 
 export default Classes;
 
-export const query = graphql`{
-  kathyhead: file(relativePath: {eq: "headshots/katy.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 100, width: 100, layout: FIXED)
+export const query = graphql`
+  {
+    kathyhead: file(relativePath: { eq: "headshots/katy.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 100, width: 100, layout: FIXED)
+      }
+    }
+    blankahead: file(relativePath: { eq: "headshots/blanka.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(height: 152, width: 152, layout: FIXED)
+      }
+    }
+    timetable: file(relativePath: { eq: "classtimetable.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    fitnessclass1: file(relativePath: { eq: "fitness-class-1.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
+    }
+    fitnessclass2: file(relativePath: { eq: "lady-man-boxfit.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
+      }
     }
   }
-  blankahead: file(relativePath: {eq: "headshots/blanka.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(height: 152, width: 152, layout: FIXED)
-    }
-  }
-  timetable: file(relativePath: {eq: "classtimetable.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  fitnessclass1: file(relativePath: {eq: "fitness-class-1.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-  fitnessclass2: file(relativePath: {eq: "lady-man-boxfit.jpg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, layout: FULL_WIDTH)
-    }
-  }
-}
 `;

@@ -11,6 +11,8 @@ module.exports = {
     author: "Thomas Sweeney",
     description:
       "Group Fitness Classes from ZUMBA to Yoga. Personal Training in a well equiped gym hosted in an immaculate, covid safe friendly environment in the heart of Ashby De La Zouch",
+    image: "/images/logo-square.jpg",
+    twitterUsername: "@ashbyfitness",
   },
   // cache will have to be manually cleared via 'gatsby clean'
   flags: { PRESERVE_WEBPACK_CACHE: true },
@@ -22,14 +24,6 @@ module.exports = {
         path: path.join(__dirname, `src`, `assets`, `images`),
       },
     },
-    // {
-    //   resolve: `gatsby-source-stripe`,
-    //   options: {
-    //     objects: ["Price"],
-    //     secretKey: process.env.STRIPE_SECRET_KEY,
-    //     downloadFiles: true,
-    //   },
-    // },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-plugin-sharp`,
@@ -85,17 +79,40 @@ module.exports = {
       options: {
         host: "https://www.fitnessrepublic.co.uk",
         sitemap: "https://www.fitnessrepublic.co.uk/sitemap.xml",
-        env: {
-          production: {
-            policy: [
-              {
-                userAgent: "*",
-                allow: "/",
-                // disallow: ["/404", "/privacy", "/terms"],
-              },
-            ],
-          },
-        },
+        // exclude: [
+        //   "/404",
+        //   "/privacy",
+        //   "/terms",
+        //   "/order-complete",
+        //   "/thanks",
+        //   "/shop",
+        //   "/workout",
+        //   "/workout/*",
+        // ],
+        createLinkInHead: true,
+        // env: {
+        //   production: {
+        //     policy: [
+        //       {
+        //         userAgent: "*",
+        //         allow: "/",
+        //         disallow: [
+        //           "/404",
+        //           "/privacy",
+        //           "/terms",
+        //           "/thank-you",
+        //           "/thanks",
+        //         ],
+        //       },
+        //     ],
+        //   },
+        // },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.fitnessrepublic.co.uk`,
       },
     },
     "gatsby-plugin-react-helmet",
@@ -119,6 +136,36 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "UA-45461666-1",
+
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: true,
+
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+
+        // Specify optional GTM environment details.
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
+
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        // routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
+        // Defaults to false
+        enableWebVitalsTracking: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
@@ -126,16 +173,12 @@ module.exports = {
           // Setting this parameter is optional
           anonymize: true,
         },
-        // googleTagManager: {
-        //   trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
-        //   cookieName: "gatsby-gdpr-google-tagmanager", // default
-        //   dataLayerName: "dataLayer" // default
-        // },
-        // facebookPixel: {
-        //   pixelId: "YOUR_FACEBOOK_PIXEL_ID"
-        // },
-        // Defines the environments where the tracking should be available  - default is ["production"]
-        environments: ["production", "development"],
+        googleTagManager: {
+          trackingId: "GTM-WH7NK66", // leave empty if you want to disable the tracker
+          cookieName: "gatsby-gdpr-google-tagmanager", // default
+          defaultDataLayer: { platform: "gatsby" },
+        },
+        environments: ["production"],
       },
     },
     {
@@ -164,6 +207,14 @@ module.exports = {
         mergeCachingHeaders: true, // boolean to turn off the default caching headers
         transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
+      },
+    },
+    {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ["Price"],
+        secretKey: process.env.GATSBY_STRIPE_SECRET_KEY,
+        downloadFiles: true,
       },
     },
     {

@@ -7,27 +7,30 @@ import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
 import WorkoutList from "../components/workout/WorkoutList";
 
-
-const Workout = ({data}) => {
+const Workout = ({ data }) => {
   console.log(data);
   const workouts = data.workouts.edges;
   return (
     <>
       <Helmet
-      title="Fitness Republic Gym | Free Online Workouts"
-      meta={[
-        {
-          name: "description",
-          content:
-            "A selection of workout plans including videos and instructions for you to carry out at our gym or at home"
-        },
-        {
-          name: "keywords",
-          content:
-            "workout, online workout, weight loss, lose weight, calorie control,fitness, weight lifting, cardio excercise, excercises, excersie plan, workout plan, lessons"
-        }
-      ]}
-    />
+        title="Free Online Workouts | Fitness Republic Gym "
+        meta={[
+          {
+            name: "description",
+            content:
+              "A selection of workout plans including videos and instructions for you to carry out at our gym or at home",
+          },
+          // {
+          //   name: "robots",
+          //   content: "noindex",
+          // },
+          {
+            name: "keywords",
+            content:
+              "workout, online workout, weight loss, lose weight, calorie control,fitness, weight lifting, cardio excercise, excercises, excersie plan, workout plan, lessons",
+          },
+        ]}
+      />
 
       <Header
         title={
@@ -35,7 +38,9 @@ const Workout = ({data}) => {
             Fitness Republic <span>Online Workouts</span>
           </>
         }
-        subtitle={"Free workout plans for you to complete at our gym or at home"}
+        subtitle={
+          "Free workout plans for you to complete at our gym or at home"
+        }
       />
       <Container>
         <DualSection>
@@ -44,8 +49,7 @@ const Workout = ({data}) => {
       </Container>
     </>
   );
-}
-
+};
 
 export default Workout;
 

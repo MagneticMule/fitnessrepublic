@@ -160,7 +160,7 @@ const Card = styled.div`
 function SingleWorkout({ workout }) {
   const sets = workout.node.workoutBuilder;
   return (
-    <Link to={`/workout/${workout.node.slug.current}`}>
+    <Link to={`/workout/${workout.node.slug.current}/`}>
       <Card>
         <GatsbyImage
           image={workout.node.image.asset.gatsbyImageData}

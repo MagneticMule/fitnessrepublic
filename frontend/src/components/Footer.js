@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 import { Link } from "gatsby";
 import { device } from "../styles/DeviceSizes";
 
@@ -12,12 +12,11 @@ import {
   FaPhoneSquareAlt,
   FaStar,
   FaMapMarkerAlt,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
-import Container from '../styles/ContainerStyle';
+import Container from "../styles/ContainerStyle";
 
-import FRlogoStacked from '../assets/images/svg/fitness-republic-logo-stacked.svg';
-
+import FRlogoStacked from "../assets/images/svg/fitness-republic-logo-stacked.svg";
 
 const SiteFooter = styled.footer`
   background: var(--dark-grad);
@@ -25,8 +24,8 @@ const SiteFooter = styled.footer`
   box-shadow: inset 0 0 64px rgba(0, 0, 0, 0.35),
     inset 0 0 16px rgba(0, 0, 0, 0.45);
 
-   a {
-    color:var(--white);
+  a {
+    color: var(--white);
 
     :hover {
       color: var(--orange);
@@ -34,28 +33,28 @@ const SiteFooter = styled.footer`
   }
 `;
 
-  const Grid = styled.div`
-    margin: 2em 0;
-    display: grid;
-    align-items: flex-start;
+const Grid = styled.div`
+  margin: 2em 0;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  grid-gap: 4em;
+
+  @media ${device.mobileS} {
+    grid-template-columns: 1fr;
+  }
+
+  @media ${device.laptop} {
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    grid-gap: 4em;
+  }
 
-    @media ${device.mobileS} {
-      grid-template-columns: 1fr;
-    }
+  @media ${device.laptopL} {
+  }
 
-    @media ${device.laptop} {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    @media ${device.laptopL} {
-    }
-
-    @media ${device.desktop} {
-    }
-  `;
+  @media ${device.desktop} {
+  }
+`;
 
 const Logo = styled.section`
   @media ${device.mobileS} {
@@ -76,18 +75,18 @@ const Logo = styled.section`
 const SectionHeader = styled.div`
   > h4 {
     font-weight: 700;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
   }
 
   > p {
-    padding:0;
+    padding: 0;
     color: var(--maroon);
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-weight: 700;
-    margin:0;
-    font-size: .8rem;
-    padding-top:.6em;
+    margin: 0;
+    font-size: 0.8rem;
+    padding-top: 0.6em;
   }
 `;
 
@@ -98,43 +97,34 @@ const Address = styled.ul`
       font-weight: 300;
     }
   }
-
 `;
 
-const SocialIcons = styled.ul`
+const SocialIcons = styled.ul``;
 
+const TelephoneNumber = styled.div``;
 
-`;
+const Map = styled.div``;
 
-  const TelephoneNumber = styled.div``;
+const Copyright = styled.div`
+  background: rgba(0, 0, 0, 0.3);
 
-  const Map = styled.div``;
+  ul {
+    > li + li {
+      margin-left: 2em;
+    }
+    > li {
+      display: inline-block;
 
-
-
-  const Copyright = styled.div`
-    background: rgba(0, 0, 0, 0.3);
-
-    ul {
-      > li + li {
-        margin-left: 2em;
-      }
-      > li {
-        display: inline-block;
-
-        > a {
-          text-decoration: underline;
-          text-decoration-thickness: 0.15em;
-          text-underline-offset: 4px;
-        }
+      > a {
+        text-decoration: underline;
+        text-decoration-thickness: 0.15em;
+        text-underline-offset: 4px;
       }
     }
-  `;
+  }
+`;
 
-
-
-
-const Footer = props => (
+const Footer = (props) => (
   <SiteFooter>
     <Container>
       <Grid>
@@ -314,13 +304,13 @@ const Footer = props => (
         </p>
         <ul>
           <li>
-            <Link to="/terms">Terms and Conditions</Link>
+            <Link to="/terms/">Terms and Conditions</Link>
           </li>
           <li>
-            <Link to="/privacy#privacy-policy">Privacy Policy</Link>
+            <Link to="/privacy/">Privacy Policy</Link>
           </li>
           <li>
-            <Link to="/privacy#cookie-policy">Cookie Policy</Link>
+            <Link to="/privacy#cookie-policy/">Cookie Policy</Link>
           </li>
         </ul>
       </Container>

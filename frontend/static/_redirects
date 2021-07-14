@@ -1,46 +1,47 @@
-/the-team                         /about
-/team                             /about
+/the-team                         /about/
+/team                             /about/
 /contact                          /
-/whats-the-best-way-to-lose-fat   /blog/post/what-is-the-best-way-to-lose-fat
-/personal-training                /training
-/basket                           /membership
-/shop                             /membership
-/checkout                         /membership
-/my-account                       /membership
-/black-friday-offer               /membership
-/student-black-friday             /membership
-/free-pass                        /membership
-/students                         /membership
-/promotions/*                     /membership
-/product-category/*               /membership
-/subscription-plan-2              /membership
-/promotions/membership/           /membership
-/product-category/membership/     /membership
-/terms-conditions                 /terms
-/zumba                            /classes
-/hiit                             /classes
-/yoga                             /classes
+/whats-the-best-way-to-lose-fat   /blog/post/what-is-the-best-way-to-lose-fat/
+/basket                           /membership/
+/checkout                         /membership/
+/my-account                       /membership/
+/black-friday-offer               /membership/
+/student-black-friday             /membership/
+/free-pass                        /membership/
+/students                         /membership/
+/promotions/*                     /membership/
+/product-category/*               /membership/
+/subscription-plan-2              /membership/
+/promotions/membership/           /membership/
+/product-category/membership/     /membership/
+/terms-conditions                 /terms/
+/zumba                            /classes/
+/hiit                             /classes/
+/yoga                             /classes/
 
 /covid-19-procedures              /
-timetable/event/glute-camp        /classes
-/privacy-policy-and-disclaimer/   /privacy
-/?feature=massage-club            /classes
+timetable/event/glute-camp        /classes/
+/privacy-policy-and-disclaimer/   /privacy/
+/?feature=massage-club            /classes/
 
 /default-redirect-page            /
 /thank-you-cancellation-form      /
 /public-individual-page-2         /
 /hoodie-payment                   /
-/?feature=bodytrax                /classes
-/personal-training/               /training
-/timetable/*                      /classes
-/timetable                        /classes
-/privacy-policy-and-disclaimer/*  /privacy
-/privacy-policy                   /privacy
+/?feature=bodytrax                /classes/
+/personal-training                /training/
+/timetable/*                      /classes/
+/timetable                        /classes/
+/privacy-policy-and-disclaimer/*  /privacy/
+/privacy-policy                   /privacy/
 /one-to-one-boxing-boxfit-sessions  /training
-http://fitnessrepublic.co.uk/timetable/event/pilates-2  /membership
+http://fitnessrepublic.co.uk/timetable/event/pilates-2  /membership/
 
- /fitness/what-not-to-do-if-youre-new-to-the-gym/ /blog/post/vanity-health-and-weight-training
+ /fitness/what-not-to-do-if-youre-new-to-the-gym/ /blog/post/vanity-health-and-weight-training/
 
  /wp-content/*                    /
- PrivacyTerms
-http://fitnessrepublic.co.uk/timetable/*  /classes
+http://fitnessrepublic.co.uk/timetable/*  /classes/
+
+/member-logout                    /
+
+http://fitnessreublic.co.uk/      https://www.fitnessrepublic.co.uk

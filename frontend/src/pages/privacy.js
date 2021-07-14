@@ -16,9 +16,9 @@ const Privacy = () => {
       <Helmet
         title="Fitness Republic | Privacy and Cookie Policy"
         meta={[
-          //   {
-          //   name:"robots",
-          //    content: "noindex"
+          // {
+          //   name: "robots",
+          //   content: "noindex",
           // },
           {
             name: "description",
@@ -35,7 +35,7 @@ const Privacy = () => {
         <DualSection>
           <TextSection
             id="privacy-policy"
-            title="Privacy Policy"
+            title={<h1>Privacy Policy</h1>}
             body={
               <ul>
                 <li>

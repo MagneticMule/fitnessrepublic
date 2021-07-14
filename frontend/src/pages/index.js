@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import React from "react";
 import { graphql } from "gatsby";
 import Helmet from "react-helmet";
-
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
 import Container from "../styles/ContainerStyle";
@@ -24,17 +23,17 @@ const Index = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic: Gym in Ashby | Get Started FREE"
+        title="Fitness Republic - Ashby Gym & Fitness | Get Started FREE"
         meta={[
           {
             name: "description",
             content:
-              "Want to feel good this summer? At Fitness Republic Ashby we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
+              "At Fitness Republic Ashby, we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
           },
           {
             name: "keywords",
             content:
-              "gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire, free pass, free trial, student membership, young people membership, juniors, family run, clean, bright, community, lose weight, build muscle, friendly, personal coaching, personal support",
+              "gym in ashby, gym near coalville, gym in leicestershire, gym, fitness, personal training, ashby, coalville, leicestershire, ashby de la zouch, leicestershire",
           },
         ]}
       >
@@ -44,9 +43,10 @@ const Index = ({ data }) => {
             "@context": "https://schema.org",
             "@type": "ExerciseGym",
             "name": "Fitness Republic",
-            "image": "",
-            "@id": "",
-            "url": "",
+            "image": "https://www.fitnessrepublic.co.uk/static/1b4debd47f40e4b7ab84999c8f9e6a92/79c11/group-shot-fitness-republic-ashby-ashby-home-page.webp",
+            "@id": "https://fitnessrepublic.co.uk",
+            "url": "https://www.fitnessrepublic.co.uk",
+            "priceRange" : "££",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "01530 413330",
@@ -60,10 +60,23 @@ const Index = ({ data }) => {
               "postalCode": "LE65 1AH",
               "addressCountry": "GB"
             },
+            "review": {
+              "@type": "Review",
+              "reviewBody": "Happy, friendly, family run gym with excellent equipment and facilities. Instructors have a great knowledge of fitness training and help with your personal needs for a fit and healthy body.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Kelvin Greenhow"
+              }
+            },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 52.7475061,
-              "longitude": -1.4705644
+              "latitude": 52.74764045802777,
+              "longitude": -1.470486230108982
             },
             "openingHoursSpecification": [{
               "@type": "OpeningHoursSpecification",
@@ -101,10 +114,12 @@ const Index = ({ data }) => {
         video={intro}
         title={
           <>
-            We are <span>Fitness Republic</span>
+            We are <span>Fitness Republic</span> Ashby
           </>
         }
-        subtitle={"A Family run gym at the heart of Ashby De La Zouch"}
+        subtitle={
+          "A Family run excercise gym at the heart of Ashby De La Zouch"
+        }
       />
       <Container>
         <DualSection>
@@ -124,14 +139,16 @@ const Index = ({ data }) => {
             body={
               <>
                 We are a friendly and caring team, passionate about your
-                fitness, health and wellbeing, situated right at the heart of
-                <strong>Ashby</strong> and serving nearby areas such as{" "}
-                <strong>Coalville, Measham and Swadlincote</strong>. We will
-                give you a warm welcome and support you every step of the way to
-                reach your fitness goals and achieve them at a pace which is
-                comfortable for you. We will work alongside you to create the
-                right exercise and nutrition programmes for you so that you can
-                relax in the knowledge that you are on track to a{" "}
+                fitness, health and wellbeing, situated right at the heart of{" "}
+                <strong>Ashby De La Zouch</strong> and serving nearby areas such
+                as <strong>Coalville, Measham, Swadlincote and Moira</strong>.
+                We are proud to be one of the most respected excercise Gyms in
+                Leicestershire. We will always give you a warm welcome and
+                support you every step of the way to reach your fitness goals
+                and achieve them at a pace which is comfortable for you. We will
+                work alongside you to create the right exercise and nutrition
+                programmes for you so that you can relax in the knowledge that
+                you are on track to a{" "}
                 <strong>fitter, happier, healthier life.</strong>
               </>
             }
@@ -159,7 +176,7 @@ const Index = ({ data }) => {
                 At Fitness Republic, we promote health and wellbeing over body
                 image. Experience tells us that if you are given the right
                 guidance and are having fun while training, you will stick with
-                your plan achieve a happier, healthier, fitter life. We will
+                your plan and achieve a happier, healthier, fitter life. We will
                 take the time to listen to you and give you the tools and
                 equipment you need to
                 <strong> exercise safely and confidently</strong>.
@@ -193,9 +210,9 @@ const Index = ({ data }) => {
                     01530 413330
                   </a>
                 </strong>{" "}
-                or simply pop into the gym anytime between{" "}
-                <strong>7.00 AM and 8.00 PM</strong> for an informal chat with
-                one of the team.
+                or simply pop into our gym in Market Street, Ashby anytime
+                between <strong>7.00 AM and 8.00 PM</strong> for an informal
+                chat with one of the team.
               </>
             }
           />
@@ -211,8 +228,10 @@ const Index = ({ data }) => {
                 package. You will learn how to get the most out of our equipment
                 so that you can exercise safely and with confidence. We will
                 talk you through our Covid safety procedures and demonstrate how
-                we keep our gym clean and safe for all our customers. If you
-                would prefer a private induction then let us know in the form.
+                we keep our gym clean and safe for all our customers.
+                <strong>
+                  If you would prefer a private induction then let us know.
+                </strong>
                 Your instructor will guide you at your pace, answer all the
                 questions which you may have and help you on your way to step 3.
               </>
@@ -240,7 +259,14 @@ const Index = ({ data }) => {
                 5.30AM to 9.00PM. This will give you time to experience
                 everything our community has to offer. If you still have
                 questions then one of our team is always at hand. When you are
-                ready, have a look at our membership plans.
+                ready,{" "}
+                <Link
+                  to="/membership/"
+                  aria-label="Takes you to our membership page"
+                >
+                  have a look at our membership plans
+                </Link>
+                .
               </>
             }
           />
@@ -256,10 +282,11 @@ const Index = ({ data }) => {
               <>
                 We are positive that once you have experienced everything our
                 gym has to offer that you will be keen to become part of our
-                almost 500 strong fitness community. Enjoy our extensive
-                selection of fitness classes and well equiped gym for the low
-                monthly cost of <strong>£32.99</strong>. Or pay annually and{" "}
-                <strong>save £95</strong> on monthly membership.
+                almost 500 strong fitness community here in Ashby De La Zouch.
+                Enjoy our extensive selection of fitness classes and well
+                equiped gym for the low monthly cost of <strong>£32.99</strong>.
+                Or pay annually and <strong>save £95</strong> on monthly
+                membership.
               </>
             }
           />
@@ -389,7 +416,7 @@ const Index = ({ data }) => {
                 course will design a fitness plan that's suitable for your
                 fitness goals. This is all included in your membership.{" "}
                 <Link
-                  to="/membership"
+                  to="/membership/"
                   aria-label="Takes you to our membership page"
                 >
                   Have a look at our four membership plans and decide which one

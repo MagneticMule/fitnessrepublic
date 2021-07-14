@@ -3,10 +3,9 @@ import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 import { device } from "../styles/DeviceSizes";
 
-
 const Section = styled.section`
   grid-column: 1/-1;
-  margin-bottom:4em;
+  margin-bottom: 4em;
 `;
 
 const InstagramContainer = styled.div`
@@ -14,7 +13,7 @@ const InstagramContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  gap:1em;
+  gap: 1em;
   justify-content: space-evenly;
   > * {
     min-width: 160px;
@@ -73,13 +72,10 @@ const SubTitle = styled.p`
 `;
 
 const InstagramCard = ({ instagram }) => {
-  return (
-      <GatsbyImage image={instagram.image.asset.gatsbyImageData}/>
-  );
+  return <GatsbyImage image={instagram.image.asset.gatsbyImageData} />;
 };
 
 const InstagramSection = ({ instagrams }) => {
-  console.debug(instagrams);
   if (!instagrams) return;
   return (
     <Section>
