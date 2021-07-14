@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import {device} from './DeviceSizes';
+import styled from "styled-components";
+import { device } from "./DeviceSizes";
 
-const Container = styled.div`
+const Container = styled.main`
   margin: 0 auto;
   padding: 1em 4em 1em 5em;
   max-width: 1400px;
@@ -23,6 +23,5 @@ const Container = styled.div`
     /* max-width: 1600px; */
   }
 `;
-
 
 export default Container;

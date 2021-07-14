@@ -1,3 +1,7 @@
 {
-  "projectId": "vjrtyi"
+  "projectId": "vjrtyi",
+  "baseUrl": "http://localhost:8000/",
+  "integrationFolder": "cypress/e2e",
+  "viewportWidth": 1600,
+  "viewportHeight": 1200
 }
