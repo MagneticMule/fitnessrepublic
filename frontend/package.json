@@ -65,11 +65,7 @@
     "preload-fonts": "gatsby-preload-fonts"
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@netlify/plugin-gatsby": "^0.0.3",
-=======
     "@netlify/plugin-gatsby": "^1.0.3",
->>>>>>> 1f75fefcf3e02ac39d33ba4aa31b35f1432c4f20
     "@testing-library/cypress": "^7.0.6",
     "axe-core": "^4.2.2",
     "cypress": "^7.4.0",
