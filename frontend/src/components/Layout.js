@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
         <Link to="/privacy#cookie-policy">Cookie Policy</Link>.
         <br />
         We also discuss how we use any data we collect from you in our{" "}
-        <Link to="/privacy">Privacy Policy</Link>
+        <Link to="/privacy/">Privacy Policy</Link>
       </CookieConsent>
       {/* <WhatsAppWidget
           companyName="Fitness Republic Ashby"

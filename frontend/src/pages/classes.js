@@ -109,19 +109,20 @@ const Classes = ({ data }) => {
                   <hr />
                   <li>
                     <strong>Ballet Be Fit</strong> This is the perfect blend of
-                    a traditional ballet class with a fitness element. Strength,
-                    flexibility & posture work. Open to all levels & abilities.
-                    No ballet shoes needed!
+                    a traditional ballet class with a cardio fitness element.
+                    Strength, flexibility & posture work. Open to all levels &
+                    abilities. No ballet shoes needed!
                     <strong>
                       <i>Open to all levels and abilities.</i>
                     </strong>
                   </li>
                   <hr />
                   <li>
-                    <strong>Bootcamp</strong> Bootcamps are fun, full body
-                    outdoor fitness classes held at the local bathgrounds in
-                    Ashby De La Zouch. The content will vary between circuits,
-                    HIIT, ab’s & glutes.{" "}
+                    <strong>Bootcamp: Outdoor Fitness Classes in Ashby</strong>{" "}
+                    Bootcamps are fun, full body outdoor fitness classes held at
+                    the local bathgrounds in Ashby De La Zouch. The content will
+                    vary between circuits, Shoulder Excercises, HIIT, ab’s &
+                    glutes. <hr />
                     <i>
                       Dependant on the weather but a drop of rain doesn’t stop
                       us!
@@ -202,9 +203,10 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Spin</strong> An indoor cycling class focusing on
-                    endurance, strength, intervals, high intensity and recovery.
-                    A fun and motivating class.
+                    <strong>Spin: Indoor Cycling</strong> A high intensity
+                    fitness class focusing on endurance, strength with intervals
+                    of high intensity and recovery. A fun and motivating class
+                    that can promote weight loss and increased stamina.
                   </li>
                   <hr />
                   <li>
@@ -221,7 +223,7 @@ const Classes = ({ data }) => {
                     <strong>Zero to Spin</strong> Have you never sat on a spin
                     bike before? Or maybe not for a long time? Then we have 7
                     weeks to get you turned into a serious spinner in this
-                    class.
+                    class. Indoor cycling classes .
                   </li>
                   <hr />
                   <li>
