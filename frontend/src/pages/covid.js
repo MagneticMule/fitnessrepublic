@@ -34,6 +34,13 @@ const Covid = () => {
             title={<h1>Covid Safety Policy</h1>}
             body={
               <ul>
+                These are difficult times for us all. At{" "}
+                <Link to="/">Fitness Republic</Link> we undertsand that y9u may
+                be unsure about whether it is safe to come to our Gym in Ashby
+                De La Zouch. In this document we andswer some of the questions
+                you have sent us as well as outline what we are doing to make
+                Fitness Republic a safe and healthy environment for keeping fit
+                in 2021 and beyond.
                 <li>
                   <strong>Is it safe to go to the Gym in 2021?</strong>
                   Your risk of catching Covid in any environment will depend on
@@ -71,7 +78,6 @@ const Covid = () => {
                   to stay open and get you back fit and exercising, but we can
                   easily be shut down again if there are outbreaks.
                 </li>
-
                 <li>
                   <strong>
                     Gym etiquette is all about how you behave in the gym
