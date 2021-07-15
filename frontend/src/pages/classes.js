@@ -17,7 +17,7 @@ const Classes = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Classes in Ashby and Online | Fitness Republic Gym | First Week FREE"
+        title="Fitness Classes in Ashby De La Zouch | Fitness Republic Gym | First Week FREE"
         meta={[
           {
             name: "description",
@@ -40,7 +40,7 @@ const Classes = ({ data }) => {
       <Header
         title={
           <>
-            Fitness Classes <span>For Everyone</span>
+            Fitness Classes in<span> Ashby De La Zouch</span>
           </>
         }
         subtitle={"Fun Filled Excercise Classes in Ashby and online"}
@@ -48,7 +48,7 @@ const Classes = ({ data }) => {
       <Container>
         <DualSection>
           <Pullquote
-            body="Fitness classes are an ideal way to add structure, fun and motivation to your fitness plan. All our excercise classes are held in our immaculate, covid safe studio."
+            body="Fitness classes are an ideal way to add structure, fun and motivation to your fitness plan. All our excercise classes are held in our immaculate, covid safe studio in Ashby De La Zouch."
             attribution={
               <>
                 <strong>Simon Pellecchia</strong> // Director and Personal
@@ -79,8 +79,18 @@ const Classes = ({ data }) => {
                 including high-octane HIIT fitness classes, Conditioning and
                 energising cardiovascular and sculpting classes to relaxing mind
                 and body, we have a class to suit you. Our intimate studio is
-                fully air conditioned, bright, and airy. We also offer some
-                outdoor fitness classes via our Bootcamp class.
+                fully air conditioned, bright, airy and{" "}
+                <Link to="/covid/">Covid Safe</Link>. We also offer outdoor
+                fitness classes at the{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Bath_Grounds"
+                  target="_blank"
+                  rel="nofollow noopener"
+                  aria-label="Takes you to the Bath Grounds article on WikiPedia.org"
+                >
+                  Bath Grounds Ashby
+                </a>
+                .
               </>
             }
           />
