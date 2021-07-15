@@ -9,7 +9,6 @@ import TextSection from "../components/TextSection";
 import Image from "../components/widgets/Image";
 import ImageGallery from "../components/ImageGallery";
 import Pullquote from "../components/widgets/text/Pullquote";
-import Button from "../components/widgets/Button";
 import SuperBullet from "../components/widgets/text/SuperBullet";
 import ReviewSection from "../components/ReviewSection";
 import MembershipSection from "../components/MembershipSection";
@@ -280,13 +279,13 @@ const Index = ({ data }) => {
             subtitle="The next step in your fitness journey"
             body={
               <>
-                We are positive that once you have experienced everything our
-                gym has to offer that you will be keen to become part of our
-                almost 500 strong fitness community here in Ashby De La Zouch.
-                Enjoy our extensive selection of fitness classes and well
-                equiped gym for the low monthly cost of <strong>£32.99</strong>.
-                Or pay annually and <strong>save £95</strong> on monthly
-                membership.
+                We are positive that once you have experienced everything{" "}
+                <strong>Fitness Republic</strong> has to offer that you will be
+                keen to become part of our almost 500 strong fitness community
+                here in Ashby De La Zouch. Enjoy our extensive selection of
+                fitness classes and well equiped gym for the low monthly cost of{" "}
+                <strong>£32.99</strong>. Or pay annually and{" "}
+                <strong>save £95</strong> on monthly membership.
               </>
             }
           />

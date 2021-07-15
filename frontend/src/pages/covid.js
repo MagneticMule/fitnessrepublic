@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { DualSection } from "../styles/GridStyles";
 import Container from "../styles/ContainerStyle";
 import TextSection from "../components/TextSection";
+import Video from "../components/Video";
 
 const Covid = () => {
   return (
@@ -34,14 +35,41 @@ const Covid = () => {
             body={
               <ul>
                 <li>
+                  <strong>Is it safe to go to the Gym in 2021?</strong>
+                  Your risk of catching Covid in any environment will depend on
+                  a range of factors, such as how well ventilated the space is,
+                  how many people are in that space with you, how good everyone
+                  is at sticking to gym cleaning and social distancing rules,
+                  how long you spend at the gym, and how many Covid cases there
+                  are in Ashby De La Zouch as a whole. Whether you have been
+                  vaccinated also plays a central role, If you’re fully
+                  vaccinated then your chances of catching Covid – and falling
+                  very ill – are thankfully, very low. Here at{" "}
+                  <Link to="/">Fitness Republic</Link> we have strict rules in
+                  place with regards to cleaning equipment and social
+                  distancing.
+                  <br />
+                  We made a quick video explaining what we are doing to protect
+                  you and our staff during your visit to{" "}
+                  <Link to="/">Fitness Repulic</Link> for the first time.
+                </li>
+                <hr />
+                <li>
+                  <Video
+                    videoSrcURL="https://www.youtube.com/embed/ozCYQ0K1NBE"
+                    videoTitle="Fitness Republic Covid Safety Proceedures"
+                  />
+                </li>
+                <hr />
+                <li>
                   <strong>If you feel unwell</strong>
                   First and most importantly, if you feel unwell or have any
-                  symptoms such as a high temperature, or new cough, please
-                  don’t enter the facility. Also, if you have been with someone
+                  symptoms such as a high temperature, or a new cough, please
+                  don’t enter the facility at all. If you have been with someone
                   who has any of these symptoms please self-isolate for 2 weeks.
                   Remember, it’s a tough time for gyms, and we desperately want
-                  to re-open and get you back exercising, but we can easily be
-                  shut down again if there are outbreaks.
+                  to stay open and get you back fit and exercising, but we can
+                  easily be shut down again if there are outbreaks.
                 </li>
 
                 <li>
