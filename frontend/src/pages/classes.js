@@ -71,15 +71,16 @@ const Classes = ({ data }) => {
             }
             body={
               <>
-                One of the great things about group classes is that they provide
-                a community that help keeps you motivated to reach your fitness
-                goals. Our class schedule includes an incredible range of
-                workout training activities to suit any fitness level. We have
-                an extensive range of group exercise classes on offer including
-                high-octane HIIT fitness classes, Conditioning and energising
-                cardiovascular and sculpting classes to relaxing mind and body,
-                we have a class to suit you. Our intimate studio is fully air
-                conditioned, bright, and airy.
+                One of the great things about group excercise classes is that
+                they provide a community that help keeps you motivated to reach
+                your fitness goals. Our class schedule includes an incredible
+                range of workout training activities to suit any fitness level.
+                We have an extensive range of group exercise classes on offer
+                including high-octane HIIT fitness classes, Conditioning and
+                energising cardiovascular and sculpting classes to relaxing mind
+                and body, we have a class to suit you. Our intimate studio is
+                fully air conditioned, bright, and airy. We also offer some
+                outdoor fitness classes via our Bootcamp class.
               </>
             }
           />
@@ -221,14 +222,14 @@ const Classes = ({ data }) => {
                   </li>
                   <hr />
                   <li>
-                    <strong>Zero to Spin</strong> Have you never sat on a spin
-                    bike before? Or maybe not for a long time? Then we have 7
-                    weeks to get you turned into a serious spinner in this
-                    indoor cycling class for begginers.
+                    <strong>Zero to Spin: Indoor Cycling for Begginers</strong>{" "}
+                    Have you never sat on a spin bike before? Or maybe not for a
+                    long time? Then we have 7 weeks to get you turned into a
+                    serious spinner in this indoor cycling class for begginers.
                   </li>
                   <hr />
                   <li>
-                    <strong>Zumba</strong>
+                    <strong>Zumba Classes</strong>
                     Combines Latin and international music with dance moves.
                     ZUMBA® routines incorporate interval training alternating
                     fast and slow rhythms to help improve cardiovascular fitness

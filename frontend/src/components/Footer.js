@@ -304,8 +304,12 @@ const Footer = (props) => (
         </p>
         <ul>
           <li>
+            <Link to="/covid/">Covid Safety Policy</Link>
+          </li>
+          <li>
             <Link to="/terms/">Terms and Conditions</Link>
           </li>
+
           <li>
             <Link to="/privacy/">Privacy Policy</Link>
           </li>

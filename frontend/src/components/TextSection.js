@@ -71,10 +71,11 @@ const BodyText = styled.div`
   }
 
   ol {
-    margin: 1em 0;
+    margin: 1em 0 2em 0;
 
     > li {
       list-style: decimal;
+      margin-bottom: 1em;
     }
   }
 `;
