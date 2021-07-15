@@ -27,7 +27,7 @@ const Classes = ({ data }) => {
           {
             name: "keywords",
             content:
-              "fitness classes near me, fitness classes in ashby, covid safe, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
+              "fitness classes near me, Spin indoor cycling, fitness classes in ashby, covid safe, yoga, Zumba, dancing, zumba toning, high intensity, weight lifting, spin class, cycling, fitness bike, instructor, cardio, step class, weight lifting, HIIT, ballet, boxing, boxfit, fitness timetable",
           },
         ]}
       >
@@ -204,9 +204,10 @@ const Classes = ({ data }) => {
                   <hr />
                   <li>
                     <strong>Spin: Indoor Cycling</strong> A high intensity
-                    fitness class focusing on endurance, strength with intervals
-                    of high intensity and recovery. A fun and motivating class
-                    that can promote weight loss and increased stamina.
+                    workout focusing on endurance, strength with intervals of
+                    high intensity followed by short bouts of recovery. A fun
+                    and highly motivating class that can promote weight loss and
+                    increase stamina.
                   </li>
                   <hr />
                   <li>
@@ -223,7 +224,7 @@ const Classes = ({ data }) => {
                     <strong>Zero to Spin</strong> Have you never sat on a spin
                     bike before? Or maybe not for a long time? Then we have 7
                     weeks to get you turned into a serious spinner in this
-                    class. Indoor cycling classes .
+                    indoor cycling class for begginers.
                   </li>
                   <hr />
                   <li>
