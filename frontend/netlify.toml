@@ -30,4 +30,4 @@ for = "/*"
 
 [build]
   command = "yarn build"
-  publish = "public"
+  publish = "frontend/public"
