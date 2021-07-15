@@ -28,6 +28,6 @@ for = "/*"
 	[headers.values]
 	Access-Control-Allow-Origin = "*"
 
-[[build]]
+[build]
   command = "yarn build && yarn export"
   publish = "public"
