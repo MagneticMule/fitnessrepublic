@@ -29,5 +29,5 @@ for = "/*"
 	Access-Control-Allow-Origin = "*"
 
 [build]
-  command = "yarn build && yarn export"
+  command = "yarn build"
   publish = "public"
