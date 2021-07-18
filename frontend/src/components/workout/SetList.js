@@ -1,9 +1,8 @@
-import { Link } from 'gatsby';
-import React from 'react';
-import ExcerciseList from './ExcerciseList.js'
+import { Link } from "gatsby";
+import React from "react";
+import ExcerciseList from "./ExcerciseList.js";
 
-const SetList = ( {sets} ) => {
-
+const SetList = ({ sets }) => {
   return (
     <>
       {sets.map((set) => (
@@ -18,6 +17,6 @@ const SetList = ( {sets} ) => {
       ))}
     </>
   );
-}
+};
 
 export default SetList;

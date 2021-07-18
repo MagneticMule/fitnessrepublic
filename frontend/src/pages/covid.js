@@ -10,7 +10,7 @@ const Covid = () => {
   return (
     <>
       <Helmet
-        title="Fitness Republic | Privacy and Cookie Policy"
+        title="Covid Safety Policy | Fitness Republic | Ashby Gym and Fitness"
         meta={[
           // {
           //   name: "robots",
@@ -35,12 +35,37 @@ const Covid = () => {
             body={
               <ul>
                 These are difficult times for us all. At{" "}
-                <Link to="/">Fitness Republic</Link> we undertsand that y9u may
+                <Link to="/">Fitness Republic</Link> we undertsand that you may
                 be unsure about whether it is safe to come to our Gym in Ashby
-                De La Zouch. In this document we andswer some of the questions
-                you have sent us as well as outline what we are doing to make
-                Fitness Republic a safe and healthy environment for keeping fit
-                in 2021 and beyond.
+                De La Zouch. At a bare minimum you should know that:
+                <ol>
+                  <li>
+                    <h4>Our staff is tested twice per week for Covid.</h4>
+                  </li>
+                  <li>
+                    <h4>
+                      We allow no more than 20 people into the gym at once
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      We enforce social distancing at each of our Fitness
+                      Classes
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>
+                      All members are required to clean equipment after use
+                    </h4>
+                  </li>
+                  <li>
+                    <h4>Staff clean the gym and equipment hourly</h4>
+                  </li>
+                </ol>
+                If you would like to know more, please keep reading. In this
+                document we answer some of the questions you have sent us as
+                well as outline what we are doing to make Fitness Republic a
+                safe and healthy environment for keeping fit in 2021 and beyond.
                 <li>
                   <strong>Is it safe to go to the Gym in 2021?</strong>
                   Your risk of catching Covid in any environment will depend on
@@ -48,10 +73,15 @@ const Covid = () => {
                   how many people are in that space with you, how good everyone
                   is at sticking to gym cleaning and social distancing rules,
                   how long you spend at the gym, and how many Covid cases there
-                  are in Ashby De La Zouch as a whole. Whether you have been
-                  vaccinated also plays a central role, If you’re fully
-                  vaccinated then your chances of catching Covid – and falling
-                  very ill – are thankfully, very low. Here at{" "}
+                  are in Ashby De La Zouch as a whole.
+                </li>
+                <li>
+                  <strong>
+                    Is it safe to go to the gym after covid vaccine?
+                  </strong>
+                  Whether you have been vaccinated also plays a central role, If
+                  you’re fully vaccinated then your chances of catching Covid –
+                  and falling very ill – are thankfully, very low. Here at{" "}
                   <Link to="/">Fitness Republic</Link> we have strict rules in
                   place with regards to cleaning equipment and social
                   distancing.
@@ -69,7 +99,7 @@ const Covid = () => {
                 </li>
                 <hr />
                 <li>
-                  <strong>If you feel unwell</strong>
+                  <strong>What If I feel unwell?</strong>
                   First and most importantly, if you feel unwell or have any
                   symptoms such as a high temperature, or a new cough, please
                   don’t enter the facility at all. If you have been with someone
@@ -127,7 +157,7 @@ const Covid = () => {
                 </li>
                 <hr />
                 <li>
-                  <strong>Getting back your fitness after lockdown</strong>
+                  <strong>How do I get back my fitness after lockdown?</strong>
                   Coronavirus and lockdown have made people more aware of their
                   health and fitness and appears to have got the UK exercising
                   more. That in itself, is great news. There is a lot of talk

@@ -1,13 +1,12 @@
-import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 // import Img from 'gatsby-image';
 import { GatsbyImage } from "gatsby-plugin-image";
-import styled from 'styled-components';
+import styled from "styled-components";
 import { device } from "../../styles/DeviceSizes";
 
-
 const PicContainer = styled.div`
-  grid-column: ${props => (props.pos ? props.pos : "1/5")};
+  grid-column: ${(props) => (props.pos ? props.pos : "1/5")};
   margin-bottom: 2em;
 `;
 
@@ -39,23 +38,22 @@ const StyledImg = styled(GatsbyImage)`
 `;
 
 const Blurb = styled.p`
-color: var(--dark-grey);
-  font-style:italic;
+  color: var(--dark-grey);
+  font-style: italic;
   > strong {
-    font-weight:bold;
+    font-weight: bold;
   }
 `;
 
-
-const Image = ({pos, pic, alt, blurb}) => {
-return (
-  <PicContainer pos={pos}>
-    <ImageContainer>
-      <StyledImg image={pic} alt={alt} />
-    </ImageContainer>
-    <Blurb>{blurb}</Blurb>
-  </PicContainer>
-);
-}
+const Image = ({ pos, pic, alt, blurb }) => {
+  return (
+    <PicContainer pos={pos}>
+      <ImageContainer>
+        <StyledImg image={pic} alt={alt} />
+      </ImageContainer>
+      <Blurb>{blurb}</Blurb>
+    </PicContainer>
+  );
+};
 
 export default Image;

@@ -14,7 +14,7 @@ const Privacy = () => {
   return (
     <>
       <Helmet
-        title="Fitness Republic | Privacy and Cookie Policy"
+        title="Privacy and Cookie Policy | Fitness Republic - Ashby Gym "
         meta={[
           // {
           //   name: "robots",

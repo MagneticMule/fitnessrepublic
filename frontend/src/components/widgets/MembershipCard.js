@@ -107,13 +107,13 @@ const Button = styled.div`
     transition: all 0.2s;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     border: 2px solid var(--white);
-      &:hover {
-        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-      }
+    &:hover {
+      box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    }
   }
-  `;
+`;
 
-const MembershipCard = ({membership}) => {
+const MembershipCard = ({ membership }) => {
   return (
     <Card>
       <h3>{membership.title}</h3>

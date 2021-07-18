@@ -36,15 +36,15 @@ const Layout = ({ children }) => {
           padding: "1em",
           textTransform: "uppercase",
           color: "black",
-          fontWeight: "black",
-          borderRadius: "2px",
+          fontWeight: "500",
+          borderRadius: "50%",
           alignSelf: "middle",
         }}
         cookieName="gatsby-gdpr-google-analytics"
       >
         <strong>Fitness Republic uses cookies.</strong> By using our site you
         are agreeing to the terms of our{" "}
-        <Link to="/privacy#cookie-policy">Cookie Policy</Link>.
+        <Link to="/privacy#cookie-policy/">Cookie Policy</Link>.
         <br />
         We also discuss how we use any data we collect from you in our{" "}
         <Link to="/privacy/">Privacy Policy</Link>

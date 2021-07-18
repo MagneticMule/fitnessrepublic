@@ -1,6 +1,5 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 import { device } from "./DeviceSizes";
-
 
 const DualSection = styled.section`
   margin-top: 4em;
@@ -24,9 +23,6 @@ const SplitSection = styled.section`
   display: grid;
   grid-gap: 2em 4em;
   grid-template-columns: repeat(auto);
-
 `;
 
-
-
-export {DualSection, SplitSection};
+export { DualSection, SplitSection };

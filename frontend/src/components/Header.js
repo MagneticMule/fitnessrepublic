@@ -1,11 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import DualSection from '../styles/GridStyles';
-import Button from './widgets/Button';
+import React from "react";
+import styled from "styled-components";
+import DualSection from "../styles/GridStyles";
+import Button from "./widgets/Button";
 import { device } from "../styles/DeviceSizes";
 import Container from "../styles/ContainerStyle";
-
-
 
 /* local components */
 // const Container = styled.div`
@@ -14,8 +12,8 @@ import Container from "../styles/ContainerStyle";
 // `;
 
 const Head = styled.head`
-  overflow:hidden;
-  z-index:0;
+  overflow: hidden;
+  z-index: 0;
   display: block;
   background: linear-gradient(
       120.04deg,
@@ -25,9 +23,9 @@ const Head = styled.head`
     linear-gradient(
       255deg,
       rgba(0, 13, 129, 0.2) 0.9%,
-      rgba(255, 255, 255,.6) 56.29%
+      rgba(255, 255, 255, 0.6) 56.29%
     ),
-    rgba(255, 225, 225,.75);
+    rgba(255, 225, 225, 0.75);
   box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.25);
 
   @media ${device.mobileS} {
@@ -114,22 +112,23 @@ const Subtitle = styled.p`
   text-transform: uppercase;
 `;
 
-
 const Video = styled.div`
   position: relative;
   > video {
     object-fit: cover;
     position: absolute;
     min-height: 80vh;
-    width:100%;
+    width: 100%;
     z-index: -1;
   }
 `;
 
-const TextSection = ({video, title, subtitle,cta} ) => {
-  let ctaButton ='';
-  if (cta!== 'none') {
-    ctaButton = <Button title="Free Seven Day Pass" destination={"/#getstarted"} />
+const TextSection = ({ video, title, subtitle, cta }) => {
+  let ctaButton = "";
+  if (cta !== "none") {
+    ctaButton = (
+      <Button title="Free Seven Day Pass" destination={"/#getstarted"} />
+    );
   }
   return (
     <Head>
@@ -149,6 +148,6 @@ const TextSection = ({video, title, subtitle,cta} ) => {
       </Container>
     </Head>
   );
-}
+};
 
 export default TextSection;

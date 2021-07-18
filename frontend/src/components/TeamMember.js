@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Card = styled.div`
-  grid-column: ${props => (props.pos ? props.pos : "1/3")};
+  grid-column: ${(props) => (props.pos ? props.pos : "1/3")};
 `;
 
 const ImageContainer = styled.div`
@@ -17,10 +17,9 @@ const StyledImg = styled(Img)`
 `;
 
 const Name = styled.h3`
-font-weight: 500;
-font-size: 2rem;
+  font-weight: 500;
+  font-size: 2rem;
 `;
-
 
 const Bio = styled.div`
   color: var(--dark-grey);
@@ -31,8 +30,8 @@ const Bio = styled.div`
     font-weight: 900;
   }
 
-  >p {
-    font-weight:500;
+  > p {
+    font-weight: 500;
   }
   > strong {
     font-weight: bold;
@@ -41,7 +40,7 @@ const Bio = styled.div`
 
 const Contact = styled.div``;
 
-const TeamMember = props => {
+const TeamMember = (props) => {
   return (
     <>
       <Card>

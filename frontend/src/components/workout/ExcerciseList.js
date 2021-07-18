@@ -1,7 +1,7 @@
-import { Link } from 'gatsby';
-import React from 'react';
-import styled from 'styled-components';
-import Video from '../Video.js';
+import { Link } from "gatsby";
+import React from "react";
+import styled from "styled-components";
+import Video from "../Video.js";
 
 const Card = styled.div`
   margin: 0 auto;
@@ -39,7 +39,7 @@ const Card = styled.div`
   }
 
   form {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     color: white;
     > label {
@@ -49,7 +49,7 @@ const Card = styled.div`
   }
   input {
     border-radius: 16px;
-    padding:.5em;
+    padding: 0.5em;
   }
 `;
 
@@ -57,13 +57,15 @@ const Content = styled.div`
   margin: 4em;
 `;
 
-const ExcerciseList = ( {excercises} ) => {
+const ExcerciseList = ({ excercises }) => {
   return (
     <>
       {excercises.map((excercise) => (
         <Card>
           {/* <Video videoSrcURL={excercise.video} controls/> */}
-          {excercise.CloudVideo && <video source src={excercise.CloudVideo.url} controls loop/>}
+          {excercise.CloudVideo && (
+            <video source src={excercise.CloudVideo.url} controls loop />
+          )}
           <Content>
             <h3>{excercise.excerciseName}</h3>
             <div className="reps">
@@ -83,6 +85,6 @@ const ExcerciseList = ( {excercises} ) => {
       ))}
     </>
   );
-}
+};
 
 export default ExcerciseList;

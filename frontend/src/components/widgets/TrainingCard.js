@@ -122,7 +122,7 @@ const TrainingCard = ({ training }) => {
       <hr />
       <div className="price">{training.cost}</div>
       <ul>
-        {training.bullets.map(bullet => (
+        {training.bullets.map((bullet) => (
           <li>{bullet}</li>
         ))}
       </ul>

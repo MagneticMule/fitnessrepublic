@@ -1,24 +1,23 @@
-import React, {useState, useEffect} from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
+import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
+import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
-import HeadShot from './widgets/HeadShot';
-import Button from './widgets/Button';
+import HeadShot from "./widgets/HeadShot";
+import Button from "./widgets/Button";
 import { device } from "../styles/DeviceSizes";
 
-
 const Container = styled.div`
-  grid-column: ${props => (props.pos ? props.pos : "1/2")};
+  grid-column: ${(props) => (props.pos ? props.pos : "1/2")};
   grid-row: span 2;
 
   @media ${device.mobileS} {
-    text-align:center;
+    text-align: center;
     grid-column: 1/-1;
     margin: 0;
   }
 
   @media ${device.laptop} {
-    grid-column: ${props => (props.pos ? props.pos : "1/2")};
+    grid-column: ${(props) => (props.pos ? props.pos : "1/2")};
     grid-row: span 2;
   }
 `;
@@ -38,7 +37,7 @@ const Bubble = styled.div`
   max-width: 480px;
 
   @media ${device.mobileS} {
-    margin:0 auto 4em auto;
+    margin: 0 auto 4em auto;
     padding: 0 2em 2em 2em;
   }
 
@@ -69,12 +68,15 @@ const Bubble = styled.div`
   }
 `;
 
-
 const InfoBubble = (props) => {
   return (
     <Container>
       <Bubble>
-        <GatsbyImage image={props.headshot} className="headshot" alt="{props.name}'s headshot" />
+        <GatsbyImage
+          image={props.headshot}
+          className="headshot"
+          alt="{props.name}'s headshot"
+        />
         <b>
           Working with a personal instructor is the perfect kickstart to your
           fitness journey.
@@ -95,7 +97,6 @@ const InfoBubble = (props) => {
       </Bubble>
     </Container>
   );
-}
-
+};
 
 export default InfoBubble;

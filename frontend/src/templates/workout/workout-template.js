@@ -1,9 +1,9 @@
-import React from 'react';
-import { graphql } from 'gatsby';
+import React from "react";
+import { graphql } from "gatsby";
 import Container from "../../styles/ContainerStyle";
-import Helmet from 'react-helmet';
-import WorkoutHeader from '../../components/workout/WorkoutHeader.js';
-import SetList from '../../components/workout/SetList.js';
+import Helmet from "react-helmet";
+import WorkoutHeader from "../../components/workout/WorkoutHeader.js";
+import SetList from "../../components/workout/SetList.js";
 
 const Workout = ({ data }) => {
   const { workout } = data;
@@ -28,8 +28,7 @@ const Workout = ({ data }) => {
       </section>
     </>
   );
-}
-
+};
 
 // $slug: String! = expect the slug to be of type String and ! = required
 export const query = graphql`

@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 import { device } from "../../../styles/DeviceSizes";
 
 const Background = styled.section`
@@ -29,7 +29,7 @@ const Bullet = styled.div`
 `;
 
 const BulletPoint = styled.div`
-margin: 0 auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,7 @@ margin: 0 auto;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
-  margin-bottom:-1em;
+  margin-bottom: -1em;
   border: 1em solid var(--grey);
 
   > span {
@@ -59,21 +59,18 @@ margin: 0 auto;
   }
 `;
 
-
 const Body = styled.div`
   align-self: top;
   font-size: 1.2rem;
   > h3 {
     color: var(--orange);
-    font-weight:500;
+    font-weight: 500;
     text-transform: capitalize;
     letter-spacing: -1px;
   }
 `;
 
-
-const SuperBullet = props =>{
-
+const SuperBullet = (props) => {
   return (
     <Bullet pos={props.pos} id={props.id}>
       <BulletPoint>
@@ -84,8 +81,7 @@ const SuperBullet = props =>{
         {props.body}
       </Body>
     </Bullet>
-  )
-}
-
+  );
+};
 
 export default SuperBullet;

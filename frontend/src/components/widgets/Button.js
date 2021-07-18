@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from "prop-types";
+import React from "react";
 
-import { Link as GatsbyLink } from 'gatsby';
-import styled from 'styled-components';
+import { Link as GatsbyLink } from "gatsby";
+import styled from "styled-components";
 
-import Icon from './Icon';
+import Icon from "./Icon";
 
 const StyledLink = styled(GatsbyLink)`
   margin: 2em 0 1em 0;
@@ -17,32 +17,34 @@ const StyledLink = styled(GatsbyLink)`
   font-size: 1rem;
   text-transform: uppercase;
   color: white;
-  padding: .8em 2em;
+  padding: 0.8em 2em;
   cursor: pointer;
   transition: all 0.2s;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--deep-purple);
   &:hover {
-    color:white;
+    color: white;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
   }
 `;
 
-const Button = props => {
+const Button = (props) => {
   return (
-      <StyledLink className="general"
+    <StyledLink
+      className="general"
       aria-label={props.aria}
-      to={props.destination}>
-        {props.title}
-      </StyledLink>
-  )
-}
+      to={props.destination}
+    >
+      {props.title}
+    </StyledLink>
+  );
+};
 
 Button.propTypes = {
   aria: PropTypes.string,
   destination: PropTypes.string,
   title: PropTypes.string,
-  type: PropTypes.oneOf(['form', 'cta', 'general']),
-}
+  type: PropTypes.oneOf(["form", "cta", "general"]),
+};
 
 export default Button;

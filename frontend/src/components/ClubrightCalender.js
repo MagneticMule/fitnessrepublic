@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { device } from "../styles/DeviceSizes";
 const Calender = styled.section`
@@ -9,7 +9,7 @@ const Calender = styled.section`
     }
 
     .calendarDay + .calendarDay {
-      margin-left:4px;
+      margin-left: 4px;
     }
     .calendarDay {
       > h3 {
@@ -65,7 +65,7 @@ const Calender = styled.section`
     }
   }
 `;
-const ClubrightCalender = props => {
+const ClubrightCalender = (props) => {
   // const [calData, setCalData] = useState(0);
   // useEffect(() => {
   //   // get data from clubright calender. It returnes Raw Html including jQuery
@@ -99,7 +99,6 @@ const ClubrightCalender = props => {
       ></div>
     </Calender>
   );
-}
-
+};
 
 export default ClubrightCalender;

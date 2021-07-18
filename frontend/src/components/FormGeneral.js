@@ -4,13 +4,12 @@ import { navigate } from "gatsby-link";
 import { device } from "../styles/DeviceSizes";
 const Form = styled.form`
   margin-bottom: 4em;
-  grid-column: ${props => (props.pos ? props.pos : "2/4")};
+  grid-column: ${(props) => (props.pos ? props.pos : "2/4")};
   display: flex;
   flex-direction: column;
 
   > .field {
     margin-top: 2em;
-
   }
 
   @media ${device.mobileS} {
@@ -18,7 +17,7 @@ const Form = styled.form`
   }
 
   @media ${device.laptop} {
-    grid-column: ${props => (props.pos ? props.pos : "2/4")};
+    grid-column: ${(props) => (props.pos ? props.pos : "2/4")};
   }
 
   @media ${device.laptopL} {
@@ -76,9 +75,9 @@ const Button = styled.input`
   box-shadow: var(--shadow-low);
 `;
 
-const FormGeneral = props => (
+const FormGeneral = (props) => (
   <Form
-    name={$props => (props.name ? props.name : "General Enquiry")}
+    name={($props) => (props.name ? props.name : "General Enquiry")}
     method="post"
     data-netlify="true"
     data-netlify-honeypot="bot-field"
@@ -90,7 +89,7 @@ const FormGeneral = props => (
       <Input
         type="hidden"
         name="form-name"
-        value={$props => (props.name ? props.name : "General Enquiry")}
+        value={($props) => (props.name ? props.name : "General Enquiry")}
       />
       <Label htmlFor="name">What should we call you?</Label>
       <Input

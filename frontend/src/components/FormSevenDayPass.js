@@ -1,8 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { navigate } from 'gatsby-link';
+import React from "react";
+import styled from "styled-components";
+import { navigate } from "gatsby-link";
 import { device } from "../styles/DeviceSizes";
-
 
 const Form = styled.form`
   margin-bottom: 4em;
@@ -40,12 +39,12 @@ const Form = styled.form`
 `;
 
 const Label = styled.label`
-  letter-spacing: -.02rem;
+  letter-spacing: -0.02rem;
   display: block;
   font-size: 1.3rem;
   font-weight: 300;
   color: var(--deep-purple);
-  text-transform:capitalize;
+  text-transform: capitalize;
 `;
 
 const Input = styled.input`
@@ -57,8 +56,8 @@ const Input = styled.input`
   background: #f4f4f4;
   border: 2px solid #ff7121;
   box-shadow: inset var(--shadow-low);
-  ::placeholder{
-    opacity:.7;
+  ::placeholder {
+    opacity: 0.7;
   }
 
   &:focus {
@@ -72,7 +71,7 @@ const TextArea = styled.textarea`
   padding: 1em;
   border: 2px solid var(--orange);
   border-radius: 4px;
-  resize:none;
+  resize: none;
 `;
 
 const Button = styled.input`
@@ -87,7 +86,7 @@ const Button = styled.input`
   box-shadow: var(--shadow-low);
 `;
 
-const FormSevenDayPass = props => (
+const FormSevenDayPass = (props) => (
   <Form
     name="Seven Day Pass"
     method="post"

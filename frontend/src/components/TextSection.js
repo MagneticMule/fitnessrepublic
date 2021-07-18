@@ -55,6 +55,15 @@ const BodyText = styled.div`
       margin: 1em 0;
       padding-left: 2em;
       border-left: 4px solid var(--orange);
+      &.flex {
+        display: flex;
+        flex-direction: row;
+
+        > .spacer {
+          flex: 1;
+        }
+      }
+
       > h2 {
         color: var(--orange);
         text-transform: capitalize;

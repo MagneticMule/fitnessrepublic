@@ -1,6 +1,4 @@
-
 let countDownTimer = (td) => {
-
   //expects date in format of '2021-04-15'
   const targetDate = +new Date(td);
   const currentDate = +new Date();
@@ -13,13 +11,13 @@ let countDownTimer = (td) => {
       minutes: Math.floor((difference / 1000 / 60) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
-    return (Object.keys(parts)
+    return Object.keys(parts)
       .map((part) => {
         if (!parts[part]) return;
         return `${parts[part]} ${part}`;
       })
-      .join(' - '));
+      .join(" - ");
   }
-}
+};
 
 export default countDownTimer;

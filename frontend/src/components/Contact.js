@@ -1,7 +1,7 @@
-import React from 'react';
-import { navigate } from 'gatsby-link';
+import React from "react";
+import { navigate } from "gatsby-link";
 
-const Contact = props => (
+const Contact = (props) => (
   <section id="contact">
     <div className="inner">
       <section>
@@ -79,4 +79,4 @@ const Contact = props => (
   </section>
 );
 
-export default Contact
+export default Contact;

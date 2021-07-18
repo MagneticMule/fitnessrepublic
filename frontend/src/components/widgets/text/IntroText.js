@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 const Text = styled.div`
   font-size: 2rem;
@@ -8,13 +8,9 @@ const Text = styled.div`
   font-style: italic;
   margin: 0;
   line-height: 1.5;
-  grid-column: ${props => (props.pos ? props.pos : '2/-1')};
+  grid-column: ${(props) => (props.pos ? props.pos : "2/-1")};
 `;
 
-const IntroText = (props) => (
-<Text>
-  {props.text}
-</Text>
-);
+const IntroText = (props) => <Text>{props.text}</Text>;
 
 export default IntroText;

@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
 
-const WorkoutLayout = ( { children } ) =>{
-  return(
+const WorkoutLayout = ({ children }) => {
+  return (
     <>
-      <GlobalStyles/>
-      <Typography/>
+      <GlobalStyles />
+      <Typography />
       {children}
     </>
   );
-}
-
+};
 
 export default WorkoutLayout;
