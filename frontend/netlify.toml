@@ -28,6 +28,6 @@ for = "/*"
 	[headers.values]
 	Access-Control-Allow-Origin = "*"
 
-[build]
-  command = "yarn build"
-  publish = "frontend/public/"
+# [build]
+#   command = "yarn build"
+#   publish = "frontend/public/"
