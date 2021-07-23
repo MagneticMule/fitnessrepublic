@@ -30,7 +30,38 @@ const Membership = ({ data }) => {
               "free membership, free pass, gym membership, student membership, older people, class memberhip, family, youth training, yearly, annual",
           },
         ]}
-      ></Helmet>
+      >
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "review": {
+              "@type": "Review",
+              "reviewBody": "It's such a friendly & welcoming atmosphere, I've honestly never been to a gym like it. I always used to feel uncomfortable in the gym, being a larger lady, but at FR there really is a range of people of all shapes & sizes from al walks of life; this helps me to feel comfortable to workout properly.",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Zoe"
+              }
+            },
+            "review": {
+              "@type": "Review",
+              "reviewBody": "The best gym in Ashby, for sure! Friendly team, nice, clean and very safe when we talk about covid!": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "Sérgio Oliveira Souza"
+              }
+      `}
+        </script>
+      </Helmet>
       <Header
         title={
           <>
