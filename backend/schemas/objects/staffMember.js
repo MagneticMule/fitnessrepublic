@@ -1,4 +1,4 @@
-import { BsFillPeopleFill as icon} from 'react-icons/bs';
+import { BsFillPeopleFill as icon } from 'react-icons/bs';
 import React from 'react';
 
 export default {
@@ -50,7 +50,7 @@ export default {
     select: {
       title: 'firstName',
       subtitle: 'secondName',
-      media: 'avitar'
+      media: 'avitar',
     },
   },
   initialValue: {

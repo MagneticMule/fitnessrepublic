@@ -23,7 +23,7 @@ const Covid = () => {
           },
           {
             name: "keywords",
-            content: "covid, gym, safety",
+            content: "covid, gym, safety, ashby de la zouch",
           },
         ]}
       ></Helmet>
@@ -57,9 +57,6 @@ const Covid = () => {
                     <h4>
                       All members are required to clean equipment after use
                     </h4>
-                  </li>
-                  <li>
-                    <h4>Staff clean the gym and equipment hourly</h4>
                   </li>
                 </ol>
                 If you would like to know more, please keep reading. In this

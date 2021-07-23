@@ -1,8 +1,8 @@
 // First, we must import the schema creator
-import createSchema from 'part:@sanity/base/schema-creator'
+import createSchema from 'part:@sanity/base/schema-creator';
 
 // Then import schema types from any plugins that might expose them
-import schemaTypes from 'all:part:@sanity/base/schema-type'
+import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // => object schemas
 import businessDetails from './objects/businessDetails.js';
@@ -19,8 +19,8 @@ import target from './objects/target.js';
 import client from './objects/client.js';
 import membership from './objects/membership.js';
 import instagram from './objects/instagram.js';
-import alert  from './objects/alert.js';
-
+import alert from './objects/alert.js';
+import fitnessClass from './objects/fitnessClass.js';
 
 // => blog
 import bodyPortableText from './objects/blog/bodyPortableText.js';
@@ -29,16 +29,12 @@ import excerptPortableText from './objects/blog/excerptPortableText.js';
 import mainImage from './objects/blog/mainImage.js';
 import authorReference from './objects/blog/authorReference.js';
 
-
-
-
 // document schemas
 import page from './documents/page.js';
 // import shop from './documents/shop.js';
 import workout from './documents/workout.js';
 // => blog
 import post from './documents/blog/post.js';
-
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -63,13 +59,14 @@ export default createSchema({
     video,
     social,
     target,
+    instagram,
+    alert,
+    fitnessClass,
     // blog
     post,
     mainImage,
     authorReference,
     bodyPortableText,
     bioPortableText,
-    instagram,
-    alert
   ]),
-})
+});

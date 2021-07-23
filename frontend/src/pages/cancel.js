@@ -56,10 +56,11 @@ const Pass = ({ data }) => {
             body={
               <>
                 <strong>Not all things were meant to last. </strong>However, we
-                know how frustrating it can be to cancel memberships and as
-                such, we want to make this as painless as possible for you. We
-                just have a few questions we need to ask before we can process
-                your membership cancellation request.
+                know how frustrating it can be to cancel a gym membership, we
+                have heard the stories! With this in mind we want to make the
+                cancellation process as painless as possible for you. <br />
+                We just have a few questions we need to ask before we can
+                process your membership cancellation request.
                 <hr />
                 If you prefer to chat to a real life human being you can{" "}
                 <strong>

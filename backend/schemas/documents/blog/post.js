@@ -52,6 +52,11 @@ export default {
       title: 'Body',
     },
     {
+      title: 'Call to Action',
+      name: 'callToActionButton',
+      type: 'cta',
+    },
+    {
       title: 'Tags',
       name: 'tags',
       type: 'array',
