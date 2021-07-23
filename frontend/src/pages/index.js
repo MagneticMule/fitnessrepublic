@@ -87,8 +87,8 @@ const Index = ({ data }) => {
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": 52.74764045802777,
-              "longitude": -1.470486230108982
+              "latitude": 52.74803227934179,
+              "longitude": -1.4704328430623543
             },
             "openingHoursSpecification": [{
               "@type": "OpeningHoursSpecification",
@@ -206,9 +206,8 @@ const Index = ({ data }) => {
               <>
                 Gettting started with us is easy with our{" "}
                 <strong>Seven Day Free Pass</strong>. All we need is your name
-                and your email and a contact number.
-                We will get back to you within the day to make an appointment
-                for your first visit.
+                and your email and a contact number. We will get back to you
+                within the day to make an appointment for your first visit.
                 <hr />
                 If you prefer to chat to a real life human being you can{" "}
                 <strong>
