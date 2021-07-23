@@ -22,7 +22,7 @@ const Index = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic - Ashby Gym & Fitness | Get Started FREE"
+        title="Fitness Republic - Ashby Gym & Fitness | Book Your Free Trial"
         meta={[
           {
             name: "description",
@@ -206,7 +206,7 @@ const Index = ({ data }) => {
               <>
                 Gettting started with us is easy with our{" "}
                 <strong>Seven Day Free Pass</strong>. All we need is your name
-                and a method of contact, either your email or telephone number.
+                and your email and a contact number.
                 We will get back to you within the day to make an appointment
                 for your first visit.
                 <hr />
@@ -214,7 +214,7 @@ const Index = ({ data }) => {
                 <strong>
                   call us directly on
                   <a
-                    aria-label="Call the gym to chat to one of our team"
+                    aria-label="Call the Fintess Republic to chat to one of our team"
                     href="tel:+4401530413330"
                     rel="noopener"
                   >
