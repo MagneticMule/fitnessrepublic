@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           textTransform: "uppercase",
           color: "black",
           fontWeight: "500",
-          borderRadius: "50%",
+          borderRadius: "4px",
           alignSelf: "middle",
         }}
         cookieName="gatsby-gdpr-google-analytics"
