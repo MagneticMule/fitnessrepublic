@@ -293,7 +293,7 @@ const Classes = ({ data }) => {
               <>
                 We are live streaming some of our excercise classes from our
                 Ashby Fitness Studio giving you access to join in from home. We
-                use the <a href="https://zoom.us/">Zoom</a> platform for
+                use the <a href="https://zoom.us/">Zoom</a> platform for this.
                 <ul>
                   <strong>Zoom is available on:</strong>
                   <li>
