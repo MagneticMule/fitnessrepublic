@@ -22,7 +22,7 @@ const Index = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic - Ashby Gym & Fitness | Book Your Free Trial"
+        title="Fitness Republic - Gym in Ashby | Book Your Free Trial"
         meta={[
           {
             name: "description",
