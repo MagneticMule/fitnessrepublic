@@ -21,7 +21,7 @@ const Training = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Personal Training in Ashby | Fitness Republic Gym"
+        title="Personal Training in Ashby | FREE Taster Session | Fitness Republic Gym"
         meta={[
           {
             name: "description",
