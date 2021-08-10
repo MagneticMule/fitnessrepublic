@@ -17,7 +17,7 @@ const Classes = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Classes in Ashby De La Zouch | Fitness Republic Gym | First Week FREE"
+        title="Fitness Classes in Ashby De La Zouch | First Week Free | Fitness Republic Gym"
         meta={[
           {
             name: "description",
