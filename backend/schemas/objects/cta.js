@@ -17,7 +17,13 @@ export default {
       type: 'string',
       title: 'Type',
       options: {
-        list: ['general', 'Seven Day Pass', 'Personal Training', 'Membership', 'Arrange a Call Back'],
+        list: [
+          { title: 'General', value: 'general' },
+          { title: 'Seven Day Pass', value: 'pass' },
+          { title: 'Personal Training', value: 'training' },
+          { title: 'Membership', value: 'membership' },
+          { title: 'Arrange a Call Back', value: 'callback' },
+        ],
       },
     },
   ],

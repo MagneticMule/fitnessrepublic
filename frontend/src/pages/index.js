@@ -59,7 +59,7 @@ const Index = ({ data }) => {
               "postalCode": "LE65 1AH",
               "addressCountry": "GB"
             },
-            "review": {
+            "review":[{
               "@type": "Review",
               "reviewBody": "I started with Blanka in January 2021. Her approach to our personal training sessions are both creative and personable. No two sessions are the same. I now look forward to exercise and have achieved significant results. Long may this journey with her continue.",
               "reviewRating": {
@@ -72,7 +72,7 @@ const Index = ({ data }) => {
                 "name": "Katy"
               }
             },
-            "review": {
+             {
               "@type": "Review",
               "reviewBody": "I love this place. The staff are amazing, they are all friendly and helpfull. They take the time to answer any questions you have. When the pandemic hit the whole team created a Facebook page for live workouts which was brilliant. I can't recommend this place highly enough.",
               "reviewRating": {
@@ -84,7 +84,7 @@ const Index = ({ data }) => {
                 "@type": "Person",
                 "name": "Chris Osborn"
               }
-            },
+            }],
             "geo": {
               "@type": "GeoCoordinates",
               "latitude": 52.74803227934179,

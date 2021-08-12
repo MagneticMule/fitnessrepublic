@@ -5,36 +5,39 @@ import createSchema from 'part:@sanity/base/schema-creator';
 import schemaTypes from 'all:part:@sanity/base/schema-type';
 
 // => object schemas
-import businessDetails from './objects/businessDetails.js';
-import hero from './objects/hero.js';
-import cta from './objects/cta.js';
-import heroTitle from './objects/heroTitle.js';
-import news from './objects/news.js';
-import excercise from './objects/excercise.js';
-import set from './objects/set.js';
-import social from './objects/social.js';
-import staffMember from './objects/staffMember.js';
-import video from './objects/video.js';
-import target from './objects/target.js';
-import client from './objects/client.js';
-import membership from './objects/membership.js';
-import instagram from './objects/instagram.js';
-import alert from './objects/alert.js';
-import fitnessClass from './objects/fitnessClass.js';
+import businessDetails from './objects/businessDetails';
+import hero from './objects/hero';
+import cta from './objects/cta';
+import heroTitle from './objects/heroTitle';
+import news from './objects/news';
+import excercise from './objects/excercise';
+import set from './objects/set';
+import social from './objects/social';
+import staffMember from './objects/staffMember';
+import video from './objects/video';
+import target from './objects/target';
+import client from './objects/client';
+import membership from './objects/membership';
+import instagram from './objects/instagram';
+import alert from './objects/alert';
+import fitnessClass from './objects/fitnessClass';
 
 // => blog
-import bodyPortableText from './objects/blog/bodyPortableText.js';
-import bioPortableText from './objects/blog/bioPortableText.js';
-import excerptPortableText from './objects/blog/excerptPortableText.js';
-import mainImage from './objects/blog/mainImage.js';
-import authorReference from './objects/blog/authorReference.js';
+import bodyPortableText from './objects/blog/bodyPortableText';
+import bioPortableText from './objects/blog/bioPortableText';
+import excerptPortableText from './objects/blog/excerptPortableText';
+import mainImage from './objects/blog/mainImage';
+import authorReference from './objects/blog/authorReference';
+
+// => workput
+import muscleGroup from './objects/workout/muscleGroup';
 
 // document schemas
-import page from './documents/page.js';
-// import shop from './documents/shop.js';
-import workout from './documents/workout.js';
+import page from './documents/page';
+// import shop from './documents/shop';
+import workout from './documents/workout';
 // => blog
-import post from './documents/blog/post.js';
+import post from './documents/blog/post';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -68,5 +71,7 @@ export default createSchema({
     authorReference,
     bodyPortableText,
     bioPortableText,
+    // workout
+    muscleGroup,
   ]),
 });

@@ -1,4 +1,4 @@
-import { BsSun as icon} from 'react-icons/bs';
+import { BsSun as icon } from 'react-icons/bs';
 export default {
   // Setup a 'document' type to house the page builder field
   title: 'Workout',
@@ -13,11 +13,11 @@ export default {
       validation: (Rule) => Rule.required().min(2).warning('Title should be longer than 2 characters'),
       description: `The title will be displayed in large type at the top of the page`,
     },
-    {
-      title: 'Target',
-      name: 'target',
-      type: 'target',
-    },
+    // {
+    //   title: 'Target',
+    //   name: 'target',
+    //   type: 'target',
+    // },
     {
       title: 'Image',
       name: 'image',
