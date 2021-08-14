@@ -17,8 +17,6 @@ import InfoBubble from "../components/InfoBubble";
 import IntroText from "../components/widgets/text/IntroText";
 import MembershipSection from "../components/MembershipSection";
 
-import intro from "/static/intro.mp4";
-
 import FormSevenDayPass from "../components/FormSevenDayPass";
 
 const Pass = ({ data }) => {
@@ -55,7 +53,7 @@ const Pass = ({ data }) => {
             subtitle="Cancel your membership with us"
             body={
               <>
-                <strong>Not all things were meant to last. </strong>However, we
+                <strong>Not all things were meant to last. </strong>We
                 know how frustrating it can be to cancel a gym membership, we
                 have heard the stories! With this in mind we want to make the
                 cancellation process as painless as possible for you. <br />
