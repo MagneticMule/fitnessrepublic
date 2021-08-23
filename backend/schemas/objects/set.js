@@ -1,43 +1,84 @@
-import { GiWeightLiftingUp as icon} from 'react-icons/gi';
+import { GiWeightLiftingUp as icon } from 'react-icons/gi';
 export default {
   title: "Set",
   name: "set",
-  type: "object",
+  type: "document",
   icon,
   fields: [
     {
-      title:"Active",
-      name:"isActive",
-      type:"boolean",
-      description: `Will this set be shown to the client?`,
-      validation: Rule=>Rule.required(),
+      Title: 'Type of set',
+      name: 'setType',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Standard Set', value: 'standard' },
+          { title: 'Super Set', value: 'super' },
+          { title: 'Drop Set', value: 'drop' },
+          { title: 'Giant Set', value: 'giant' },
+          { title: 'Circuit Set', value: 'circuit' },
+        ],
+        layout: 'dropdown',
+        direction: 'horizontal'
+      }
     },
     {
-      title: "Set Name",
-      name: "setName",
-      type: "string",
-      description: `You can give this set a name or leave blank`,
-      validation: Rule => Rule.min(2).warning(`Set names should be longer than 2 characters.`),
+      title: 'Set Repetitions (how many times should this set be performed?)',
+      name: 'setRepetitions',
+      type: 'number',
     },
-     {
+    {
       title: 'Excercise',
       name: 'excercise',
       type: 'array',
       editModal: 'fullscreen',
       of: [
-        { type: 'excercise'}
-      ]
+        {
+          type: 'object',
+          fields: [
+            { title: 'Excercise', name: 'excerciseReference', type: 'reference', to: { type: 'excercise' } },
+            {
+              type: 'object',
+              name: 'repFields',
+              title: 'Excercise Repetitions',
+              options: {
+                columns: 2
+              },
+              fieldsets: [
+                { name: 'excerciseRepetitionsFieldSet' }
+              ],
+              fields: [
+                { title: 'Minimum Number of Repetitions', name: 'minReps', type: 'number' },
+                { title: 'Maximum Number of Repetitions', name: 'maxReps', type: 'number' },
+              ],
+              initialValue: {
+                minReps: 10,
+                maxReps: 15
+              }
+            }
+          ],
+          preview: {
+            select: {
+              title: 'excerciseReference.excerciseName',
+              minReps: 'repFields.minReps',
+              maxReps: 'repFields.maxReps',
+              image: 'excerciseReference.cover.asset'
+            },
+            prepare(selection) {
+              const { title, minReps, maxReps, image } = selection;
+              return {
+                title: `${title} | ${minReps} - ${maxReps} Repetitions`,
+                media: image
+              }
+            }
+          },
+        },
+      ],
     },
-    {
-      title: "Description",
-      name: "description",
-      type: "text",
-      validation: Rule => Rule.min(5).warning('Descriptions should be longer than five characters'),
-    },
-    {
-      title: 'Repetitions',
-      name: 'repetitions',
-      type: 'number',
-    }
-  ]
+
+  ],
+  initialValue: {
+    setRepetitions: 2,
+    setType: 'standard'
+  }
+
 }

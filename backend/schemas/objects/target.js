@@ -8,7 +8,7 @@ export default {
   },
   type: 'object',
   fields: [
-    { name: 'uppeBody', type: 'boolean', title: 'Upper Body' },
+    { name: 'upperBody', type: 'boolean', title: 'Upper Body' },
     { name: 'lowerBody', type: 'boolean', title: 'Lower Body' },
   ],
 };
