@@ -64,15 +64,15 @@ export default {
               excercise2: 'set.excercise.1.excerciseReference.excerciseName',
               excercise3: 'set.excercise.2.excerciseReference.excerciseName',
               excercise4: 'set.excercise.3.excerciseReference.excerciseName',
-              setType: 'set.setType.title',
+              setType: 'set.setType',
               image: 'set.excercise.0.excerciseReference.cover.asset'
             },
             prepare: ({ excercise1, excercise2, excercise3, excercise4, setType, image }) => {
-              const excercises = [excercise1, excercise2, excercise3, excercise4];
-              const subtitle = excercises.length > 0 ? `${setType} :  ${excercises.join(' | ')}` : ' ';
+              const excercises = [excercise1, excercise2, excercise3, excercise4].filter((x) => x !== undefined);
+              const subtitle = excercises.length > 0 ? `${excercises.join(' | ')}` : ' ';
               const hasMoreExcercises = Boolean(excercise3);
               return {
-                title: excercise1,
+                title: setType.charAt(0).toUpperCase() + setType.substring(1) + ` Set`,
                 subtitle: Boolean(excercise3) ? `${subtitle}...` : subtitle,
                 media: image
               }

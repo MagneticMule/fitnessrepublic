@@ -2,7 +2,7 @@ import { GiWeightLiftingUp as icon } from 'react-icons/gi';
 export default {
   title: "Set",
   name: "set",
-  type: "document",
+  type: "object",
   icon,
   fields: [
     {

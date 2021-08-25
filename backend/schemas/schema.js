@@ -10,12 +10,12 @@ import hero from './objects/hero';
 import cta from './objects/cta';
 import heroTitle from './objects/heroTitle';
 import news from './objects/news';
-import excercise from './objects/excercise';
+
 import set from './objects/set';
 import social from './objects/social';
 import staffMember from './objects/staffMember';
 import video from './objects/video';
-import target from './objects/target';
+
 import client from './objects/client';
 import membership from './objects/membership';
 import instagram from './objects/instagram';
@@ -29,13 +29,18 @@ import excerptPortableText from './objects/blog/excerptPortableText';
 import mainImage from './objects/blog/mainImage';
 import authorReference from './objects/blog/authorReference';
 
-// => workput
+// => workout
+import workout from './documents/workout';
+import plan from './documents/plan';
 import muscleGroup from './objects/workout/muscleGroup';
+import excercise from './objects/excercise';
+
+import target from './objects/target';
 
 // document schemas
 import page from './documents/page';
 // import shop from './documents/shop';
-import workout from './documents/workout';
+
 // => blog
 import post from './documents/blog/post';
 
@@ -55,13 +60,12 @@ export default createSchema({
     heroTitle,
     cta,
     news,
-    workout,
+    ,
     membership,
-    set,
-    excercise,
+
     video,
     social,
-    target,
+
     instagram,
     alert,
     fitnessClass,
@@ -72,6 +76,11 @@ export default createSchema({
     bodyPortableText,
     bioPortableText,
     // workout
+    workout,
+    plan,
+    set,
+    excercise,
     muscleGroup,
+    target,
   ]),
 });

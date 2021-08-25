@@ -53,11 +53,11 @@ const Pass = ({ data }) => {
             subtitle="Cancel your membership with us"
             body={
               <>
-                <strong>Not all things were meant to last. </strong>We
+                We
                 know how frustrating it can be to cancel a gym membership, we
                 have heard the stories! With this in mind we want to make the
-                cancellation process as painless as possible for you. <br />
-                We just have a few questions we need to ask before we can
+                cancellation process as smooth and as painless as possible for you. <br />
+                We just have a few questions to ask you before we can
                 process your membership cancellation request.
                 <hr />
                 If you prefer to chat to a real life human being you can{" "}
@@ -105,17 +105,6 @@ const Pass = ({ data }) => {
                 help you on your way to step 3.
               </>
             }
-          />
-          <video
-            className="intro-video"
-            height="100%"
-            width="100%"
-            loop
-            muted
-            autoPlay
-            source
-            src={intro}
-            type="video/mp4"
           />
           <SuperBullet
             pos="2/4"
