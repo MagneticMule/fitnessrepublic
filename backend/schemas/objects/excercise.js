@@ -12,7 +12,6 @@ export default {
       description: `Will this excercise be shown to the client app?`,
       validation: (Rule) => Rule.required(),
     },
-
     {
       title: 'Excercise Name',
       name: 'excerciseName',

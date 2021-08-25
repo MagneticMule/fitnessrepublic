@@ -10,7 +10,7 @@ export default () =>
     .items([
       // List out the rest of the document types, but filter out the config type
       ...S.documentTypeListItems().filter(
-        (listItem) => !['workout', 'excercise', 'plan', 'businessDetails', 'hero', 'video'].includes(listItem.getId())
+        (listItem) => !['media.tag', 'workout', 'excercise', 'plan', 'businessDetails', 'hero', 'video'].includes(listItem.getId())
       ),
 
       S.divider(),
