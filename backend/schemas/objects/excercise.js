@@ -1,4 +1,6 @@
 import { CgGym as icon } from 'react-icons/cg';
+import { BsInfoSquareFill as alertIcon } from 'react-icons/bs';
+import { array } from 'prop-types';
 export default {
   title: 'Excercise',
   name: 'excercise',
@@ -98,6 +100,16 @@ export default {
       of: [{ type: 'text', rows: 3 }],
     },
     {
+      name: 'note',
+      type: 'note',
+      options: {
+        icon: alertIcon,
+        headline: 'This is a Tip!',
+        message: `A tip will look something like this!`,
+        tone: 'positive'
+      }
+    },
+    {
       title: 'Tips',
       description: 'Optional',
       name: 'tips',
@@ -154,5 +166,6 @@ export default {
   },
   initialValue: {
     isActive: true,
+    excerciseLevel: 1
   },
 };

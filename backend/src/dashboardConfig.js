@@ -1,7 +1,20 @@
 export default {
   widgets: [
     {
+      name: 'document-list',
+      options: {
+        title: 'Recent Excercises and Workouts',
+        types: ['excercise'],
+        showCreateButton: true,
+        createButtonText: 'Create a new Excercise'
+      }
+    },
+    {
       name: 'netlify',
+      layout: {
+        width: 'small',
+        height: 'small',
+      },
       options: {
         title: 'Website: Hosted on Netlify',
         sites: [
@@ -20,17 +33,17 @@ export default {
         ],
       },
     },
-    // {
-    //   name: 'project-info',
-    //   layout: {
-    //     width: 'large',
-    //     height: 'small',
-    //   },
-    // },
+    {
+      name: 'project-info',
+      layout: {
+        width: 'small',
+        height: 'small',
+      },
+    },
     {
       name: 'project-users',
       layout: {
-        width: 'medium',
+        width: 'small',
         height: 'small',
       },
     },

@@ -10,7 +10,7 @@ export default {
   fieldsets: [{ name: 'ctaoptions', title: 'Call to action Button' }],
   fields: [
     { name: 'Name', type: 'string', title: 'Name' },
-    { name: 'Description', type: 'text', title: 'Description', rows: 5 },
+    { name: 'Description', type: 'text', title: 'Description', rows: 3 },
 
     {
       name: 'Type',

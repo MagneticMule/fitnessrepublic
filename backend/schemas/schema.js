@@ -31,9 +31,14 @@ import authorReference from './objects/blog/authorReference';
 
 // => workout
 import workout from './documents/workout';
+import course from './documents/course';
 import plan from './documents/plan';
 import muscleGroup from './objects/workout/muscleGroup';
+import setExcercise from './objects/workout/setExcercise';
+import planBuilder from './objects/workout/planBuilder';
+import setBuilder from './objects/workout/setBuilder';
 import excercise from './objects/excercise';
+import repFields from './objects/workout/repFields';
 
 import target from './objects/target';
 
@@ -60,7 +65,6 @@ export default createSchema({
     heroTitle,
     cta,
     news,
-    ,
     membership,
 
     video,
@@ -69,18 +73,25 @@ export default createSchema({
     instagram,
     alert,
     fitnessClass,
+
     // blog
     post,
     mainImage,
     authorReference,
     bodyPortableText,
     bioPortableText,
+
     // workout
+    course,
     workout,
     plan,
     set,
     excercise,
     muscleGroup,
     target,
+    planBuilder,
+    setExcercise,
+    setBuilder,
+    repFields
   ]),
 });

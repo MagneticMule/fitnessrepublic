@@ -19,7 +19,9 @@
     "cloudinary",
     "dark-theme-blue",
     "media",
-    "content-calendar"
+    "content-calendar",
+    "dashboard-widget-document-list",
+    "note-field"
   ],
   "env": {
     "development": {

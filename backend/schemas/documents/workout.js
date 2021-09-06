@@ -38,6 +38,21 @@ export default {
       },
     },
     {
+      title: 'Workout Level',
+      description: 'There are currently five levels of workout. Level 1 (entry level) is for the abslolute begginer who is starting the gym for the first time, perhaps a little nervous. Level 2 is for those who have been to the gym before and feel more confident in their abilities but are still just starting their fitness journey. Levels 3 4 and 5 are for the more confident and experienced gym user. ',
+      name: 'excerciseLevel',
+      type: 'number',
+      options: {
+        list: [
+          { title: 'Level 1: Entry Level', value: 1, name: 'level1' },
+          { title: 'Level 2: Begginner', value: 2, name: 'level2' },
+          { title: 'Level 3: Intermediate', value: 3, name: 'level3' },
+          { title: 'Level 4: Advanced', value: 4, name: 'level4' },
+          { title: 'Level 5: Dwayne "MuthaFuggin" Johnson', value: 5, name: 'level5' },
+        ],
+      },
+    },
+    {
       title: 'Description',
       name: 'description',
       type: 'text',
@@ -47,37 +62,11 @@ export default {
     },
     {
       title: 'Set Builder',
-      name: 'workoutBuilder',
       type: 'array',
-      options: {
-        editModal: 'fullscreen',
-      },
+      name: 'setBuilder',
       of: [
         {
-          type: 'object',
-          fields: [
-            { title: 'Set', name: 'set', type: 'set' },
-          ],
-          preview: {
-            select: {
-              excercise1: 'set.excercise.0.excerciseReference.excerciseName',
-              excercise2: 'set.excercise.1.excerciseReference.excerciseName',
-              excercise3: 'set.excercise.2.excerciseReference.excerciseName',
-              excercise4: 'set.excercise.3.excerciseReference.excerciseName',
-              setType: 'set.setType',
-              image: 'set.excercise.0.excerciseReference.cover.asset'
-            },
-            prepare: ({ excercise1, excercise2, excercise3, excercise4, setType, image }) => {
-              const excercises = [excercise1, excercise2, excercise3, excercise4].filter((x) => x !== undefined);
-              const subtitle = excercises.length > 0 ? `${excercises.join(' | ')}` : ' ';
-              const hasMoreExcercises = Boolean(excercise3);
-              return {
-                title: setType.charAt(0).toUpperCase() + setType.substring(1) + ` Set`,
-                subtitle: Boolean(excercise3) ? `${subtitle}...` : subtitle,
-                media: image
-              }
-            }
-          },
+          type: 'setBuilder', name: 'setBuilder'
         },
       ],
     },

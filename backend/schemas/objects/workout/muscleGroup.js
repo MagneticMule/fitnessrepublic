@@ -1,16 +1,40 @@
 export default {
   title: 'Muscle Groups',
   name: 'muscleGroup',
-  options: {
-    collapsible: true, // Makes the whole fieldset collapsible
-    collapsed: false, // Defines if the fieldset should be collapsed by default or not
-    columns: 2, // Defines a grid for the fields and how many columns it should have
-  },
   type: 'object',
+  fieldsets: [
+    {
+      name: 'general',
+      title: 'General Muscle Groups',
+      options: { collapsible: false, collapsed: false, columns: 1 },
+    },
+    {
+      name: 'specific',
+      title: 'Specific Muscle Groups',
+      options: { collapsible: false, collapsed: false, columns: 2 },
+    },
+  ],
   fields: [
+    {
+      name: 'general',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        direction: 'horizontal',
+        list: [
+          { title: 'Chest', value: 'chest' },
+          { title: 'Arms', value: 'arms' },
+          { title: 'Shoulders', value: 'shoulders' },
+          { title: 'Back', value: 'back' },
+          { title: 'Stomach', value: 'stomach' },
+          { title: 'Legs', value: 'legs' },
+        ],
+      },
+    },
     {
       name: 'primary',
       type: 'array',
+      fieldset: 'specific',
       of: [{ type: 'string' }],
       options: {
         list: [
@@ -23,7 +47,7 @@ export default {
           { title: 'Abdominals', value: 'abdominals' },
           { title: 'Quadriceps', value: 'quadriceps' },
           { title: 'Trapezius', value: 'trapezius' },
-          { title: 'Tibialis anterior', value: 'tibialisAnterior' },
+          { title: 'Tibialis Anterior', value: 'tibialisAnterior' },
           { title: 'Glutes', value: 'glutes' },
           { title: 'Hamstrings', value: 'hamstrings' },
           { title: 'Calves', value: 'calves' },
@@ -34,6 +58,7 @@ export default {
     {
       name: 'secondary',
       type: 'array',
+      fieldset: 'specific',
       of: [{ type: 'string' }],
       options: {
         list: [
@@ -46,7 +71,7 @@ export default {
           { title: 'Abdominals', value: 'abdominals' },
           { title: 'Quadriceps', value: 'quadriceps' },
           { title: 'Trapezius', value: 'trapezius' },
-          { title: 'Tibialis anterior', value: 'tibialisAnterior' },
+          { title: 'Tibialis Anterior', value: 'tibialisAnterior' },
           { title: 'Glutes', value: 'glutes' },
           { title: 'Hamstrings', value: 'hamstrings' },
           { title: 'Calves', value: 'calves' },

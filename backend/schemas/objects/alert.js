@@ -14,35 +14,26 @@ export default {
     {
       name: 'text',
       title: 'Alert text',
-      type: 'text',
+      description: 'This is the text the visitor will see',
+      type: 'string',
     },
     {
-      name: 'callToAction',
-      title: 'Call to action',
-      type: 'object',
-      options: {
-        columns: 2, // Puts the fields side-by-side
-      },
-      fields: [
-        {
-          name: 'text',
-          title: 'Link text',
-          type: 'string',
-        },
-        {
-          name: 'url',
-          title: 'Link URL',
-          type: 'url',
-        },
-      ],
+      name: 'url',
+      title: 'URL',
+      type: 'url'
     },
+    // {
+    //   name: 'callToAction',
+    //   title: 'Call to Action',
+    //   type: 'cta'
+    // },
     {
       name: 'style',
       title: 'Banner style',
       type: 'string',
       options: {
         // Creates a dropdown to select the strings
-        list: ['Sale', 'Promo', 'Breaking'],
+        list: ['Sale', 'Promo', 'News'],
       },
     },
   ],
