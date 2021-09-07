@@ -25,7 +25,18 @@ export default {
       title: 'Cover Image',
     },
     {
+      title: 'Slug',
+      name: 'slug',
+      type: 'slug',
+      options: {
+        source: 'name',
+        maxLength: 200, // will be ignored if slugify is set
+        slugify: (input) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
+      },
+    },
+    {
       title: 'Workouts',
+      description: 'Feedback welcome. Think of each of these entries as a day of the week. So if you want a three day plan then add the workputs as needed and fill each other day as a rest day',
       name: 'planBuilder',
       type: 'array',
       of: [

@@ -13,5 +13,14 @@ export default {
       subtitle: 'workout.description',
       media: 'workout.image.asset'
     },
+    prepare(selection) {
+      const { title, subtitle, media } = selection;
+      return {
+        title,
+        subtitle,
+        media
+      }
+    },
+
   }
 }
