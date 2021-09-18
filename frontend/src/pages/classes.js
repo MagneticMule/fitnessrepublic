@@ -222,11 +222,13 @@ const Classes = ({ data }) => {
 
 export default Classes;
 
-
-
 export const query = graphql`
 query q {
-  classes:allSanityFitnessClass {
+  classes:allSanityFitnessClass(
+    sort: {
+      fields: [name]
+      order: [ASC]
+    }) {
     edges {
       node {
         id
@@ -264,5 +266,4 @@ query q {
       }
     }
   }
-
 `;
