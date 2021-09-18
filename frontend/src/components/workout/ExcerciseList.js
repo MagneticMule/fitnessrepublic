@@ -60,29 +60,33 @@ const Content = styled.div`
 const ExcerciseList = ({ excercises }) => {
   return (
     <>
-      {excercises.map((excercise) => (
-        <Card>
-          {/* <Video videoSrcURL={excercise.video} controls/> */}
-          {excercise.CloudVideo && (
-            <video source src={excercise.CloudVideo.url} controls loop />
-          )}
-          <Content>
-            <h3>{excercise.excerciseName}</h3>
-            <div className="reps">
-              Repetitions: <span>{excercise.repetitions}</span>
-            </div>
-            <div className="instructions">
-              <strong>Instructions:</strong>{" "}
-              <span>{excercise.instructions}</span>
-            </div>
-            <hr />
-            <form>
-              <label htmFor="reps"> How many reps did you do?</label>
-              <input id="reps" type="number"></input>
-            </form>
-          </Content>
-        </Card>
-      ))}
+      {
+
+        // excercises.map((excercise) => (
+        //   <Card>
+        //     {/* <Video videoSrcURL={excercise.video} controls/> */}
+        //     {/* {excercise.CloudVideo && (
+        //       <video source src={excercise.CloudVideo.url} controls loop />
+        //     )} */}
+        //     <Content>
+        //       <h3>{excercise.excerciseName}</h3>
+        //       <div className="reps">
+        //         Repetitions: <span>{excercise.repetitions}</span>
+        //       </div>
+        //       <div className="instructions">
+        //         <strong>Instructions:</strong>{" "}
+        //         <span>{excercise.instructions}</span>
+        //       </div>
+        //       <hr />
+        //       <form>
+        //         <label htmFor="reps"> How many reps did you do?</label>
+        //         <input id="reps" type="number"></input>
+        //       </form>
+        //     </Content>
+        //   </Card>
+        // ))
+
+      }
     </>
   );
 };
