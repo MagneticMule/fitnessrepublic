@@ -3,6 +3,7 @@ import React from "react";
 import ExcerciseList from "./ExcerciseList.js";
 
 const SetList = ({ sets }) => {
+  console.log(`sets: ${sets}`);
   return (
     <>
       {sets.map((set) => (

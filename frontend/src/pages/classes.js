@@ -80,7 +80,7 @@ const Classes = ({ data }) => {
                 energising cardiovascular and sculpting classes to relaxing mind
                 and body, we have a class to suit you. Our intimate studio is
                 fully air conditioned, bright, airy and{" "}
-                <Link to="/covid/">Covid Safe</Link>. We also offer outdoor
+                <Link to="/covid/">Covid Safe</Link>. During summer we also offer outdoor
                 fitness classes at the{" "}
                 <a
                   href="https://en.wikipedia.org/wiki/Bath_Grounds"
@@ -104,164 +104,25 @@ const Classes = ({ data }) => {
               </>
             }
           />
-
           <TextSection
-            title="Our Classes"
+            title="Our Fitness Classes"
             subtitle="As diverse as they are effective"
             body={
               <>
                 <ul>
-                  <li>
-                    <strong>Abs and Core</strong> This class is designed to
-                    build the core muscle groups whilst improving posture
-                    through performing a variety of exercises that strengthen
-                    the abdonen and back. Plus increasing flexibility.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Ballet Be Fit</strong> This is the perfect blend of
-                    a traditional ballet class with a cardio fitness element.
-                    Strength, flexibility & posture work. Open to all levels &
-                    abilities. No ballet shoes needed!
-                    <strong>
-                      <i>Open to all levels and abilities.</i>
-                    </strong>
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Bootcamp: Outdoor Fitness Classes in Ashby</strong>{" "}
-                    Bootcamps are fun, full body outdoor fitness classes held at
-                    the local bathgrounds in Ashby De La Zouch. The content will
-                    vary between circuits, Shoulder Excercises, HIIT, ab’s &
-                    glutes. <hr />
-                    <i>
-                      Dependant on the weather but a drop of rain doesn’t stop
-                      us!
-                    </i>
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Boxfit</strong> A high energy workout that features
-                    boxing pad work drills. Fat burning and fitness driven! Your
-                    own gloves are required for this class and can be purchased
-                    from any good sports retailer or directly from our gym in
-                    Ashby.
-                  </li>
-                  <hr />
-                  {/* <li>
-                  <strong>Combat HIIT</strong> A High intensity workout
-                  featuring punching, kicking and bodyweight drills to get the
-                  heart pumping! A great fun, fat burning and fitness workout.{" "}
-                </li>
-                <hr /> */}
-                  <li>
-                    <strong>Cardio Step</strong> Bringing the classic 80’s step
-                    class back to life. A great low impact, high cardio workout
-                    and safe for your joints.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Core</strong> A class focued on building the core
-                    muscle groups while improving posture through performing a
-                    variety of exercises that strengthen the abdomen and back ,
-                    plus increase flexibility.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>HIIT Workout</strong> A High Intensity bodyweight
-                    workout, involving repeated bouts of high intensity,
-                    followed by various recovery times. A tough Fat Burning
-                    Workout!
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Glute Camp</strong> A fun workout focusing on the
-                    glutes and quads. <i>Shape and sculpt those bums!</i>
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Group X</strong> A gym based class in which you will
-                    perform the workout of the day (WOD) utilising all of the
-                    gym and workouts will be performed in rounds or time.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Legs, Guns and Buns</strong> This class works
-                    exclusively on the legs, glutes and arms. Using body-
-                    weight, bars, bands and steps, it’s a real fun workout.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>LIFT</strong> An amazing new class featuring
-                    dumbbells to provide a full body workout. Learn new
-                    exercises and techniques and how to perform them correctly
-                    and safely whilst pushing your muscles further.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Pilates</strong> Pilates is a form of exercise which
-                    concentrates on strengthening the body with an emphasis on
-                    core strength. This helps to improve general fitness and
-                    overall well-being. Similar to Yoga, Pilates concentrates on
-                    posture, balance and flexibility. .
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Pump</strong> One of the best overall toning classes
-                    there is. Featuring our Les Mills Smart barbells with plenty
-                    of sweat and fat burning! A whole body workout to great
-                    music.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Spin: Indoor Cycling</strong> A high intensity
-                    workout focusing on endurance, strength with intervals of
-                    high intensity followed by short bouts of recovery. A fun
-                    and highly motivating class that can promote weight loss and
-                    increase stamina.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Yoga Classes</strong> Yoga practice began at the
-                    dawn of civilization and has been used build strength,
-                    flexibility and breathing to boost physical and mental
-                    wellbeing. The main aspects of yoga are postures (a series
-                    of movements designed to increase strength and flexibility)
-                    and breathing. This class is suitable for all levels & will
-                    leave you with a sense of calm & well being.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Zero to Spin: Indoor Cycling for Begginers</strong>{" "}
-                    Have you never sat on a spin bike before? Or maybe not for a
-                    long time? Then we have 7 weeks to get you turned into a
-                    serious spinner in this indoor cycling class for begginers.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Zumba Classes</strong>
-                    Combines Latin and international music with dance moves.
-                    ZUMBA® routines incorporate interval training alternating
-                    fast and slow rhythms to help improve cardiovascular fitness
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Zumba Step</strong>
-                    Combining the awesome toning and strengthening power of step
-                    aerobics with the fun fitness party that only Zumba brings
-                    to the dancefloor.
-                  </li>
-                  <hr />
-                  <li>
-                    <strong>Zumba Toning</strong> Combines targeted body
-                    sculpting exercises and high-energy cardio work with a
-                    Latin-infused ZUMBA® moves to create a calorie torching,
-                    strength training dance fitness party.
-                  </li>
+                  {data.classes.edges.map((c) => (
+                    <li>
+                      <strong>{c.node.name}</strong>
+                      {c.node.description}
+                    </li>
+                  ))
+                  }
                 </ul>
+                <hr />
               </>
             }
           />
+
           <Image
             pic={data.fitnessclass1.childImageSharp.gatsbyImageData}
             alt="A black and white image of one of our fitness classes in Ashby. A group of women hold barbells with small weights over their shoulder in unison."
@@ -361,8 +222,20 @@ const Classes = ({ data }) => {
 
 export default Classes;
 
+
+
 export const query = graphql`
-  {
+query q {
+  classes:allSanityFitnessClass {
+    edges {
+      node {
+        id
+        isActive
+        name
+        description
+      }
+    }
+  }
     timetable: file(
       relativePath: {
         eq: "fitness-classes-ashby-timetable-fitness-republic-ashby.jpg"
@@ -391,4 +264,5 @@ export const query = graphql`
       }
     }
   }
+
 `;

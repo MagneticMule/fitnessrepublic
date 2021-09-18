@@ -22,7 +22,7 @@ const Workout = ({ data }) => {
         />
         <Container>
           <div className="inner">
-            <SetList sets={workout.workoutBuilder} />
+            <SetList sets={workout.setBuilder} />
           </div>
         </Container>
       </section>
@@ -50,28 +50,50 @@ export const query = graphql`
           )
         }
       }
-      workoutBuilder {
-        isActive
-        setName
-        description
-        repetitions
-        excercise {
-          video
-          repetitions
-          instructions
-          excerciseName
-          CloudVideo {
+      setBuilder {
+          _key
+          set {
             _key
-            url: secure_url
-            public_id
-            width
-            format
-            height
+            setType
+            setRepetitions
+            setExcercise {
+              _key
+              repFields {
+                minReps
+                maxReps
+                _key
+              }
+              excerciseReference {
+                _key
+                category
+                id
+                excerciseName
+                introduction
+                isActive
+                metaTags
+                note
+                otherNames
+                tips
+                muscles {
+                  secondary
+                  primary
+                  general
+                  _key
+                }
+                substitution {
+                  CloudVideo {
+                    _key
+                  }
+                  slug {
+                    current
+                  }
+                }
+              }
+            }
           }
         }
       }
     }
-  }
 `;
 
 export default Workout;

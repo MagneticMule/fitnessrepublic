@@ -3,7 +3,6 @@ export default {
   name: 'setExcercise',
   fields: [
     { title: 'Excercise', name: 'excerciseReference', type: 'reference', to: { type: 'excercise' } },
-
     {
       type: 'repFields',
       name: 'repFields'

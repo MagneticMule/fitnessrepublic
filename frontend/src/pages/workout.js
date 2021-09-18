@@ -78,36 +78,50 @@ export const query = graphql`
             }
           }
           name
-          target {
-            lower_body
-            upper_body
-          }
-          workoutBuilder {
-            setName
-            repetitions
-            description
-            isActive
+          setBuilder {
+          _key
+          set {
             _key
-            excercise {
-              _id
-              excerciseName
-              instructions
-              isActive
-              repetitions
-              video
-              CloudVideo {
+            setType
+            setRepetitions
+            setExcercise {
+              _key
+              repFields {
+                minReps
+                maxReps
                 _key
-                url: secure_url
-                public_id
-                width
-                format
-                height
+              }
+              excerciseReference {
+                _key
+                category
+                id
+                excerciseName
+                introduction
+                isActive
+                metaTags
+                note
+                otherNames
+                tips
+                muscles {
+                  secondary
+                  primary
+                  general
+                  _key
+                }
+                substitution {
+                  CloudVideo {
+                    _key
+                  }
+                  slug {
+                    current
+                  }
+                }
               }
             }
           }
         }
       }
-      totalCount
     }
   }
+}
 `;
