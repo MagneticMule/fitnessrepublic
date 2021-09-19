@@ -40,7 +40,7 @@ const Covid = () => {
                 De La Zouch. At a bare minimum you should know that:
                 <ol>
                   <li>
-                    <h4>Our staff is tested twice per week for Covid.</h4>
+                    <h4>Our staff are tested twice per week for Covid.</h4>
                   </li>
                   <li>
                     <h4>
