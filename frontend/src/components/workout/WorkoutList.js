@@ -163,7 +163,7 @@ function SingleWorkout({ workout }) {
     <Link to={`/workout/${workout.node.slug.current}/`}>
       <Card>
         <GatsbyImage
-          image={workout.node.image.asset.gatsbyImageData}
+          // image={workout.node.image.asset.gatsbyImageData}
           className="card__image"
           alt={workout.node.name}
         />

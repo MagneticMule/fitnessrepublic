@@ -49,8 +49,7 @@ const Covid = () => {
                   </li>
                   <li>
                     <h4>
-                      We enforce social distancing at each of our Fitness
-                      Classes
+                      We enforce social distancing at each of our <Link to="/classes">Fitness Classes</Link>
                     </h4>
                   </li>
                   <li>
