@@ -162,9 +162,9 @@ const FormSevenDayPass = (props) => (
       />
     </div>
     <div className="field">
-      <Label>Are you over 16?</Label>
-      <div className="buttonGroup">
-        <div className="buttonLabelGroup">
+      <Label htmlFor="over16Set">Are you over 16?</Label>
+      <fieldset id="over16Set" className="buttonGroup">
+        <div id="over16Set" className="buttonLabelGroup">
           <Label htmlFor="over16">Yes</Label>
           <RadioButton
             value="Yes"
@@ -182,11 +182,11 @@ const FormSevenDayPass = (props) => (
             id="under16"
           />
         </div>
-      </div>
+      </fieldset>
     </div>
     <div className="field">
-      <Label>Would you like an induction with one of our team?</Label>
-      <div className="buttonGroup">
+      <Label htmlFor="inductionGroup">Would you like an induction with one of our team?</Label>
+      <fieldset id="inductionGroup" className="buttonGroup">
         <div className="buttonLabelGroup">
           <Label htmlFor="inductionYes">Yes</Label>
           <RadioButton
@@ -205,7 +205,7 @@ const FormSevenDayPass = (props) => (
             id="inductionNo"
           />
         </div>
-      </div>
+      </fieldset>
     </div>
     <div className="field">
       <Label htmlFor="message">Message (optional)</Label>
