@@ -11,6 +11,23 @@ const Form = styled.form`
 
   > .field {
     margin-bottom: 2em;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction:row;
+    border-radius: 4px;
+  }
+
+  .buttonLabelGroup  + .buttonLabelGroup  {
+    margin-left:2em;
+  }
+
+  .buttonLabelGroup {
+    align-content:space-between;
+
   }
 
   @media ${device.mobileS} {
@@ -40,7 +57,6 @@ const Form = styled.form`
 
 const Label = styled.label`
   letter-spacing: -0.02rem;
-  display: block;
   font-size: 1.3rem;
   font-weight: 300;
   color: var(--deep-purple);
@@ -85,6 +101,14 @@ const Button = styled.input`
   padding: 1.2em 1.8em;
   box-shadow: var(--shadow-low);
 `;
+
+const RadioButton = styled.input.attrs({ type: 'radio' })`
+    display: inline-block;
+    cursor: pointer;
+    margin-left:.5em;
+    width: 1em;
+    height: 1em;
+  `;
 
 const FormSevenDayPass = (props) => (
   <Form
@@ -136,6 +160,52 @@ const FormSevenDayPass = (props) => (
         id="phone"
         placeholder="e,g, 01530 413330"
       />
+    </div>
+    <div className="field">
+      <Label>Are you over 16?</Label>
+      <div className="buttonGroup">
+        <div className="buttonLabelGroup">
+          <Label htmlFor="over16">Yes</Label>
+          <RadioButton
+            value="Yes"
+            type="checkbox"
+            name="age"
+            id="over16"
+          />
+        </div>
+        <div className="buttonLabelGroup">
+          <Label htmlFor="under16">No</Label>
+          <RadioButton
+            value="No"
+            type="checkbox"
+            name="age"
+            id="under16"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="field">
+      <Label>Would you like an induction with one of our team?</Label>
+      <div className="buttonGroup">
+        <div className="buttonLabelGroup">
+          <Label htmlFor="inductionYes">Yes</Label>
+          <RadioButton
+            value="Yes"
+            type="checkbox"
+            name="induction"
+            id="inductionYes"
+          />
+        </div>
+        <div className="buttonLabelGroup">
+          <Label htmlFor="inductionNo">No</Label>
+          <RadioButton
+            value="No"
+            type="checkbox"
+            name="induction"
+            id="inductionNo"
+          />
+        </div>
+      </div>
     </div>
     <div className="field">
       <Label htmlFor="message">Message (optional)</Label>
