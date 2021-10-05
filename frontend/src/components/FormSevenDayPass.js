@@ -162,10 +162,10 @@ const FormSevenDayPass = (props) => (
       />
     </div>
     <div className="field">
-      <Label htmlFor="over16Set">Are you over 16?</Label>
+      <legend>Are you over 16?</legend>
       <fieldset id="over16Set" className="buttonGroup">
         <div id="over16Set" className="buttonLabelGroup">
-          <Label htmlFor="over16">Yes</Label>
+          <Label>Yes</Label>
           <RadioButton
             value="Yes"
             type="checkbox"
@@ -174,7 +174,7 @@ const FormSevenDayPass = (props) => (
           />
         </div>
         <div className="buttonLabelGroup">
-          <Label htmlFor="under16">No</Label>
+          <Label>No</Label>
           <RadioButton
             value="No"
             type="checkbox"
@@ -185,10 +185,10 @@ const FormSevenDayPass = (props) => (
       </fieldset>
     </div>
     <div className="field">
-      <Label htmlFor="inductionGroup">Would you like an induction with one of our team?</Label>
+      <legend >Would you like an induction with one of our team?</legend>
       <fieldset id="inductionGroup" className="buttonGroup">
         <div className="buttonLabelGroup">
-          <Label htmlFor="inductionYes">Yes</Label>
+          <Label >Yes</Label>
           <RadioButton
             value="Yes"
             type="checkbox"
@@ -197,7 +197,7 @@ const FormSevenDayPass = (props) => (
           />
         </div>
         <div className="buttonLabelGroup">
-          <Label htmlFor="inductionNo">No</Label>
+          <Label>No</Label>
           <RadioButton
             value="No"
             type="checkbox"
