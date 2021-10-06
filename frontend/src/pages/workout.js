@@ -44,7 +44,7 @@ const Workout = ({ data }) => {
       />
       <Container>
         <DualSection>
-          <WorkoutList workouts={workouts} />
+          {/* <WorkoutList workouts={workouts} /> */}
         </DualSection>
       </Container>
     </>

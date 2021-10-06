@@ -69,7 +69,6 @@ const Label = styled.label`
 const Legend = Label;
 
 const FieldSet = styled.fieldset`
-
 block-size: fit-content;
 border:0;
 border-bottom: 1px solid black;
