@@ -27,7 +27,10 @@ const Form = styled.form`
 
   .buttonLabelGroup {
     align-content:space-between;
+  }
 
+  .buttonLabel {
+    font-size:1em;
   }
 
   @media ${device.mobileS} {
@@ -62,6 +65,16 @@ const Label = styled.label`
   color: var(--deep-purple);
   text-transform: capitalize;
 `;
+
+const Legend = Label;
+
+const FieldSet = styled.fieldset`
+
+block-size: fit-content;
+border:0;
+border-bottom: 1px solid black;
+`;
+
 
 const Input = styled.input`
   width: 100%;
@@ -106,8 +119,7 @@ const RadioButton = styled.input.attrs({ type: 'radio' })`
     display: inline-block;
     cursor: pointer;
     margin-left:.5em;
-    width: 1em;
-    height: 1em;
+
   `;
 
 const FormSevenDayPass = (props) => (
@@ -162,10 +174,10 @@ const FormSevenDayPass = (props) => (
       />
     </div>
     <div className="field">
-      <legend>Are you over 16?</legend>
-      <fieldset id="over16Set" className="buttonGroup">
+      <Legend>Are you over 16?</Legend>
+      <FieldSet id="over16Set" className="buttonGroup">
         <div id="over16Set" className="buttonLabelGroup">
-          <Label>I am over 16</Label>
+          <label>I am over 16</label>
           <RadioButton
             value="Over 16"
             type="checkbox"
@@ -174,7 +186,7 @@ const FormSevenDayPass = (props) => (
           />
         </div>
         <div className="buttonLabelGroup">
-          <Label>I am under 16</Label>
+          <label>I am under 16</label>
           <RadioButton
             value="Under 16"
             type="checkbox"
@@ -182,13 +194,13 @@ const FormSevenDayPass = (props) => (
             id="under16"
           />
         </div>
-      </fieldset>
+      </FieldSet>
     </div>
     <div className="field">
-      <legend >Would you like an induction with one of our team?</legend>
-      <fieldset id="inductionGroup" className="buttonGroup">
+      <Legend >Would you like an induction with one of our team?</Legend>
+      <FieldSet id="inductionGroup" className="buttonGroup">
         <div className="buttonLabelGroup">
-          <Label>Yes please</Label>
+          <label>Yes please</label>
           <RadioButton
             value="Yes Please"
             type="checkbox"
@@ -197,7 +209,7 @@ const FormSevenDayPass = (props) => (
           />
         </div>
         <div className="buttonLabelGroup">
-          <Label>No thanks</Label>
+          <label>No thanks</label>
           <RadioButton
             value="No Thanks"
             type="checkbox"
@@ -205,7 +217,7 @@ const FormSevenDayPass = (props) => (
             id="inductionNo"
           />
         </div>
-      </fieldset>
+      </FieldSet>
     </div>
     <div className="field">
       <Label htmlFor="message">Message (optional)</Label>
