@@ -17,7 +17,7 @@ const Membership = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Gym Membership Plans in Ashby | FREE 7 Day Trial | Fitness Republic Gym"
+        title="Gym Membership Plans in Ashby | No Joining Fee| Fitness Republic Gym"
         meta={[
           {
             name: "description",
@@ -65,7 +65,7 @@ const Membership = ({ data }) => {
       <Header
         title={
           <>
-            Ashby Gym <span>Membership Plans</span>
+            Ashby Fitness Gym <span>Membership Plans</span>
           </>
         }
         subtitle={"The very first step in your fitness journey"}
