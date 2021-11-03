@@ -41,6 +41,7 @@ const Contents = styled.div`
 `;
 
 const Title = styled.h1`
+  text-align:center;
   background: linear-gradient(
       262.16deg,
       rgba(255, 107, 0, 0.8) 0.74%,
