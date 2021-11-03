@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
     --dark-orange: ;
     --maroon: #ff6b00;
     --white: #fff;
+    --light-grey: #aaa;
     --grey: #F0E1E1;
     --dark-grey: #797676;
     --deep-purple: #770264;
@@ -66,7 +67,7 @@ const GlobalStyles = createGlobalStyle`
     text-decoration: none;
     transition: .2s color;
     font-weight: 700;
-    :hover {
+    &:hover {
       color:var(--deep-purple);
 
     }

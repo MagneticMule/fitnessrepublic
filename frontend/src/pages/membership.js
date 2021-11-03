@@ -35,7 +35,8 @@ const Membership = ({ data }) => {
           {`
           {
             "@context": "https://schema.org",
-            "review": {
+            "review": [
+              {
               "@type": "Review",
               "reviewBody": "It's such a friendly & welcoming atmosphere, I've honestly never been to a gym like it. I always used to feel uncomfortable in the gym, being a larger lady, but at FR there really is a range of people of all shapes & sizes from al walks of life; this helps me to feel comfortable to workout properly.",
               "reviewRating": {
@@ -48,7 +49,7 @@ const Membership = ({ data }) => {
                 "name": "Zoe"
               }
             },
-            "review": {
+             {
               "@type": "Review",
               "reviewBody": "The best gym in Ashby, for sure! Friendly team, nice, clean and very safe when we talk about covid!": {
                 "@type": "Rating",
@@ -59,6 +60,8 @@ const Membership = ({ data }) => {
                 "@type": "Person",
                 "name": "Sérgio Oliveira Souza"
               }
+            }
+            ]
       `}
         </script>
       </Helmet>

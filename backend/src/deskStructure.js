@@ -13,9 +13,7 @@ export default () =>
       ...S.documentTypeListItems().filter(
         (listItem) => !['media.tag', 'workout', 'excercise', 'plan', 'course', 'businessDetails', 'hero', 'video', 'alert'].includes(listItem.getId())
       ),
-
       S.divider(),
-
       S.listItem()
         .title('Workout Builder')
         .icon(workoutBuilderIcon)

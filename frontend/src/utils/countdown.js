@@ -11,12 +11,7 @@ let countDownTimer = (td) => {
       minutes: Math.floor((difference / 1000 / 60) % 60),
       seconds: Math.floor((difference / 1000) % 60),
     };
-    return Object.keys(parts)
-      .map((part) => {
-        if (!parts[part]) return;
-        return `${parts[part]} ${part}`;
-      })
-      .join(" - ");
+    return parts;
   }
 };
 

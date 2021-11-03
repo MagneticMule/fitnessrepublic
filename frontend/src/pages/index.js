@@ -4,6 +4,7 @@ import { graphql } from "gatsby";
 import Helmet from "react-helmet";
 import { DualSection } from "../styles/GridStyles";
 import Header from "../components/Header";
+import CountdownHeader from "../components/CountdownHeader";
 import Container from "../styles/ContainerStyle";
 import TextSection from "../components/TextSection";
 import Image from "../components/widgets/Image";
@@ -122,7 +123,19 @@ const Index = ({ data }) => {
       `}
         </script>
       </Helmet>
-      <Header
+      <CountdownHeader
+        title={
+          <>
+            <span>Black Friday Sale</span>
+          </>
+        }
+        subtitle={
+          <>
+            <strong>Buy a 12 Month Gym and Class Membership for just £219</strong> <hr />That's Less than £4.25 per week for unlimited use of our gym and access to all our fitness classes
+          </>
+        }
+      />
+      {/* <Header
         video={intro}
         title={
           <>
@@ -132,7 +145,7 @@ const Index = ({ data }) => {
         subtitle={
           "A Family run excercise gym at the heart of Ashby De La Zouch"
         }
-      />
+      /> */}
       <Container>
         <DualSection>
           <Pullquote
@@ -146,7 +159,7 @@ const Index = ({ data }) => {
           />
 
           <TextSection
-            title="Welcome Aboard"
+            title="Welcome to our Ashby Gym"
             subtitle="Our mission - Fitness, Strength and Balance for Life"
             body={
               <>

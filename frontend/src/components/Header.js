@@ -127,7 +127,8 @@ const TextSection = ({ video, title, subtitle, cta }) => {
   let ctaButton = "";
   if (cta !== "none") {
     ctaButton = (
-      <Button title="Free Seven Day Pass" destination={"/#getstarted"} />
+      <Button title={
+        <>Grab Our Free Pass <strong>Now</strong></>} destination={"/#getstarted"} />
     );
   }
   return (
