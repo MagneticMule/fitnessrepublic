@@ -90,17 +90,20 @@ const Subtitle = styled.p`
     rgba(240, 180, 150, 1) 0%,
     rgba(255, 200, 250, 1) 100%
   );
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: white;
   -webkit-background-clip: text;
   background-clip: text;
   -moz-text-fill-color: transparent;
   font-weight: bold;
   font-size: 1.333rem;
+  font-weight: 200;
   strong {
+    -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-weight: 900;
   }
   >a {
+  -webkit-text-fill-color: white;
   margin: 2em 0 1em 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 32px;
@@ -115,10 +118,10 @@ const Subtitle = styled.p`
   transition: all 0.2s;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   border: 1px solid var(--deep-purple);
-  &:hover {
-    color: var(--white);
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
-  }
+  // &:hover {
+  //   color: var(--white);
+  //   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  // }
   }
 `;
 
@@ -248,9 +251,9 @@ const CountdownHeader = ({ title, subtitle, cta }) => {
           </Subtitle>
           <FinePrint>
             *Buying our black friday yearly membership offer will save you over £176 compared to our standard monthly plan.
-            <hr />
+            {/* <hr />
             Student membership is dependant on you holding full time student status at a UK school, college or university.
-            We may ask you for some form of student ID on your first visit.
+            We may ask you for some form of student ID on your first visit. */}
           </FinePrint>
         </Contents>
       </Container>
