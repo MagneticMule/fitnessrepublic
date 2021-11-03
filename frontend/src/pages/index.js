@@ -131,7 +131,7 @@ const Index = ({ data }) => {
         }
         subtitle={
           <>
-            <strong>Buy a 12 Month Gym and Class Membership for just £219</strong> <hr />That's Less than £4.25 per week for unlimited use of our gym and access to all our fitness classes
+            <strong>Buy a 12 Month Gym and Class Membership for just £219</strong> <hr />That's less than £4.25 per week for unlimited use of our gym and access to all our fitness classes
           </>
         }
       />
