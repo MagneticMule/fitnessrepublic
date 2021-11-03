@@ -23,12 +23,12 @@ const Index = ({ data }) => {
   return (
     <>
       <Helmet
-        title="Fitness Republic - Ashby Gym | Book Your Free Trial Today"
+        title="Fitness Republic - Ashby Gym | Join today and pay no Joining Fee's"
         meta={[
           {
             name: "description",
             content:
-              "At Fitness Republic Ashby, we promote health and wellbeing over body image. Get started training with Ashby's longest running gym today",
+              "At the center of Ashby De La Zouch for over 11 years. Join us today and pay no joining fee's",
           },
           {
             name: "keywords",
