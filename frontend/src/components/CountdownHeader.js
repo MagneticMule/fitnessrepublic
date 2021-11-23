@@ -103,7 +103,9 @@ const Subtitle = styled.p`
     font-weight: 900;
   }
   >a {
+
   -webkit-text-fill-color: white;
+  background: var(--orange);
   margin: 2em 0 1em 0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 32px;
@@ -117,7 +119,7 @@ const Subtitle = styled.p`
   cursor: pointer;
   transition: all 0.2s;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  border: 1px solid var(--deep-purple);
+  border: 1px solid var(--white);
   // &:hover {
   //   color: var(--white);
   //   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
@@ -140,7 +142,6 @@ const Countdown = styled.h2`
     font-weight: 900;
     color: #ddd;
     padding-bottom: .1rem;
-
   }
 
   > div {
@@ -194,16 +195,16 @@ const CountdownHeader = ({ title, subtitle, cta }) => {
   let ctaButtonSecondary = "";
   if (cta !== "none") {
     ctaButtonPrimary = (
-      <Button title={<>Get one year adult membership for <strong>£219</strong></>} destination={"/black-friday-membership-deal"} />
+      <Button title={<>Get one year adult membership for <strong>£219</strong></>} destination={"https://staging.fitnessrepublic.co.uk/shop"} />
     );
     ctaButtonSecondary = (
-      <Button style="minor" title={<>Get One Year Student Membership for <strong>£199</strong></>} destination={"/black-friday-membership-deal"} />
+      <Button style="minor" title={<>Get One Year Student Membership for <strong>£199</strong></>} destination={"https://staging.fitnessrepublic.co.uk/shop"} />
     );
   }
-  const [time, setTime] = useState(countDownTimer('2021-11-26'));
+  const [time, setTime] = useState(countDownTimer('2021-11-29'));
   useEffect(() => {
     const timer = setTimeout(() => {
-      setTime(countDownTimer('2021-11-26'));
+      setTime(countDownTimer('2021-11-29'));
     }, 1000);
     return () => clearTimeout(timer);
   });
@@ -211,8 +212,8 @@ const CountdownHeader = ({ title, subtitle, cta }) => {
     <CountdownContainer>
       <Container>
         <Contents>
+          <Subtitle><strong>Time is running out!</strong></Subtitle>
           <Title>{title}</Title>
-          <Subtitle><strong>Countdown to our Biggest sale ever!</strong></Subtitle>
           <DateContainer>
             <Countdown>
               <span>{time.days}</span>
@@ -236,28 +237,28 @@ const CountdownHeader = ({ title, subtitle, cta }) => {
             {/* {ctaButtonPrimary} {ctaButtonSecondary} */}
             {' '}
             <a
-              aria-label="Email the gym and reserve your black friday membership"
-              href="mailto:info@fitnessrepublic.co.uk?subject=Reserve my 2021 Black Friday Membership&body=Please reserve my 2021 Black Friday Membership!" rel="noopener noreferrer">
-              Reserve your black friday membership
+              aria-label="Buy our black friday membership offer on the fitness republic store"
+              href="https://staging.fitnessrepublic.co.uk/shop">
+              BUY IT NOW
             </a>
-            <br />
+            {/* <br />
             <a
               aria-label="Call the gym and reserve your black friday membership"
               href="tel:+4401530413330"
               rel="noopener noreferrer"
             >
               Or call us on{' '}01530 413330
-            </a>
+            </a> */}
           </Subtitle>
           <FinePrint>
-            *Buying our black friday yearly membership offer will save you over £176 compared to our standard monthly plan.
+            *Buying our black friday yearly membership offer will <strong>save you over £176</strong> compared to our standard monthly plan.
             {/* <hr />
             Student membership is dependant on you holding full time student status at a UK school, college or university.
             We may ask you for some form of student ID on your first visit. */}
           </FinePrint>
         </Contents>
       </Container>
-    </CountdownContainer>
+    </CountdownContainer >
   );
 };
 
