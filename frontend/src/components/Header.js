@@ -17,16 +17,17 @@ const Head = styled.head`
   display: block;
   background: linear-gradient(
       120.04deg,
-      rgba(255, 107, 100, 0.3) 48.53%,
-      rgba(255, 255, 155, 0.3) 99.73%
+      rgba(80, 0, 30, 0.9) 30.53%,
+      rgba(255, 255, 155, 0.1) 100%
     ),
+
     linear-gradient(
       255deg,
-      rgba(200, 13, 129, 0.2) 0%,
+      rgba(0, 13, 129, 0.9) 0%,
       rgba(255, 255, 255, 0.6) 50.29%
     ),
     rgba(0, 0, 0, 0.23);
-  box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.85);
 
   @media ${device.mobileS} {
   }
@@ -52,26 +53,10 @@ const Contents = styled.div`
 `;
 
 const Title = styled.h1`
-  background: linear-gradient(
-      262.16deg,
-      rgba(255, 107, 0, 0.8) 0.74%,
-      rgba(255, 255, 255, 0.1) 99.73%
-    ),
-    linear-gradient(
-      98deg,
-      rgba(0, 13, 129, 0.5) 0%,
-      rgba(255, 255, 255, 0.2) 99.66%
-    ),
-    linear-gradient(0deg, #410e23, #410e23);
-
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
+  color: var(--white);
   text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25) inset;
   filter: drop-shadow(1px 1px 0 rgba(255, 255, 255, 0.2));
   font-size: 4.209rem;
-  color: #770264;
   letter-spacing: -0.05em;
   text-transform: capitalize;
 
@@ -97,16 +82,8 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
+  color:var(--white);
   width: fit-content;
-  background: linear-gradient(
-    110deg,
-    rgba(120, 60, 0, 1) 0%,
-    rgba(134, 37, 158, 1) 100%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -moz-text-fill-color: transparent;
   font-weight: bold;
   font-size: 1.1rem;
   text-transform: uppercase;
