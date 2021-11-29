@@ -123,7 +123,7 @@ const Index = ({ data }) => {
       `}
         </script>
       </Helmet>
-      <CountdownHeader
+      {/* <CountdownHeader
         title={
           <>
             <span>Black Friday Sale</span>
@@ -134,8 +134,8 @@ const Index = ({ data }) => {
             <strong>Buy a 12 Month Gym and Class Membership for just £219</strong> <hr />That's less than £4.25 per week for unlimited use of our gym and access to all our fitness classes
           </>
         }
-      />
-      {/* <Header
+      /> */}
+      <Header
         video={intro}
         title={
           <>
@@ -145,7 +145,7 @@ const Index = ({ data }) => {
         subtitle={
           "A Family run excercise gym at the heart of Ashby De La Zouch"
         }
-      /> */}
+      />
       <Container>
         <DualSection>
           <Pullquote
