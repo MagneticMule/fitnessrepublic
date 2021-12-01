@@ -12,22 +12,23 @@ import Container from "../styles/ContainerStyle";
 // `;
 
 const Head = styled.head`
+  min-height:85vh;
   overflow: hidden;
   z-index: 0;
   display: block;
   background: linear-gradient(
       120.04deg,
-      rgba(80, 0, 30, 0.9) 30.53%,
-      rgba(255, 255, 155, 0.1) 100%
+      rgba(80, 0, 30, 0.3) 30.53%,
+      rgba(100, 80, 155, 0.1) 100%
     ),
 
-    linear-gradient(
-      255deg,
-      rgba(0, 13, 129, 0.9) 0%,
-      rgba(255, 255, 255, 0.6) 50.29%
-    ),
-    rgba(0, 0, 0, 0.23);
-  box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.85);
+    // linear-gradient(
+    //   255deg,
+    //   rgba(0, 13, 129, 0.2) 0%,
+    //   rgba(255, 255, 255, 0.2) 50.29%
+    // ),
+    rgba(0, 0, 0, 0.13);
+    box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.85);
 
   @media ${device.mobileS} {
   }
@@ -43,22 +44,25 @@ const Head = styled.head`
 `;
 
 const Contents = styled.div`
-  height: 48vh;
+  height: 85vh;
   min-height: min(30em, 860px);
-  max-height: 50em;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
+  text-align:center;
 `;
 
 const Title = styled.h1`
   color: var(--white);
-  text-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.25) inset;
-  filter: drop-shadow(1px 1px 0 rgba(255, 255, 255, 0.2));
-  font-size: 4.209rem;
+  text-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.85) inset;
+  filter: drop-shadow(1px 1px 64px rgba(0,0,0, 0.9));
+  font-size: 9.209rem;
   letter-spacing: -0.05em;
   text-transform: capitalize;
+  text-align:center;
+  padding:0;
+  margin:0;
 
   span {
     font-weight: 900;
@@ -66,6 +70,7 @@ const Title = styled.h1`
 
   @media ${device.mobileS} {
     font-size: 3.209rem;
+
   }
 
   @media ${device.laptop} {
@@ -73,11 +78,11 @@ const Title = styled.h1`
   }
 
   @media ${device.laptopL} {
-    font-size: 5.209rem;
+    font-size: 7.209rem;
   }
 
   @media ${device.desktop} {
-    font-size: 6.209rem;
+    font-size: 8.209rem;
   }
 `;
 
@@ -87,14 +92,15 @@ const Subtitle = styled.p`
   font-weight: bold;
   font-size: 1.1rem;
   text-transform: uppercase;
+  text-align:center;
 `;
 
-const Video = styled.div`
+const Media = styled.div`
   position: relative;
   > video {
     object-fit: cover;
     position: absolute;
-    min-height: 80vh;
+    min-height: 110vh;
     width: 100%;
     z-index: -1;
   }
@@ -105,23 +111,21 @@ const TextSection = ({ video, title, subtitle, cta }) => {
   if (cta !== "none") {
     ctaButton = (
       <Button title={
-        <>Grab Our Free Pass <strong>Now</strong></>} destination={"/#getstarted"} />
+        <>Grab Our Free Pass <strong>Now</strong></>} destination={"/free-ashby-gym-pass"} />
     );
   }
   return (
     <Head>
-      <Video>
+      <Media>
         <video autoPlay={true} muted={true} loop={true}>
           <source src={video} type="video/mp4" />
         </video>
-      </Video>
+      </Media>
       <Container>
         <Contents>
-          <div>
-            <Title>{title}</Title>
-            <Subtitle>{subtitle}</Subtitle>
-            {ctaButton}
-          </div>
+          <Title>{title}</Title>
+          <Subtitle>{subtitle}</Subtitle>
+          {ctaButton}
         </Contents>
       </Container>
     </Head>

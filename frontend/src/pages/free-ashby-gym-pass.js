@@ -50,22 +50,6 @@ const Pass = ({ data }) => {
       />
       <Container>
         <DualSection>
-          <TextSection
-            pos="2/5"
-            title="Your Fitness Republic Journey"
-            subtitle="Get started training with us in 3 simple steps"
-            body={
-              <>
-                At Fitness Republic, we promote health and wellbeing over body
-                image. Experience tells us that if you are given the right
-                guidance and are having fun while training, you will stick with
-                your plan achieve a happier, healthier, fitter life. We will
-                take the time to listen to you and give you the tools and
-                equipment you need to
-                <strong> exercise safely and confidently</strong>.
-              </>
-            }
-          />
 
           {/* <IntroText text="want to try us out for free? Get access to all our facilities including our state of the art gym, fitness classes and a support from our expert staff for seven days at no cost and with no commitment." /> */}
           <SuperBullet
@@ -118,7 +102,7 @@ const Pass = ({ data }) => {
               </>
             }
           />
-          <video
+          {/* <video
             className="intro-video"
             height="100%"
             width="100%"
@@ -162,7 +146,7 @@ const Pass = ({ data }) => {
                 <strong>save £95</strong> on monthly membership.
               </>
             }
-          />
+          /> */}
 
           {/* <Image
           pos="1/5"

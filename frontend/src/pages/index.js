@@ -139,7 +139,7 @@ const Index = ({ data }) => {
         video={intro}
         title={
           <>
-            We are <span>Fitness Republic</span> Ashby
+            <span>Fitness Republic</span> Ashby
           </>
         }
         subtitle={
@@ -148,7 +148,7 @@ const Index = ({ data }) => {
       />
       <Container>
         <DualSection>
-          <Pullquote
+          {/* <Pullquote
             body="Fitness Republic is a family business and as soon as you walk into the gym you’ll feel at home."
             attribution={
               <>
@@ -156,7 +156,7 @@ const Index = ({ data }) => {
                 Trainer
               </>
             }
-          />
+          /> */}
 
           <TextSection
             title="Welcome to our Ashby Gym"
@@ -179,7 +179,7 @@ const Index = ({ data }) => {
             }
           />
 
-          <Image
+          {/* <Image
             pic={data.groupshot.childImageSharp.gatsbyImageData}
             alt="The staff of Fitness Republic standing in the gym, smiling at the camera"
             blurb={
@@ -190,7 +190,7 @@ const Index = ({ data }) => {
                 </strong>
               </>
             }
-          />
+          /> */}
           <InstagramSection instagrams={data.instagrams} />
           <TextSection
             pos="2/5"
@@ -210,7 +210,7 @@ const Index = ({ data }) => {
           />
 
           {/* <IntroText text="want to try us out for free? Get access to all our facilities including our state of the art gym, fitness classes and a support from our expert staff for seven days at no cost and with no commitment." /> */}
-          <SuperBullet
+          {/* <SuperBullet
             id="getstarted"
             pos="2/4"
             number="01"
@@ -239,8 +239,8 @@ const Index = ({ data }) => {
                 chat with one of the team.
               </>
             }
-          />
-          <FormSevenDayPass />
+          /> */}
+          {/* <FormSevenDayPass />
           <SuperBullet
             pos="2/4"
             number="02"
@@ -293,13 +293,13 @@ const Index = ({ data }) => {
                 .
               </>
             }
-          />
+          /> */}
           <ImageGallery
             pic1={data.side2.childImageSharp.gatsbyImageData}
             pic2={data.dumbells.childImageSharp.gatsbyImageData}
             pic3={data.lowdown.childImageSharp.gatsbyImageData}
           />
-          <TextSection
+          {/* <TextSection
             pos="2/-1"
             subtitle="The next step in your fitness journey"
             body={
@@ -313,7 +313,7 @@ const Index = ({ data }) => {
                 <strong>save £95</strong> on monthly membership.
               </>
             }
-          />
+          /> */}
           <MembershipSection
             title="Single Membership Plans"
             subtitle="Gym and Class"
