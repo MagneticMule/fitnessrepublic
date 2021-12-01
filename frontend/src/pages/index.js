@@ -158,7 +158,7 @@ const Index = ({ data }) => {
             }
           /> */}
 
-          <TextSection
+          {/* <TextSection
             title="Welcome to our Ashby Gym"
             subtitle="Our mission - Fitness, Strength and Balance for Life"
             body={
@@ -177,7 +177,7 @@ const Index = ({ data }) => {
                 <strong>fitter, happier, healthier life.</strong>
               </>
             }
-          />
+          /> */}
 
           {/* <Image
             pic={data.groupshot.childImageSharp.gatsbyImageData}
@@ -191,9 +191,9 @@ const Index = ({ data }) => {
               </>
             }
           /> */}
-          <InstagramSection instagrams={data.instagrams} />
+
           <TextSection
-            pos="2/5"
+            pos="1/5"
             title="Your Fitness Republic Journey"
             subtitle="Get started training with us in 3 simple steps"
             body={
@@ -355,7 +355,7 @@ const Index = ({ data }) => {
             ]}
           />
 
-          <TextSection
+          {/* <TextSection
             title="What are people saying about us?"
             subtitle="It's all good, very good"
             body={
@@ -389,7 +389,7 @@ const Index = ({ data }) => {
                 <i>Feel free to have a look but promise you'll come back!</i> 😊
               </>
             }
-          />
+          /> */}
           <ReviewSection
             reviews={[
               {
@@ -431,7 +431,7 @@ const Index = ({ data }) => {
           />
 
           <TextSection
-            pos={"2/-1"}
+            pos={"1/-1"}
             subtitle="Your Fitness Republic Journey Continues"
             body={
               <>
@@ -449,7 +449,7 @@ const Index = ({ data }) => {
               </>
             }
           />
-
+          <InstagramSection instagrams={data.instagrams} />
           {/* <Image
           pos="1/5"
           pic={data.asksimon.childImageSharp.fluid}

@@ -18,16 +18,16 @@ const Head = styled.head`
   display: block;
   background: linear-gradient(
       120.04deg,
-      rgba(80, 0, 30, 0.3) 30.53%,
-      rgba(100, 80, 155, 0.1) 100%
+      rgba(255, 215, 0, .2) 30.53%,
+      rgba(102, 51, 153, 1) 100%
     ),
 
     // linear-gradient(
     //   255deg,
-    //   rgba(0, 13, 129, 0.2) 0%,
-    //   rgba(255, 255, 255, 0.2) 50.29%
+    //   rgba(0, 13, 129, 1) 0%,
+    //   rgba(255, 255, 255, 0.2) 50%
     // ),
-    rgba(0, 0, 0, 0.13);
+    rgba(255, 215, 0, 0.13);
     box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.85);
 
   @media ${device.mobileS} {
