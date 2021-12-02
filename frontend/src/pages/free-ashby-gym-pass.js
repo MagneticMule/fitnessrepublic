@@ -40,23 +40,22 @@ const Pass = ({ data }) => {
         ]}
       ></Helmet>
 
-      <Header
+      {/* <Header
         title={
           <>
             Your Very Own <span>Free Pass</span>
           </>
         }
         subtitle={"experience everything we have to offer free for seven days"}
-      />
+        image={data.topdown}
+      /> */}
       <Container>
         <DualSection>
 
           {/* <IntroText text="want to try us out for free? Get access to all our facilities including our state of the art gym, fitness classes and a support from our expert staff for seven days at no cost and with no commitment." /> */}
-          <SuperBullet
-            id="getstarted"
+          <TextSection
             pos="2/4"
-            number="01"
-            heading="Seven Day Free Pass"
+            subtitle="Seven Day Free Pass"
             body={
               <>
                 Gettting started with us is easy with our{" "}
@@ -84,10 +83,9 @@ const Pass = ({ data }) => {
             }
           />
           <FormSevenDayPass />
-          <SuperBullet
+          <TextSection
             pos="2/4"
-            number="02"
-            heading="Come in for an Induction"
+            subtitle="Come in for an Induction"
             body={
               <>
                 Whether you are an absolute beginner or an experienced gym user,

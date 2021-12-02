@@ -1,9 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+
+import { convertToBgImage } from "gbimage-bridge";
+import BackgroundImage from "gatsby-background-image";
 import DualSection from "../styles/GridStyles";
 import Button from "./widgets/Button";
 import { device } from "../styles/DeviceSizes";
 import Container from "../styles/ContainerStyle";
+
+import "../styles/background-image.css";
 
 /* local components */
 // const Container = styled.div`
@@ -18,7 +23,7 @@ const Head = styled.head`
   display: block;
   background: linear-gradient(
       120.04deg,
-      rgba(255, 215, 0, .2) 30.53%,
+      rgba(80,0,90, .4) 30.53%,
       rgba(102, 51, 153, 1) 100%
     ),
 
@@ -27,7 +32,7 @@ const Head = styled.head`
     //   rgba(0, 13, 129, 1) 0%,
     //   rgba(255, 255, 255, 0.2) 50%
     // ),
-    rgba(255, 215, 0, 0.13);
+    rgba(0,0,0, 0.13);
     box-shadow: inset 0px -4px 16px rgba(0, 0, 0, 0.85);
 
   @media ${device.mobileS} {
@@ -106,7 +111,10 @@ const Media = styled.div`
   }
 `;
 
-const TextSection = ({ video, title, subtitle, cta }) => {
+const TextSection = ({ video, image, title, subtitle, cta }) => {
+
+  const bgImage = convertToBgImage(image);
+
   let ctaButton = "";
   if (cta !== "none") {
     ctaButton = (
@@ -114,22 +122,48 @@ const TextSection = ({ video, title, subtitle, cta }) => {
         <>Grab Our Free Pass <strong>Now</strong></>} destination={"/free-ashby-gym-pass"} />
     );
   }
-  return (
-    <Head>
-      <Media>
-        <video autoPlay={true} muted={true} loop={true}>
-          <source src={video} type="video/mp4" />
-        </video>
-      </Media>
-      <Container>
-        <Contents>
-          <Title>{title}</Title>
-          <Subtitle>{subtitle}</Subtitle>
-          {ctaButton}
-        </Contents>
-      </Container>
-    </Head>
-  );
+  if (image) {
+    return (
+      <BackgroundImage
+        {...bgImage}
+        className={"masthead"}
+        backgroundColor={`#040e18`}
+      >
+        <Head>
+          <Media>
+            <video autoPlay={true} muted={true} loop={true}>
+              <source src={video} type="video/mp4" />
+            </video>
+          </Media>
+          <Container>
+            <Contents>
+              <Title>{title}</Title>
+              <Subtitle>{subtitle}</Subtitle>
+              {ctaButton}
+            </Contents>
+          </Container>
+        </Head>
+      </BackgroundImage>
+    );
+  }
+  else {
+    return (
+      <Head>
+        <Media>
+          <video autoPlay={true} muted={true} loop={true}>
+            <source src={video} type="video/mp4" />
+          </video>
+        </Media>
+        <Container>
+          <Contents>
+            <Title>{title}</Title>
+            <Subtitle>{subtitle}</Subtitle>
+            {ctaButton}
+          </Contents>
+        </Container>
+      </Head>
+    );
+  }
 };
 
 export default TextSection;
