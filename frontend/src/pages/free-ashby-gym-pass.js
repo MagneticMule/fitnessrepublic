@@ -40,15 +40,15 @@ const Pass = ({ data }) => {
         ]}
       ></Helmet>
 
-      {/* <Header
+      <Header
         title={
           <>
             Your Very Own <span>Free Pass</span>
           </>
         }
         subtitle={"experience everything we have to offer free for seven days"}
-        image={data.topdown}
-      /> */}
+        image={data.topdown.childImageSharp.gatsbyImageData}
+      />
       <Container>
         <DualSection>
 

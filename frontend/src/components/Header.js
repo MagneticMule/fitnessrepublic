@@ -60,7 +60,7 @@ const Contents = styled.div`
 
 const Title = styled.h1`
   color: var(--white);
-  text-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.85) inset;
+  text-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.85);
   filter: drop-shadow(1px 1px 64px rgba(0,0,0, 0.9));
   font-size: 9.209rem;
   letter-spacing: -0.05em;
@@ -124,9 +124,9 @@ const TextSection = ({ video, image, title, subtitle, cta }) => {
   }
   if (image) {
     return (
+
       <BackgroundImage
         {...bgImage}
-        className={"masthead"}
         backgroundColor={`#040e18`}
       >
         <Head>
@@ -144,6 +144,7 @@ const TextSection = ({ video, image, title, subtitle, cta }) => {
           </Container>
         </Head>
       </BackgroundImage>
+
     );
   }
   else {
