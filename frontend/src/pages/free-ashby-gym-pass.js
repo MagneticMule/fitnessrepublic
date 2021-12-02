@@ -43,11 +43,12 @@ const Pass = ({ data }) => {
       <Header
         title={
           <>
-            Your Very Own <span>Free Pass</span>
+            <span>Free Gym Pass</span> in Ashby
           </>
         }
         subtitle={"experience everything we have to offer free for seven days"}
         image={data.topdown.childImageSharp.gatsbyImageData}
+        cta={"none"}
       />
       <Container>
         <DualSection>
