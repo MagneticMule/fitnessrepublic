@@ -35,7 +35,7 @@ const Pass = ({ data }) => {
           {
             name: "keywords",
             content:
-              "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, free trial, seven days, no obligation, marjet street",
+              "gym, fitness, personal training, ashby, ashby de la zouch, leicestershire, free pass, free trial, seven days, no obligation, market street",
           },
         ]}
       ></Helmet>
