@@ -54,7 +54,8 @@ module.exports = {
         },
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
     {
       resolve: `gatsby-source-sanity`,
       options: {
