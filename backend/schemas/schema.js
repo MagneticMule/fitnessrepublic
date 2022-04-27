@@ -39,8 +39,8 @@ import planBuilder from './objects/workout/planBuilder';
 import setBuilder from './objects/workout/setBuilder';
 import excercise from './objects/excercise';
 import repFields from './objects/workout/repFields';
-
 import target from './objects/target';
+import terminology from './documents/terminology';
 
 // document schemas
 import page from './documents/page';
@@ -92,6 +92,7 @@ export default createSchema({
     planBuilder,
     setExcercise,
     setBuilder,
-    repFields
+    repFields,
+    terminology,
   ]),
 });

@@ -10,29 +10,38 @@ export default {
       }
     },
     {
-      name: 'netlify',
-      layout: {
-        width: 'small',
-        height: 'small',
-      },
+      name: 'document-list',
       options: {
-        title: 'Website: Hosted on Netlify',
-        sites: [
-          // {
-          //   title: 'Sanity Studio',
-          //   apiId: 'xxxxx-yyyy-zzzz-xxxx-yyyyyyyy',
-          //   buildHookId: 'xxxyyyxxxyyyyxxxyyy',
-          //   name: 'sanity-gatsby-blog-20-studio',
-          // },
-          {
-            title: 'Fitness Republic Website',
-            apiId: process.env.SANITY_STUDIO_NETLIFY_API_ID,
-            buildHookId: process.env.SANITY_STUDIO_BUILDHOOKID,
-            name: 'fitnessrepublic',
-          },
-        ],
-      },
+        title: 'Recent Workouts',
+        types: ['workout'],
+        showCreateButton: true,
+        createButtonText: 'Create a new Workout'
+      }
     },
+    // {
+    //   name: 'netlify',
+    //   layout: {
+    //     width: 'small',
+    //     height: 'small',
+    //   },
+    //   options: {
+    //     title: 'Website: Hosted on Netlify',
+    //     sites: [
+    //       // {
+    //       //   title: 'Sanity Studio',
+    //       //   apiId: 'xxxxx-yyyy-zzzz-xxxx-yyyyyyyy',
+    //       //   buildHookId: 'xxxyyyxxxyyyyxxxyyy',
+    //       //   name: 'sanity-gatsby-blog-20-studio',
+    //       // },
+    //       {
+    //         title: 'Fitness Republic Website',
+    //         apiId: process.env.SANITY_STUDIO_NETLIFY_API_ID,
+    //         buildHookId: process.env.SANITY_STUDIO_BUILDHOOKID,
+    //         name: 'fitnessrepublic',
+    //       },
+    //     ],
+    //   },
+    // },
     {
       name: 'project-info',
       layout: {

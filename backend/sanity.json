@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "Fitness Republic"
+    "name": "GymTom Admin"
   },
   "api": {
     "projectId": "s1k3b826",
@@ -15,9 +15,7 @@
     "@sanity/dashboard",
     "@sanity/desk-tool",
     "asset-source-unsplash",
-    "dashboard-widget-netlify",
     "cloudinary",
-    "dark-theme-blue",
     "media",
     "content-calendar",
     "dashboard-widget-document-list",

@@ -1,4 +1,4 @@
-import { BsFillInfoCircleFill as icon} from 'react-icons/bs';
+import { BsFillInfoCircleFill as icon } from 'react-icons/bs';
 
 export default {
   title: "Business Details",
@@ -12,7 +12,7 @@ export default {
       name: "name",
       type: "string",
       validation: Rule => Rule.required().min(2).warning('Name should be longer than 2 characters'),
-      description: `This is the name of your business and will be used throughout the site. In this case it is Fitness Republic but you could change it to something like FitnessRepublic.co.uk.`
+      description: `This is the name of your business and will be used throughout the site. In this case it is GymTom but you could change it to something that better reflects your business.`
     },
     {
       title: "Address",
@@ -29,7 +29,7 @@ export default {
       description: `This is the number you want your clients to call.`,
       validation: Rule => [
         Rule.required(),
-          Rule.max(200).error('Body text must be shorter than 200 characters')
+        Rule.max(200).error('Body text must be shorter than 200 characters')
       ]
     },
     {
@@ -43,7 +43,7 @@ export default {
       name: "email",
       title: "Email",
       type: "string",
-      description: `The contact email for Fitness Republic. This is where customers will contact you directly`,
+      description: `The contact email for your business. This is where customers will contact you directly`,
       validation: (Rule) =>
         Rule.regex(
           /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
@@ -54,9 +54,9 @@ export default {
         ),
     },
     {
-     title: 'Social Media',
-     name: 'businessSocialMedia',
-     type:'social'
+      title: 'Social Media',
+      name: 'businessSocialMedia',
+      type: 'social'
     },
   ]
 }

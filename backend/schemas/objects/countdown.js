@@ -9,7 +9,7 @@ export default {
       title: 'Title',
       name: 'title',
       type: 'heroTitle',
-      description: `The title will be displayed in large type in the first setion of the hero box. This will generally be the name of the page made into a statement e.g. We are Fitness Republic || Your Own Fitness Trainer`,
+      description: `The title will be displayed in large type in the first setion of the hero box. This will generally be the name of the page made into a statement e.g. We are GymTom || Your Own Fitness Trainer`,
     },
     {
       title: 'Sub Title',
