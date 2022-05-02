@@ -48,6 +48,10 @@
     {
       "implements": "part:@sanity/form-builder/input/image/asset-sources",
       "path": "./parts/assetSources.js"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "./logo/gymtom-logo.js"
     }
   ]
 }

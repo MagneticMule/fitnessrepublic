@@ -41,6 +41,7 @@ import excercise from './objects/excercise';
 import repFields from './objects/workout/repFields';
 import target from './objects/target';
 import terminology from './documents/terminology';
+import lesson from './documents/lesson';
 
 // document schemas
 import page from './documents/page';
@@ -94,5 +95,6 @@ export default createSchema({
     setBuilder,
     repFields,
     terminology,
+    lesson
   ]),
 });

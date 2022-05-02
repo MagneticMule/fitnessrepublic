@@ -1,16 +1,17 @@
 {
-    "types": [
-        {
-            "type": "workout",
-            "field": "publishedAt",
-            "titleField": "title"
-        }
-    ],
-    "calendar": {
-        "event": {
-            "dateFormat": "MMMM, dd yyyy",
-            "timeFormat": "hh:mm a",
-            "showAuthor": "false"
-        }
+  "types": [
+    {
+      "type": "lesson",
+      "field": "launchAt",
+      "titleField": "title"
     }
+  ],
+  "calendar": {
+    "event": {
+      "dateFormat": "dd, mmmm yyyy",
+      "timeFormat": "hh:mm a",
+      "showAuthor": "false"
+    }
+  },
+  "filterWarnings": []
 }

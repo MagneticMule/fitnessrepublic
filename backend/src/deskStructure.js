@@ -6,13 +6,14 @@ import { BsSun as workoutBuilderIcon } from 'react-icons/bs';
 import { RiCalendarTodoLine as planIcon } from 'react-icons/ri';
 import { BsCardList as courseIcon } from 'react-icons/bs';
 import { GoBook as dictionaryIcon } from 'react-icons/go';
+import { GrArticle as lessonIcon } from 'react-icons/gr';
 export default () =>
   S.list()
     .title('GymTom Course Platform')
     .items([
       // List out the rest of the document types, but filter out the config type
       ...S.documentTypeListItems().filter(
-        (listItem) => !['media.tag', 'workout', 'excercise', 'plan', 'course', 'businessDetails', 'hero', 'video', 'alert', 'terminology'].includes(listItem.getId())
+        (listItem) => !['media.tag', 'workout', 'excercise', 'plan', 'course', 'businessDetails', 'hero', 'video', 'alert', 'terminology', 'lesson'].includes(listItem.getId())
       ),
       S.divider(),
       S.listItem()
@@ -225,6 +226,11 @@ export default () =>
                 .title('Courses')
                 .child(S.documentTypeList('course'))
                 .icon(courseIcon),
+              S.listItem()
+                .title('Theory Lessons')
+                .child(S.documentTypeList('lesson'))
+                .icon(lessonIcon),
+              S.divider(),
               S.listItem()
                 .title('Terminology Dictionary')
                 .child(S.documentTypeList('terminology'))

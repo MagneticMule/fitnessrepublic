@@ -7,7 +7,7 @@
   "sanity-plugin-asset-source-cloudinary": "90a9bd123778d4a589a7875d9bbc5a9b713f39084be79987a076da2f6d1d0161",
   "asset-source-cloudinary": "90a9bd123778d4a589a7875d9bbc5a9b713f39084be79987a076da2f6d1d0161",
   "sanity-plugin-seo-pane": "922902575995e62af8f628e6abe652ecc5f3b1e1d2dec5859392e79e47707088",
-  "sanity-plugin-content-calendar": "77266b09d4f59715778bc5fd507aefc59e2c6269ab885d7451ad680a20bb651f",
+  "sanity-plugin-content-calendar": "38b27aff30a6a791a8ee58125992093fcacbff5abba4aea3e77478ba531c7a3c",
   "content-calendar": "77266b09d4f59715778bc5fd507aefc59e2c6269ab885d7451ad680a20bb651f",
   "@sanity/vision": "da5b6ed712703ecd04bf4df560570c668aa95252c6bc1c41d6df1bda9b8b8f60"
 }
