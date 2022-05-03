@@ -19,7 +19,8 @@
     "media",
     "content-calendar",
     "dashboard-widget-document-list",
-    "note-field"
+    "note-field",
+    "pdf-generator"
   ],
   "env": {
     "development": {

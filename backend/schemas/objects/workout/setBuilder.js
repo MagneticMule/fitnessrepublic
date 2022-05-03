@@ -15,9 +15,13 @@ export default {
       image: 'set.setExcercise.0.excerciseReference.cover.asset'
     },
     prepare: ({ excercise1, excercise2, excercise3, excercise4, setType, image }) => {
-      const excercises = [excercise1, excercise2, excercise3, excercise4].filter((x) => x !== undefined);
+      const excercises = [excercise1, excercise2, excercise3, excercise4]
+        .filter((x) => x !== undefined);
+
       const subtitle = excercises.length > 0 ? `${excercises.join(' | ')}` : ' ';
+
       const hasMoreExcercises = Boolean(excercise3);
+      
       return {
         title: setType.charAt(0).toUpperCase() + setType.substring(1) + ` Set`,
         subtitle: Boolean(excercise3) ? `${subtitle}...` : subtitle,
